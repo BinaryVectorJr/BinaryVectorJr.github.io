@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<title>Gallery</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+.responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+    background-image: url('file:///E:/Website/ReferenceImages/Actual/Level_Design/Screenshot_285.png');
+    min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+.header {
+    text-align: center;
+    padding: 32px;
+}
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 6px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 30%; /* IE10 */
+    flex: 30%;
+    max-width: 100%;
+    padding: 0 6px;
+}
+
+.column img {
+    margin-top: 10px;
+    vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+}
+</style>
+<body>
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="./index.html" class="w3-bar-item w3-button">HOME</a>
+    <!-- <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> SHOWCASE</a> -->
+    <a href="./gallery.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> GALLERY</a>
+    <a href="#" target="_blank" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> MORE ABOUT ME</a>
+    <!-- <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red"><i class="fa fa-search"></i> -->
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <!-- <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">SHOWCASE</a> -->
+    <a href="./gallery.html" class="w3-bar-item w3-button" onclick="toggleFunction()">GALLERY</a>
+    <a href="#" target="_blank" class="w3-bar-item w3-button" onclick="toggleFunction()">MORE ABOUT ME</a>
+    <!-- <a href="#" class="w3-bar-item w3-button">SEARCH</a> -->
+  </div>
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">GALLERY</span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <!-- <h3 class="w3-center">MY WORK</h3> -->
+  <p class="w3-center"><em>Here is a collection of artwork, posters, and logos that have been created by me over the past few years.<br> Click on the images to make them bigger and know the stories behind them.</em></p><br>
+  
+  <!-- Photo Grid -->
+	<div class="row"> 
+	  <div class="column">
+		<img src="file:///E:/Website/ReferenceImages/Actual/Art/GameArt13_logo.jpg" style="width:100%" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Concept Art: Ao Shirai || A determined historian-turned-assassin of Japanese descent, who is out to fulfill her grandfather's last wish -  to find the long lost Ring of Omnipotence. She loves to explore, and thinks of herself as the new-age Lara Croft-Nathan Drake hybrid - only better. || Changed my concept art style with this one, to include colors and shadowing. Also, this was one of the first artworks to feature my new logo (top right).">
+		<img src="file:///E:/Website/ReferenceImages/Actual/Art/GameArt9_King.jpg" style="width:100%" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Concept Art: Konungr Trygve || Concept art of a King looking upon his kingdom, which he knows is about to fall into turmoil, as all the contenders for Konungr (Old Norse for 'King') are not worthy of the power || The character has been heavily inspired by Viking Kings, with some features similar to the charcter Crach an Craite from the game The Witcher 3. I was doing some missions in Skellige in the game, and also trying to gather some information about Old Norse mythologies, when I got inspired to sketch him.">
+		<img src="file:///E:/Website/ReferenceImages/Actual/Art/GameArt2.jpg" style="width:100%" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Concept Art: Balahoff The Guardian || Concept art for the dragon that guards the legendary artifact, The Hellblade, that lies embedded in the Obsidian courtyard of the Castle Ga'ar. It is said that the sword contains the power to control and summon the mythical beast, and control it.|| This was the direct result of watching too much Game of Thrones in one day, and also Dark Souls. So the thought creeped into my head that what if there was a weapon that could summon this mythical beast and in the end of the day, which could only be obtained by defating it first in a series of battles. Also, I intended this to be the (unofficial) backstory of how the Nameless King (from Dark Souls 3) came into existance. It was my way of putting my own twist in the lore of Dark Souls 3.">
+		<img src="file:///E:/Website/ReferenceImages/Actual/Compositions/Logos/StreetSangam-01.jpg" style="width:100%" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Logo: Street Sangam || The literal meaning of the name is 'fusion of (different) paths'. This was done for an event being organised by MOX (Movement of Expression) which is an organization that caters to services such as Event Management, Talent Management, PR, Photography, as well as hosting various events around India. || Through the logo, I had to bring out the vibrance and euphoria that India provides in terms of art forms, and along with that, I had to convey the message that this was an event where various art forms from all around the country would come together, and the best way I thought this was possible is throught he use of vibrant colours, patterns, and of course the elephant and peacock silhouette, to give it that exotic feel.">
+	  </div>
+	  
+	  <div class="column">
+		<img src="file:///E:/Website/ReferenceImages/Actual/Art/IMG_20150101_222716.jpg" style="width:100%" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Art: Commander Shepard (Female) || This was way back in the day when I had just completed Mass Effect 3. This was one of those 'greatest game ever' moments in my life, because of how well woven the story was, and because of that exquisite level design. Couple that with the fact that Mass Effect 3 was the ending to such a beautiful trilogy, and it makes a vary powerful combination - one that will surely be etched into my mind for a long time.">
+		<img src="file:///E:/Website/ReferenceImages/Actual/Art/IMG_20150116_135600_20150116135956349.jpg" style="width:100%" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Art: Ezio Auditore || Just a quick sketch, when I discovered that we all are living in a simulation. (okay maybe not)">
+		<img src="file:///E:/Website/ReferenceImages/Actual/Art/IMG_20140824_163603.jpg" style="width:100%" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Concept Art: Agni Daitya || Rising from the depths of hell to start the cycle of Vinaasha (Cycle of Destruction). It's body is formed from the fusion of molten lava, and the earth itself, making it an all-powerful force. Only a Deva (God) can defeat it by putting it into a trance like state. || The inspiration of this creature has been drawn from monsters such as the Cloverfield Monster, Kronos, Surtur and other fire-based-kaiju hybrid creatures. I do plan to turn it into a video game boss someday.">
+		<img src="file:///E:/Website/ReferenceImages/Actual/Compositions/BIDSF_Main_Raterized.jpg" style="width:100%" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Poster: BIDSF'17 Main Even Poster || BIDSF (Bio-Inspired Design Summer Fest) is an annual fest held by the Biotechnology division of VIT. I was fortunate enough to be chosen as the Head of Design for the event, and the club I was in (BEAM-VIT) was selected as the Organizing Club. I oversaw all design decisions, and other design projects such as posters, stickers, banners, flyers, etc. This poster showcases the 4 major events in the fest, that were the main attraction.">
+	  </div> 
+	  
+	  <div class="column">
+		<img src="file:///E:/Website/ReferenceImages/Actual/Compositions/FatherDayUpload.png" style="width:100%" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Poster: Father's Day || This was a pretty simple composition I made for BEAM-VIT, where I held the position on the Board as Head of Design Department. We released this on the event of Father's Day, to show our appreciation towars all the fathers and father-like figures out there who are building a safer and better future for their children.">
+		<img src="file:///E:/Website/ReferenceImages/Actual/Art/GameArt5.jpg" style="width:100%" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Concept Art: Joe 'Scar' Bennett || A mercenary hired by the Dreymond Corporation to fulfill only one mission: Eliminate threats, recover assets. Scar's major area of operation is the post-apocalyptic cyberpunk city of Detroit. He loves guns, bacon, and most important of all, Don Carlos cigars. || Okay this is pretty simple to figure out. I watched Altered Carbon, and fell in love with the character of Takeshi Kovacs. So I drew this version of him based on the sleeve of Elias Ryker (played by Joel Kinnaman). Takeshi (Elias Ryker) definitely ranks very high on my list of Top 10 Fictional Characters. ">
+		<img src="file:///E:/Website/ReferenceImages/Actual/Compositions/BEAM_Online_Competitions.jpg" style="width:100%" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Poster: BIDSF'17 Online Competition || This is more like an e-information pflyer, that needed to be circulated around for the online competitions that we were conducting (before the main BIDSF events) to create buzz about the event, as well as provide information about the online competitions to the participants. A poster generally has fewer words and the visual aspect of it is much more prominent than the words - hence why I chose to call it an e-information flyer.">
+		<img src="file:///E:/Website/ReferenceImages/Actual/Compositions/Logos/BIDSF17FINALLOGO.png" style="width:100%" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Logo: BIDSF'17 || BIDSF (Bio-Inspired Design Summer Fest) is an annual fest held by the Biotechnology division of VIT. I was fortunate enough to be chosen as the Head of Design for the event, and the club I was in (BEAM-VIT) was selected as the Organizing Club. This was the main logo of the event. The overall logo denotes the coming together of engineering (the gears) and nature (the leaf). My end goal was to create awareness about the fact that most of the engineering marvels we see around the world have been inspired by nature itself, in one way or the other. The logo was also developed keeping in mind the materialistic design elements that Google had introduced into the designing industry.">
+	  </div>
+	  
+	  <div class="column">
+		<img src="file:///E:/Website/ReferenceImages/Actual/Compositions/Puma_final_Angshuman.jpg" style="width:100%" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Poster: Puma Promotional || This poster was made for the Internshala Graphic Design Contest 2.0 with PUMA competition, where we had to design a poster for an even t being held by Puma (hypothetical of course). We had to come up with a name, a logo for it and try to make it as interesting  as possible. I chose the design for the logo based on the pattern which we find on the sides of Puma shoes, which is it's differentiating feature from other brands. Also, I threw in Sergio Aguero, because he endorses Puma boots (and is one of my favourite finishers in the Premiere League).">
+		<img src="file:///E:/Website/ReferenceImages/Actual/Art/IMG_20141109_074643.jpg" style="width:100%" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Concept Art: Eliza Martell Aviero || 2nd-in-Command of Santos de la Furia (Saints of Fury), a resistance group based out of New Mexico, to rescue hostages from the human farms of Gen-0 Corp. - a company dedicated to eradicating the weak strains in mankind's DNA, to create the perfect race of humans.">
+	  </div>
+	  
+	  <div class="column">
+		<img src="file:///E:/Website/ReferenceImages/Actual/Compositions/Vimaanas_Life.jpg" style="width:100%" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Poster: Vimaanas Life || This poster was one of the various poster which I made to publicize the team, and keep their social media active, as well as generate buzz for the upcoming recruitments. The trend at that time, was a meme that resembled the format of 'Life-(something relavant-Death' and I tried to capitalize on tha tfact.">
+		<img src="file:///E:/Website/ReferenceImages/Actual/Compositions/BEAM_23March_Francis.jpg" style="width:100%" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Poster: Guest Lecture || This poster was compiled for one of the guest lectures leading up to the event of BIDSF'17. The guest speaker was Mr. Francis Mondal, who is the founder of Indian Coacoa Venture (ICV) and the former president of BEAM-VIT. The topic of the session was how to set our workflow and priorities, while forming a startup, without any prior managerial experience.">
+
+		<img src="file:///E:/Website/ReferenceImages/Actual/Compositions/BIDSF_Sticker.jpg" style="width:100%" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sticker: BIDSF'17 Sticker || One of the two versions of stickers developed by me to publicize BIDSF'17. We distributed these stickers at our info booths and gave them out to participants, and anyone who came to us.">
+	  </div>
+	</div>
+	
+	<div class = "w3-container">
+		<p><a href="https://www.artstation.com/binaryvectorjr" target="_blank" class="w3-btn w3-block w3-black" style="width=100%">Click here to view more!</a></p>
+	</div>
+
+	<!--Modal for full size images on click-->
+	<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+	  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+	  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-8">
+		<img id="img01" class="w3-image">
+		<p id="caption" class="w3-opacity w3-large"></p>
+	  </div>
+	</div>
+	<script>
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+</body>
+</html>

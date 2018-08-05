@@ -1,0 +1,2 @@
+Browser window size: 1536 x 737
+Screen size: 1536 x 864
