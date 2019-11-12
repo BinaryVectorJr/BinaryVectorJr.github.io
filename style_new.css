@@ -752,6 +752,17 @@
 			filter: grayscale(100%);
 		}
 		
+		#art-portfolio .art-portfolio-item .art-portfolio-link {
+			display: block;
+			position: relative;
+			margin: 0 0;
+			max-width: 100%;
+		}
+
+		#art-portfolio .art-portfolio-item .art-portfolio-link img {
+			height: 100%;
+		}
+		
 	}
 
 	.flexbox {
