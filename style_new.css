@@ -570,12 +570,13 @@
 
 	.portfolio-modal .modal-content p {
 		margin-bottom: 30px;
+		font-size: 18px;
 	}
 
 	.portfolio-modal .modal-content p.item-intro {
 		margin: 20px 0 30px;
 		font-family: 'Abel', sans-serif;
-		font-size: 16px;
+		font-size: 18px;
 		font-style: italic;
 	}
 
