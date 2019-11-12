@@ -658,12 +658,12 @@
 	#art-portfolio .art-portfolio-item .art-portfolio-link {
 		display: block;
 		position: relative;
-		margin: 0 0;
-		max-width: 100%;
+		margin: 0 auto;
+		max-width: 400px;
 	}
 
 	#art-portfolio .art-portfolio-item .art-portfolio-link img {
-		height: 100%;
+		height: 240px;
 	}
 
 	#art-portfolio .art-portfolio-item .art-portfolio-link .art-portfolio-hover {
