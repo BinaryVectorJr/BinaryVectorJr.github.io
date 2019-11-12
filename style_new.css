@@ -651,8 +651,8 @@
 	
 	#art-portfolio .art-portfolio-item {
 		right: 0;
-		margin: 0 0 0px;
-		width: 50%;
+		margin: 0 0 0;
+		width: 100%;
 	}
 
 	#art-portfolio .art-portfolio-item .art-portfolio-link {
@@ -663,7 +663,7 @@
 	}
 
 	#art-portfolio .art-portfolio-item .art-portfolio-link img {
-		height: 240px;
+		height: 350px;
 	}
 
 	#art-portfolio .art-portfolio-item .art-portfolio-link .art-portfolio-hover {
@@ -719,7 +719,7 @@
 	#art-portfolio .art-portfolio-item .art-portfolio-caption {
 		margin: 0 auto;
 		padding: 15px;
-		max-width: 800px;
+		max-width: 500px;
 		text-align: center;
 		background-color: #fff;
 	}
@@ -743,9 +743,15 @@
 	}
 
 	@media(min-width:767px) {
+		/* #art-portfolio .art-portfolio-item { */
+			/* margin: 0 0 30px; */
+		/* } */
+		
 		#art-portfolio .art-portfolio-item {
-			margin: 0 0 30px;
-		}
+		right: 0;
+		margin: 0 0 30px;
+		width: 50%;
+	}
 		
 		.art-portfolio-link img {
 			-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
