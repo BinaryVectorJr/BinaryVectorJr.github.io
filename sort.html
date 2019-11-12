@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+	<link href="./agencyportfolio.css" rel="stylesheet">
+	<link href="./bootstrap-v3.3.7/bootstrap.min.css" rel="stylesheet">
+	
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> 
+	
+	<title>Portfolio</title>
+	
+</head>
+
+<style>
+
+.filterDiv {
+  float: left;
+  background-color: #2196F3;
+  color: #ffffff;
+  width: 100px;
+  line-height: 100px;
+  text-align: center;
+  margin: 2px;
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.container {
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+</style>
+<body>
+
+<h2 align="w3-center">Filter DIV Elements</h2>
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('LEVEL DESIGN')"> LEVEL DESIGN</button>
+  <button class="btn" onclick="filterSelection('GAME DESIGN')"> GAME DESIGN</button>
+  <button class="btn" onclick="filterSelection('MODELLING')"> MODELLING</button>
+  <button class="btn" onclick="filterSelection('CONCEPT ART')"> CONCEPT ART</button>
+</div>
+
+<div class="container">
+  <div class="filterDiv LEVEL DESIGN">BMW</div>
+  <div class="filterDiv CONCEPT ART MODELLING">Orange</div>
+  <div class="filterDiv LEVEL DESIGN">Volvo</div>
+  <div class="filterDiv CONCEPT ART">Red</div>
+  <div class="filterDiv LEVEL DESIGN GAME DESIGN">Mustang</div>
+  <div class="filterDiv CONCEPT ART">Blue</div>
+  <div class="filterDiv GAME DESIGN">Cat</div>
+  <div class="filterDiv GAME DESIGN">Dog</div>
+  <div class="filterDiv MODELLING">Melon</div>
+  <div class="filterDiv MODELLING GAME DESIGN">Kiwi</div>
+  <div class="filterDiv MODELLING">Banana</div>
+  <div class="filterDiv MODELLING">Lemon</div>
+  <div class="filterDiv GAME DESIGN">Cow</div>
+</div>
+
+<!-- ||||||||||||| -->
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<section class="hero">
+    <div class="hero-inner">
+        <h1>The World of Moz</h1>
+        <h2><a href="./index.html" target="_blank" title="Go to home page">Angshuman Mazumdar</a></h2>
+    </div>
+</section>
+
+<br>
+
+<section>
+<!-- Portfolio Grid Section -->
+<section id="portfolio" class="bg-light-gray">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">Game Development Projects</h2>
+        <h3 class="section-subheading text-muted"></h3>
+      </div>
+    </div>
+	
+	<br>
+	
+    <div class="row" align="center">
+      
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fa fa-plus fa-3x"></i>
+              </div>
+            </div>
+            
+            <img src="./images/portfolio/major-projects/forest/forest-preview.jpg" class="img-responsive" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Cabin in the Woods</h4>
+            <p class="text-muted">Unreal Engine 4</p>
+          </div>
+        </div>
+      
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fa fa-plus fa-3x"></i>
+              </div>
+            </div>
+            
+            <img src="./images/portfolio/major-projects/bedroom/bedroom-preview.jpg" class="img-responsive" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Master Bedroom</h4>
+            <p class="text-muted">Trimble SketchUp | Unreal Engine 4</p>
+          </div>
+        </div>
+      
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fa fa-plus fa-3x"></i>
+              </div>
+            </div>
+            
+            <img src="./images/portfolio/major-projects/escape/escape-preview.jpg" class="img-responsive" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Escape the Room</h4>
+            <p class="text-muted">Unreal Engine 4</p>
+          </div>
+        </div>
+      
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fa fa-plus fa-3x"></i>
+              </div>
+            </div>
+            
+            <img src="./images/portfolio/major-projects/sidescroller/sidescroller-preview.jpg" class="img-responsive" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Jungle Run Sidescroller</h4>
+            <p class="text-muted">Unreal Engine 4 | Adobe Photoshop</p>
+          </div>
+        </div>
+      
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fa fa-plus fa-3x"></i>
+              </div>
+            </div>
+            
+            <img src="./images/portfolio/major-projects/roomvr/roomvr-preview.jpg" class="img-responsive" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Lost in Space</h4>
+            <p class="text-muted">Unity3D</p>
+          </div>
+        </div>
+      
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fa fa-plus fa-3x"></i>
+              </div>
+            </div>
+            
+            <img src="./images/portfolio/major-projects/word/word-preview.png" class="img-responsive" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Bulls and Cows</h4>
+            <p class="text-muted">C++</p>
+          </div>
+        </div>
+      
+
+    </div>
+  </div>
+</section>
+
+
+      <!-- Portfolio Modals -->
+
+  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+          <div class="rl">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <div class="modal-body">
+              <h2>Cabin in the Woods</h2>
+              <p class="item-intro text-muted">Unreal Engine 4</p>
+			  <p>A small level design project where I tried to include different types of terrain and foliage, in the level. It also includes a log cabin, as well as some smoke and fire particle effects. The First Person Shooter template has been used here, so as to make the player better experience the environment, as well as move about in it freely.</p>
+              <ul class="list-inline">
+                
+				
+                <li><a href="#" target="_blank">Demo Video (Coming Soon)</a></li>
+              </ul>
+			  
+              
+              <img class="img-responsive img-centered" src="./images/portfolio/major-projects/forest/1forest.jpg" alt="">
+			  
+			  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/forest/2forest.jpg" alt="">
+			  
+			  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/forest/3forest.jpg" alt="">
+			  
+			  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/forest/4forest.jpg" alt="">
+			  
+			  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/forest/5forest.jpg" alt="">
+              
+              <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close project</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+          <div class="rl">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <div class="modal-body">
+              <h2>Master Bedroom</h2>
+              <p class="item-intro text-muted">Trimble SketchUp | Unreal Engine 4</p>
+			  <p>A digital recreation of a bedroom of a house. The initial design was done in Trimble SketchUp, and then the projet was imported into Unreal Studio using the new  &ldquo;.udatasmith&rdquo; extension. Most of the objects in the room (apart from the bed, ottoman, and the phone) have been designed by me in SketchUp.</p>
+              <ul class="list-inline">
+                
+				
+                <li><a href="#" target="_blank">Demo Video (Coming Soon)</a></li>
+              </ul>
+			  
+              
+              <img class="img-responsive img-centered" src="./images/portfolio/major-projects/bedroom/1bedroom.jpg" alt="">
+			  
+			  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/bedroom/2bedroom.jpg" alt="">
+			  
+			  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/bedroom/3bedroom.jpg" alt="">
+			  
+			  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/bedroom/4bedroom.jpg" alt="">
+			  
+			  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/bedroom/5bedroom.jpg" alt="">
+              
+              <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close project</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+          <div class="rl">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <div class="modal-body">
+              <h2>Escape the Room</h2>
+              <p class="item-intro text-muted">Unreal Engine 4</p>
+			  <p>A simple game where the user has to figure out how to escape two rooms. The main mechanic used in the game is putting a specific amount of weight onto the marked spots so as to &ldquo;open&rdquo; the door. The tables and chairs have a mass to them, and the &ldquo;spot&rdquo; is a trigger volume. Also, through this project I was trying to understand the basics of a grabbing mechanism, as well as the implementation of physics in video games.</p>
+              <ul class="list-inline">
+                
+				
+                <li><a href="https://youtu.be/6kEyqDi728g" target="_blank">Demo Video</a></li>
+              </ul>
+			  
+              
+              <img class="img-responsive img-centered" src="./images/portfolio/major-projects/escape/1escape.jpg" alt="">
+			  
+			  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/escape/2escape.jpg" alt="">
+			  
+			  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/escape/3escape.jpg" alt="">
+			  
+			  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/escape/4escape.jpg" alt="">
+			  
+			  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/escape/5escape.jpg" alt="">
+              
+              <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close project</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+          <div class="rl">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <div class="modal-body">
+              <h2>Jungle Run Sidescroller</h2>
+              <p class="item-intro text-muted">Unreal Engine 4 | Adobe Photoshop</p>
+			  <p>A simple 2D game that mimics the look and feel of classic 8-bit sidescrollers such as Metroid and Super Mario. This is one of the levels I am focussing on, and my goal is to publish this into a full fledged game. Most of the level assets have been done by me as a mini-project to try and learn pixel art. Free assets off the internet have been used for backgrounds, the coin sprites, and the player sprite.</p>
+              <ul class="list-inline">
+                
+				
+                <li><a href="#" target="_blank">Demo Video (Coming Soon)</a></li>
+              </ul>
+			  
+              
+              <img class="img-responsive img-centered" src="./images/portfolio/major-projects/sidescroller/1sidescroller.jpg" alt="">
+			  
+			  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/sidescroller/2sidescroller.jpg" alt="">
+			  
+			  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/sidescroller/3sidescroller.jpg" alt="">
+			  
+			  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/sidescroller/4sidescroller.jpg" alt="">
+			  
+			  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/sidescroller/5sidescroller.jpg" alt="">
+              
+              <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close project</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+          <div class="rl">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <div class="modal-body">
+              <h2>Lost in Space</h2>
+              <p class="item-intro text-muted">Unity3D</p>
+			  <p>This virtual reality demo was created as a part of the edX course I did, entitled &ldquo;Creating Virtual Reality Applications&rdquo; (UCSanDiegoX:CSE190x). The application focusses on two parts - create game objects in a virtual room and manipulate them (along with existing objects in the scene). The user is able to freely create objects and them relocate, rotate, and scale them. ALso there are three different modes of locomotion - teleport, walk, and an automatic hover mode.</p>
+              <ul class="list-inline">
+                
+				
+                <li><a href="#" target="_blank">Demo Video (Coming Soon)</a></li>
+              </ul>
+              
+              <img class="img-responsive img-centered" src="./images/portfolio/major-projects/roomvr/1roomvr.jpg" alt="">
+			  
+			  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/roomvr/2roomvr.jpg" alt="">
+			  
+			  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/roomvr/3roomvr.jpg" alt="">
+			  
+			  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/roomvr/4roomvr.jpg" alt="">
+			  
+			  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/roomvr/5roomvr.jpg" alt="">
+			  
+			  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/roomvr/6roomvr.jpg" alt="">
+              
+              <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close project</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+          <div class="rl">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <div class="modal-body">
+              <h2>Bulls and Cows</h2>
+              <p class="item-intro text-muted">C++</p>
+			  <p>One of my first games, that I made using C++. The core aim of the game is to guess a 6 letter word (isogram), that is hidden from the player. The player gets a set amount of tries before they either get the correct answer (i.e. all 6 bulls) or run out of tries.</p>
+              <ul class="list-inline">
+                
+				
+                <li><a href="https://github.com/BinaryVectorJr/BullsAndCowsGame" target="_blank">Code Here</a></li>
+              </ul>
+			  
+              
+              <img class="img-responsive img-centered" src="./images/portfolio/major-projects/word/1word.png" alt="">
+			  
+			  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/word/2word.png" alt="">
+              
+              <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close project</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- jQuery -->
+	<script src="./jquery.min.js"></script>
+
+	<!-- Bootstrap Core -->
+	<script src="./bootstrap-v3.3.7/bootstrap.min.js"></script>
+
+</section>
+
+<!-- ////////////////////////////////////////////////////////////////////////////////////// -->
+
+<!-- Footer -->
+<div class="footer">
+
+	© Angshuman Mazumdar, 2019
+	
+</div>
+
+<!-- ||||||||||||| -->
+
+
+
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+</body>
+</html>
