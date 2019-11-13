@@ -465,7 +465,8 @@
 	  filter: grayscale(0%);
 	}
 	
-	.portfolio-link img:hover {
+	/* So we have to write .xxxx:hover img instead of .xxxx img:hover for it to work everywhere */
+	.portfolio-link:hover img {
 	  -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
 	  filter: grayscale(0%);
 	  transition: all ease .3s;
@@ -474,7 +475,7 @@
 	
 	/* Chnage opacity of on-hover modal here */
 	#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
-		opacity: 1;
+		opacity: 0;
 	}
 
 	#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
@@ -672,28 +673,35 @@
 		height: 100%;
 		opacity: 0;
 		/* below changes color on hovering */
-		background: rgba(0,0,0,.9);
+		//background: rgba(0,0,0,.9);
 		-webkit-transition: all ease .3s;
 		-moz-transition: all ease .3s;
 		transition: all ease .3s;
 	}
 	
-	.art-portfolio-link img {
-	  -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
-	  filter: grayscale(0%);
-	  transition: all ease .3s;
+	#art-portfolio .art-portfolio-link img {
+	    -webkit-filter: grayscale(100%);
+		-moz-filter: grayscale(100%);
+		-ms-filter: grayscale(100%);
+		-o-filter: grayscale(100%);
+		filter: grayscale(100%);
+		transition: all ease .3s;
 	}
 	
-	.art-portfolio-link img:hover {
-	  -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
-	  filter: grayscale(0%);
-	  transition: all ease .3s;
-	  transform: scale(1.05);
+	/* So we have to write .xxxx:hover img instead of .xxxx img:hover for it to work everywhere */
+	#art-portfolio .art-portfolio-link:hover img {
+		-webkit-filter: grayscale(0%);
+		-moz-filter: grayscale(0%);
+		-ms-filter: grayscale(0%);
+		-o-filter: grayscale(0%);
+		filter: grayscale(0%);
+		transition: all ease .3s;
+		transform: scale(1.05);
 	}
 	
-	/* Chnage opacity of on-hover modal here */
+	/* Chnage opacity of on-hover modal here; keep it at 0 else the + thing appears on Edge and Chrome */
 	#art-portfolio .art-portfolio-item .art-portfolio-link .art-portfolio-hover:hover {
-		opacity: 1;
+		opacity: 0;
 	}
 
 	#art-portfolio .art-portfolio-item .art-portfolio-link .art-portfolio-hover .art-portfolio-hover-content {
@@ -751,9 +759,9 @@
 		right: 0;
 		margin: 0 0 30px;
 		width: 50%;
-	}
+		}
 		
-		.art-portfolio-link img {
+		#art-portfolio.art-portfolio-link img {
 			-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
 			filter: grayscale(100%);
 		}
