@@ -178,6 +178,12 @@
 		font-family: 'Abel', sans-serif;
 	}
 	
+	.section-subheading{
+		margin: 0;
+		font-family: 'Abel', sans-serif;
+		font-size: 21px;
+	}
+	
 	.footer a{
 		font-size: 20px;
 		color: white;
@@ -496,6 +502,7 @@
 	#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
 	#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
 		margin: 0;
+		font-family: 'Abel', sans-serif;
 	}
 
 	#portfolio .portfolio-item .portfolio-caption {
@@ -719,9 +726,15 @@
 		margin-top: -12px;
 	}
 
-	#art-portfolio .art-portfolio-item .art-portfolio-link .art-portfolio-hover .art-portfolio-hover-content h3,
+	#art-portfolio .art-portfolio-item .art-portfolio-link .art-portfolio-hover .art-portfolio-hover-content h3{
+				margin: 0;
+		font-family: 'Abel', sans-serif;
+		font-size: 18px;
+	}
 	#art-portfolio .art-portfolio-item .art-portfolio-link .art-portfolio-hover .art-portfolio-hover-content h4 {
 		margin: 0;
+		font-family: 'Abel', sans-serif;
+		font-size: 18px;
 	}
 
 	#art-portfolio .art-portfolio-item .art-portfolio-caption {
