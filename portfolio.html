@@ -41,9 +41,23 @@
 		<br>
 		<div class="hero-inner-icons w3-xlarge w3-center w3-padding-32 w3-hover-opacity-on w3-text-white">
 			<h2><a href="https://purdue0-my.sharepoint.com/:b:/g/personal/amazumda_purdue_edu/ET5EJJxXqWdGqGVhdie-YQEBv-Bo7KWbgrAwEO5lMPVCUA?e=gHcuK9" target="_blank"><i class="fa w3-text-white w3-hover-opacity"title="Portfolio"></i>RESUME</a></h2>
+    	</div>
+	</div>
+
+	<!-- MOUSE SCROLL DOWN -->
+	<a href="#portfolio">
+		<div id="mouse-scroll">
+		  <div class="mouse">
+			<div class="mouse-in"></div>
+		  </div>
+		  <div>
+			  <span class="down-arrow-1"></span>
+			  <span class="down-arrow-2"></span>
+			  <span class="down-arrow-3"></span>
+		   </div>
 		</div>
-		
-    </div>
+	</a>
+
 </section>
 
 <br>
@@ -54,7 +68,7 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
-        <h2 class="section-heading">LEVEL AND GAME DESIGN PROJECTS</h2>
+        <h2 class="section-heading">PROJECTS</h2>
         <h3 class="section-subheading text-muted"></h3>
       </div>
     </div>
@@ -62,7 +76,23 @@
 	<br>
 	
     <div class="row" align="center">
-      
+    
+		<div class="col-md-4 col-sm-6 portfolio-item">
+          <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fa fa-plus fa-3x"></i>
+              </div>
+            </div>
+            
+            <img src="./images/portfolio/major-projects/thesis/6thesis.png" class="img-responsive" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>MASTERS THESIS</h4>
+            <p class="text-muted">Unity</p>
+          </div>
+        </div>
+
 		<div class="col-md-4 col-sm-6 portfolio-item">
           <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
             <div class="portfolio-hover">
@@ -160,22 +190,6 @@
         </div>
 		
 		<div class="col-md-4 col-sm-6 portfolio-item">
-          <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fa fa-plus fa-3x"></i>
-              </div>
-            </div>
-            
-            <img src="./images/portfolio/major-projects/puzzle/puzzle-preview.png" class="img-responsive" alt="">
-          </a>
-          <div class="portfolio-caption">
-            <h4>THE COLLECTOR</h4>
-            <p class="text-muted">Unity | Autodesk Maya | Adobe Photoshop</p>
-          </div>
-        </div>
-		
-		<div class="col-md-4 col-sm-6 portfolio-item">
           <a href="#portfolioModal20" class="portfolio-link" data-toggle="modal">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
@@ -183,11 +197,11 @@
               </div>
             </div>
             
-            <img src="./images/portfolio/major-projects/3d/3d-preview.png" class="img-responsive" alt="">
+            <img src="./images/portfolio/major-projects/tinker/7tinker.png" class="img-responsive" alt="">
           </a>
           <div class="portfolio-caption">
-            <h4>3D MODELLING</h4>
-            <p class="text-muted">Autodesk Maya | Blender</p>
+            <h4>DEVELOPING FOR FUN</h4>
+            <p class="text-muted">Various</p>
           </div>
         </div>
 
@@ -198,8 +212,60 @@
 
       <!-- Portfolio Modals -->
 	  
+	  <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-content">
+		  <div class="close-modal" data-dismiss="modal">
+			<div class="lr">
+			  <div class="rl">
+			  </div>
+			</div>
+		  </div>
+		  <div class="container">
+			<div class="row">
+			  <div class="col-lg-8 col-lg-offset-2">
+				<div class="modal-body">
+				  <h2>Optimized Affect-Based Multi-Character Scenarios</h2>
+				  <p class="item-intro text-muted">Unity</p>
+				  <p>This virtual reality project was made for my Masters thesis at Purdue University. Everything (except the 3D models) was made from scratch. The basic idea was to develop a system that could quickly synthesize a multi-character scenario (which can be extrapolated to crowds), with each character having their own levels of "perceived negative emotion by the player" (a.k.a. affect). This project also demonstrated how to optimize this scenario, so that the algorithm can adjust itself towards a target "overall negative affect" of the scene.</p>
+				  <ul class="list-inline">
+					
+					<li><a href="https://doi.org/10.25394/PGS.14489202.v1" target="_blank">Full Thesis</a></li>
+					<li>	</li>
+					<li><a href="https://doi.org/10.1002/cav.2004" target="_blank">Published Paper</a></li>
+	
+				  </ul>
+				  
+				  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/thesis/1thesis.png" alt="">
+				  <p> Pictured above is the final setup of the characters - optimized for a target value of negative affect (emotion). The characters walk from these points to the player's position, as the player "walks" the street.</p>
+				  <hr style="height:2px;border-width:0;color:gray;background-image:linear-gradient(to right, rgba(0, 0, 0, 0), rgba(129, 129, 129, 0.75), rgba(0, 0, 0, 0))">
+				  
+				  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/thesis/2thesis.png" alt="">
+				  <p> An example of a female character displaying "no-look at" and "look-at" behavior.</p>
+				  <hr style="height:2px;border-width:0;color:gray;background-image:linear-gradient(to right, rgba(0, 0, 0, 0), rgba(129, 129, 129, 0.75), rgba(0, 0, 0, 0))">
+	
+				  
+				  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/thesis/3thesis.png" alt="">
+				  <p> Each character came with proxemics logic (that enabled them to have a concept of personal space).</p>
+				  <hr style="height:2px;border-width:0;color:gray;background-image:linear-gradient(to right, rgba(0, 0, 0, 0), rgba(129, 129, 129, 0.75), rgba(0, 0, 0, 0))">
+				  
+				  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/thesis/4thesis.png" alt="">
+				  <p> An example of the Markov Chain Monte Carlo method called Simulated Annealing.</p>
+				  <hr style="height:2px;border-width:0;color:gray;background-image:linear-gradient(to right, rgba(0, 0, 0, 0), rgba(129, 129, 129, 0.75), rgba(0, 0, 0, 0))">
+				  
+				  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/thesis/5thesis.png" alt="">
+				  <p> Flowchart of the overall experiement.</p>
+				  
+				  <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close project</button>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+
+
 	<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
+	<div class="modal-content">
       <div class="close-modal" data-dismiss="modal">
         <div class="lr">
           <div class="rl">
@@ -220,18 +286,30 @@
               </ul>
               
               <img class="img-responsive img-centered" src="./images/portfolio/major-projects/topplots/1topplots.png" alt="">
+			  <p>Underworld (Level 3) - playspace in the middle is marked with the white and red mat.</p>
+			  <hr style="height:2px;border-width:0;color:gray;background-image:linear-gradient(to right, rgba(0, 0, 0, 0), rgba(129, 129, 129, 0.75), rgba(0, 0, 0, 0))">
 			  
 			  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/topplots/2topplots.png" alt="">
+			  <p>Underworld (Level 3)- playspace in the middle is marked with the white and red mat.</p>
+			  <hr style="height:2px;border-width:0;color:gray;background-image:linear-gradient(to right, rgba(0, 0, 0, 0), rgba(129, 129, 129, 0.75), rgba(0, 0, 0, 0))">
 																							  
 			  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/topplots/3topplots.png" alt="">
-																							  
+			  <p>Mole World (Level 2) - playspace is in the mesa in the middle.</p>
+			  <hr style="height:2px;border-width:0;color:gray;background-image:linear-gradient(to right, rgba(0, 0, 0, 0), rgba(129, 129, 129, 0.75), rgba(0, 0, 0, 0))">																				  
+			  
 			  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/topplots/4topplots.png" alt="">
-																							  
+			  <p>Mole World (Level 2) - playspace is in the mesa in the middle.</p>
+			  <hr style="height:2px;border-width:0;color:gray;background-image:linear-gradient(to right, rgba(0, 0, 0, 0), rgba(129, 129, 129, 0.75), rgba(0, 0, 0, 0))">
+
 			  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/topplots/5topplots.png" alt="">
-																							  
+			  <p>The Mines (Level 1) - playspace is on the blue blueprint map.</p>
+			  <hr style="height:2px;border-width:0;color:gray;background-image:linear-gradient(to right, rgba(0, 0, 0, 0), rgba(129, 129, 129, 0.75), rgba(0, 0, 0, 0))">
+
 			  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/topplots/6topplots.png" alt="">
-              
+			  <p>The Mines (Level 1) - playspace is on the blue blueprint map.</p>
+
               <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close project</button>
+
             </div>
           </div>
         </div>
@@ -254,63 +332,26 @@
               <h2>Cabin in the Woods</h2>
               <p class="item-intro text-muted">Unreal Engine 4</p>
 			  <p>A level design project, that primarily focuses on environment design. Primary goals were to work with foliage (LoD levels) and terrain design tools, as well as lighting scenarions. It also includes a log cabin, as well as smoke and fire particle effects. The First Person Shooter template of Unreal Engine has been used here, to allow the player to roam about, and experience the environment.</p>
-              <!-- <ul class="list-inline"> -->
-                
-				
-                <!-- <li><a href="#" target="_blank">Demo Video (Coming Soon)</a></li> -->
-              <!-- </ul> -->
-			  
-              
-              <img class="img-responsive img-centered" src="./images/portfolio/major-projects/forest/1forest.jpg" alt="">
-			  
-			  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/forest/2forest.jpg" alt="">
-			  
-			  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/forest/3forest.jpg" alt="">
-			  
-			  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/forest/4forest.jpg" alt="">
-			  
-			  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/forest/5forest.jpg" alt="">
-              
-              <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close project</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-      <div class="close-modal" data-dismiss="modal">
-        <div class="lr">
-          <div class="rl">
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-lg-offset-2">
-            <div class="modal-body">
-              <h2>Master Bedroom</h2>
-              <p class="item-intro text-muted">Trimble SketchUp | Unreal Engine 4</p>
-			  <p>A digital recreation of a bedroom of a house. The initial design was done in Trimble SketchUp, and then the projet was imported into Unreal Studio using the new  &ldquo;.udatasmith&rdquo; extension. The primary focus here was to understand the tools and working of SketchUP, and the workflow between a 3D modelling software and a game engine.</p>
-              <!-- <ul class="list-inline"> -->
-                
-				
-                <!-- <li><a href="#" target="_blank">Demo Video (Coming Soon)</a></li> -->
-              <!-- </ul> -->
-			  
-              
-              <img class="img-responsive img-centered" src="./images/portfolio/major-projects/bedroom/1bedroom.jpg" alt="">
-			  
-			  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/bedroom/2bedroom.jpg" alt="">
-			  
-			  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/bedroom/3bedroom.jpg" alt="">
-			  
-			  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/bedroom/4bedroom.jpg" alt="">
-			  
-			  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/bedroom/5bedroom.jpg" alt="">
-              
+              <img class="img-responsive img-centered" src="./images/portfolio/major-projects/forest/1forest.jpg" alt="">
+			  <p>Natural vegetation is prevalent in this 4 KM x 4 KM world.</p>
+			  <hr style="height:2px;border-width:0;color:gray;background-image:linear-gradient(to right, rgba(0, 0, 0, 0), rgba(129, 129, 129, 0.75), rgba(0, 0, 0, 0))">
+
+			  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/forest/2forest.jpg" alt="">			  
+			  <p>Rock formations were manually placed, and oriented.</p>
+			  <hr style="height:2px;border-width:0;color:gray;background-image:linear-gradient(to right, rgba(0, 0, 0, 0), rgba(129, 129, 129, 0.75), rgba(0, 0, 0, 0))">
+
+			  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/forest/3forest.jpg" alt="">
+			  <p>The cabin is an Unreal Marketplace asset. The campfire includes particle effects and sound.</p>
+			  <hr style="height:2px;border-width:0;color:gray;background-image:linear-gradient(to right, rgba(0, 0, 0, 0), rgba(129, 129, 129, 0.75), rgba(0, 0, 0, 0))">
+
+			  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/forest/4forest.jpg" alt="">
+			  <p>The aesthetic was made to mimic classic "lost in the forest" style games, that displayed themes of horror and solitary survivalism.</p>
+			  <hr style="height:2px;border-width:0;color:gray;background-image:linear-gradient(to right, rgba(0, 0, 0, 0), rgba(129, 129, 129, 0.75), rgba(0, 0, 0, 0))">
+
+			  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/forest/5forest.jpg" alt="">
+			  <p>As you look into the woods, maybe something looks back?</p>
+
               <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close project</button>
             </div>
           </div>
@@ -334,64 +375,29 @@
               <h2>Lost in Space</h2>
               <p class="item-intro text-muted">Unity</p>
 			  <p>This virtual reality demo was created as a part of the edX course I did, entitled &ldquo;Creating Virtual Reality Applications&rdquo; (UCSanDiegoX:CSE190x). A major focus was to build a "one-button" system for virtual reality based environments. The application comprises of two parts - creation of game objects in a virtual room and manipulating them (along with existing objects in the scene). The user is able to freely create objects and them relocate, rotate, and scale them, using three different modes of locomotion - teleport, walk, and an automatic hover mode. </p>
-              <!-- <ul class="list-inline"> -->
-                
-				
-                <!-- <li><a href="#" target="_blank">Demo Video (Coming Soon)</a></li> -->
-              <!-- </ul> -->
               
               <img class="img-responsive img-centered" src="./images/portfolio/major-projects/roomvr/1roomvr.jpg" alt="">
-			  
+			  <p>Diegetic menu for instantiating items, as well as basic object manipulation and traversal options.</p>
+			  <hr style="height:2px;border-width:0;color:gray;background-image:linear-gradient(to right, rgba(0, 0, 0, 0), rgba(129, 129, 129, 0.75), rgba(0, 0, 0, 0))">
+
 			  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/roomvr/2roomvr.jpg" alt="">
-			  
+			  <p>The aesthetic has been designed to mimic a room floating in space. Inspired by the Tardis but more cozy.</p>
+			  <hr style="height:2px;border-width:0;color:gray;background-image:linear-gradient(to right, rgba(0, 0, 0, 0), rgba(129, 129, 129, 0.75), rgba(0, 0, 0, 0))">
+
 			  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/roomvr/3roomvr.jpg" alt="">
-			  
+			  <p>All items in the level are rigidbodies, which enables the player to interact with them.</p>
+			  <hr style="height:2px;border-width:0;color:gray;background-image:linear-gradient(to right, rgba(0, 0, 0, 0), rgba(129, 129, 129, 0.75), rgba(0, 0, 0, 0))">
+
 			  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/roomvr/4roomvr.jpg" alt="">
-			  
+			  <p>A  minimap also exists to display a top down view of the room.</p>
+			  <hr style="height:2px;border-width:0;color:gray;background-image:linear-gradient(to right, rgba(0, 0, 0, 0), rgba(129, 129, 129, 0.75), rgba(0, 0, 0, 0))">
+
 			  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/roomvr/5roomvr.jpg" alt="">
-			  
+			  <p>An object highlight feature is also implemented. If the raycast from the player detects a rigidbody with a custom tag, the algorithm applies a red overlay on top of it, to indicate context.</p>
+			  <hr style="height:2px;border-width:0;color:gray;background-image:linear-gradient(to right, rgba(0, 0, 0, 0), rgba(129, 129, 129, 0.75), rgba(0, 0, 0, 0))">
+
 			  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/roomvr/6roomvr.jpg" alt="">
-              
-              <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close project</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-      <div class="close-modal" data-dismiss="modal">
-        <div class="lr">
-          <div class="rl">
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-lg-offset-2">
-            <div class="modal-body">
-              <h2>The Collector</h2>
-              <p class="item-intro text-muted">Unity | Autodesk Maya | Adobe Photoshop</p>
-			  <p>This project was created as an item collection game, whose primary function is to have a modular system for the items to be collected or interacted with. One of the rules I put in place for myself, was to only include simple geometric shapes to represent the major elements of the game. Three major systems have been implemented - item collection/pick-up, inventory storage, and a "grabber"/interaction system. The main design aesthetic  has been kept as low-poly based meshes, as the primary focus was on developing the game mechanics.</p>
-              <ul class="list-inline">
-                
-				
-                <li><a href="https://youtu.be/gFcCxq9p8w4" target="_blank">Demo Video</a></li>
-              </ul>
-              
-              <img class="img-responsive img-centered" src="./images/portfolio/major-projects/puzzle/1puzzle.png" alt="">
-			  
-			  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/puzzle/2puzzle.png" alt="">
-			  
-			  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/puzzle/4puzzle.png" alt="">
-			  
-			  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/puzzle/5puzzle.png" alt="">
-			  
-			  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/puzzle/7puzzle.png" alt="">
-			  
-			  <!-- <img class="img-responsive img-centered" src="./images/portfolio/major-projects/puzzle/6puzzle.png" alt=""> -->
+			  <p>One of my first dives into virtual reality game development (2018). However, this was back when I did not have access to proper equipment, thus having to make this "one-button controller" simulation.</p>
               
               <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close project</button>
             </div>
@@ -422,16 +428,27 @@
               </ul>
               
               <img class="img-responsive img-centered" src="./images/portfolio/major-projects/fantasy/1fantasy.png" alt="">
-			  
+			  <p>A peaceful village called "Oasis" on the edge of an asteroid.</p>
+			  <hr style="height:2px;border-width:0;color:gray;background-image:linear-gradient(to right, rgba(0, 0, 0, 0), rgba(129, 129, 129, 0.75), rgba(0, 0, 0, 0))">
+
 			  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/fantasy/2fantasy.png" alt="">
-			  
+			  <p>Main focus was to integrate Quixel Megascans assets into the world.</p>
+			  <hr style="height:2px;border-width:0;color:gray;background-image:linear-gradient(to right, rgba(0, 0, 0, 0), rgba(129, 129, 129, 0.75), rgba(0, 0, 0, 0))">
+
 			  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/fantasy/4fantasy.png" alt="">
-			  
+			  <p>The level design was done by hand. The layout follows closely with a place I am very familiar with.</p>
+			  <hr style="height:2px;border-width:0;color:gray;background-image:linear-gradient(to right, rgba(0, 0, 0, 0), rgba(129, 129, 129, 0.75), rgba(0, 0, 0, 0))">
+
 			  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/fantasy/5fantasy.png" alt="">
-			  
+			  <p>Landscape foliage was also used in this project.</p>
+			  <hr style="height:2px;border-width:0;color:gray;background-image:linear-gradient(to right, rgba(0, 0, 0, 0), rgba(129, 129, 129, 0.75), rgba(0, 0, 0, 0))">
+
 			  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/fantasy/8fantasy.png" alt="">
-			  
+			  <p>Terrain manipulation and heightmaps were generated using World Machine.</p>
+			  <hr style="height:2px;border-width:0;color:gray;background-image:linear-gradient(to right, rgba(0, 0, 0, 0), rgba(129, 129, 129, 0.75), rgba(0, 0, 0, 0))">
+
 			  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/fantasy/9fantasy.png" alt="">
+			  <p>To make the scene more interesting, a night scene was decided on. Along with that, the lamps are custom blueprints, and the trees have wind animations built in.</p>
               
               <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close project</button>
             </div>
@@ -463,16 +480,27 @@
               </ul>
               
               <img class="img-responsive img-centered" src="./images/portfolio/major-projects/alienshooter/1alien.png" alt="">
-			  
+			  <p>A Brick-Breaker styled game, complete with customizable levels (in the form of characters in text files).</p>
+			  <hr style="height:2px;border-width:0;color:gray;background-image:linear-gradient(to right, rgba(0, 0, 0, 0), rgba(129, 129, 129, 0.75), rgba(0, 0, 0, 0))">
+
 			  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/alienshooter/2alien.png" alt="">
-			  
+			  <p>One of the levels consisting of unbreakable blocks and enemies. Each type of enemy when destroyed drops a power-up.</p>
+			  <hr style="height:2px;border-width:0;color:gray;background-image:linear-gradient(to right, rgba(0, 0, 0, 0), rgba(129, 129, 129, 0.75), rgba(0, 0, 0, 0))">
+
 			  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/alienshooter/3alien.png" alt="">
-			  
+			  <p>Death Screen.</p>
+			  <hr style="height:2px;border-width:0;color:gray;background-image:linear-gradient(to right, rgba(0, 0, 0, 0), rgba(129, 129, 129, 0.75), rgba(0, 0, 0, 0))">
+
 			  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/alienshooter/4alien.png" alt="">
-			  
+			  <p>Win screen.</p>
+			  <hr style="height:2px;border-width:0;color:gray;background-image:linear-gradient(to right, rgba(0, 0, 0, 0), rgba(129, 129, 129, 0.75), rgba(0, 0, 0, 0))">
+
 			  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/alienshooter/5alien.png" alt="">
-			  
+			  <p>Power-up 1 activated (Chaos mode - where the screen moves around changing perspective). An interesting by-product of this mode was the changed appearance of the enemies due to changing the shader buffers (which was a happy and unexpected accident).</p>
+			  <hr style="height:2px;border-width:0;color:gray;background-image:linear-gradient(to right, rgba(0, 0, 0, 0), rgba(129, 129, 129, 0.75), rgba(0, 0, 0, 0))">
+
 			  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/alienshooter/6alien.png" alt="">
+			  <p>Power-up 2 activated (Inversion - Turns the game upside down).</p>
               
               <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close project</button>
             </div>
@@ -496,7 +524,7 @@
             <div class="modal-body">
               <h2>POSE RECOGNIZED HAND TRACKING</h2>
               <p class="item-intro text-muted">Unity | Oculus Quest</p>
-			  <p>A project I made to test out developing an application that harnesses the power of hand tracking that is provided by Oculus Quest. A major focus of the application was to implement pose recognition. The user is able to set custom gestures, and spawn in objects, and interact with them. Some of the implemented features are custom pose setup, pose recognition, use gesture to "force call" objects towards player and "force blast" it away, physics interaction with environment elements (springs, rigidbodies, buttons etc.), and it all comes together in a minigame, where the player has to blast the ball towards a randomly generated target on the wall for points. Overall, it was really fun, and I think that the Oculus Quest has to be the most promising Virtual Reality device that was released in the past couple of years. I hope the developers (both for Oculus and us independents) keep supporting it with content for years.</p>
+			  <p>A project I made to test out developing an application that harnesses the power of hand tracking that is provided by Oculus Quest. A major focus of the application was to implement pose recognition. The user is able to set custom gestures, and spawn in objects, and interact with them. Some of the implemented features are custom pose setup, pose recognition, use gesture to "force call" objects towards player and "force blast" it away, physics interaction with environment elements (springs, rigidbodies, buttons etc.), and it all comes together in a minigame, where the player has to blast the ball towards a randomly generated target on the wall for points. </p>
               <ul class="list-inline">
                 
 				
@@ -504,16 +532,27 @@
               </ul>
               
               <img class="img-responsive img-centered" src="./images/portfolio/major-projects/handtrack/1hand.png" alt="">
-			  
+			  <p>The room. The main player is an OVRCameraRig (which does not have any locomotion capabilities).</p>
+			  <hr style="height:2px;border-width:0;color:gray;background-image:linear-gradient(to right, rgba(0, 0, 0, 0), rgba(129, 129, 129, 0.75), rgba(0, 0, 0, 0))">
+
 			  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/handtrack/6hand.png" alt="">
-			  
+			  <p>The tracked hands in game. This was done in the early days of the hand tracking SDK being released, thus for its time, it was fine. Occlusion and edge detection were the biggest problems back in the day.</p>
+			  <hr style="height:2px;border-width:0;color:gray;background-image:linear-gradient(to right, rgba(0, 0, 0, 0), rgba(129, 129, 129, 0.75), rgba(0, 0, 0, 0))">
+
 			  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/handtrack/3hand.png" alt="">
-			  
+			  <p>Room view.</p>
+			  <hr style="height:2px;border-width:0;color:gray;background-image:linear-gradient(to right, rgba(0, 0, 0, 0), rgba(129, 129, 129, 0.75), rgba(0, 0, 0, 0))">
+
 			  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/handtrack/4hand.png" alt="">
-			  
+			  <p>The player stood in front of physics accurate buttons, that could be used to record custom poses, and map them to custom functions.</p>
+			  <hr style="height:2px;border-width:0;color:gray;background-image:linear-gradient(to right, rgba(0, 0, 0, 0), rgba(129, 129, 129, 0.75), rgba(0, 0, 0, 0))">
+
 			  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/handtrack/5hand.png" alt="">
-			  
+			  <p>There was also a minigame included where players could make objects float (using one hand sign) and then blast them towards a target to score points (using another hand sign).</p>
+			  <hr style="height:2px;border-width:0;color:gray;background-image:linear-gradient(to right, rgba(0, 0, 0, 0), rgba(129, 129, 129, 0.75), rgba(0, 0, 0, 0))">
+
 			  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/handtrack/2hand.png" alt="">
+			  <p>Overall, it was really fun, and I think that the Oculus Quest has to be the most promising Virtual Reality device that was released in the past couple of years. I hope the developers (both for Oculus and us independents) keep supporting it with content for years.</p>
               
               <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close project</button>
             </div>
@@ -535,32 +574,45 @@
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2">
             <div class="modal-body">
-              <h2>3D MODELLING</h2>
-              <p class="item-intro text-muted">Autodesk Maya | Blender</p>
-			  <p>An assorment of various 3D models and scenes I have developed over time.</p>
+              <h2>DEVELOPING FOR FUN</h2>
+              <p class="item-intro text-muted">Various</p>
+			  <p>I call this The Tinker Zone - Fun side projects, systems, and mechanics I made for games, during my chill time.</p>
               
-			  <!-- <ul class="list-inline">   -->
-                <!-- <li><a href="https://youtu.be/2H_TBvRzL0w" target="_blank">Demo Video</a></li> -->
-              <!-- </ul> -->
-              
-			  The Man Cave (A long term project I am working on currently | Autodesk Maya)
-              <img class="img-responsive img-centered" src="./images/portfolio/major-projects/3d/1model.png" alt="">
+			  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/tinker/7tinker.png" alt="">
+			  <p><a href="https://youtu.be/jpOBoui14w4">AI Patrol Agents</a> for a game (used for a <a href="https://doi.org/10.1016/j.gvc.2021.200020">publication</a>) that move between "n" checkpoints randomly to simulate enemy guard behavior. The agent also comes with a player detection zone (light blue zone using a sphere-overlap), to simulate enemy chase behavior.</p>
+			  <hr style="height:2px;border-width:0;color:gray;background-image:linear-gradient(to right, rgba(0, 0, 0, 0), rgba(129, 129, 129, 0.75), rgba(0, 0, 0, 0))">
+
+			  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/tinker/8tinker.png" alt="">
+			  <p>Once the player enters the detection zone (light blue), the patrol agent notices the player and starts following it, overriding the checkpoint patrol behavior. The zone also turns black indicating that the player is seen, and the agent will follow with a slightly higher speed, until the player comes out of the detection zone.</p>
+              <hr style="height:2px;border-width:0;color:gray;background-image:linear-gradient(to right, rgba(0, 0, 0, 0), rgba(129, 129, 129, 0.75), rgba(0, 0, 0, 0))">
+
+			  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/tinker/2tinker.png" alt="">
+			  <p>Fully <a href="https://youtu.be/Wv7M7NUwZKk">procedural seating generator</a>. The user just needs to click on the generate button (and set the starter parameters on the left if they wish to) and everytime, a new form of sittable furniture will be generated.</p>
+			  <hr style="height:2px;border-width:0;color:gray;background-image:linear-gradient(to right, rgba(0, 0, 0, 0), rgba(129, 129, 129, 0.75), rgba(0, 0, 0, 0))">
+																		  
+			  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/tinker/1tinker.png" alt="">
+			  <p>One feature this algorithm also has is the edge (red blocks) and corner (yellow blocks without the grey pegs) detection abilities of the base, thus making it very versatile, and providing with the ability to generate any form of seats (from ottomans to sofas to barstools).</p>
+			  <hr style="height:2px;border-width:0;color:gray;background-image:linear-gradient(to right, rgba(0, 0, 0, 0), rgba(129, 129, 129, 0.75), rgba(0, 0, 0, 0))">	
+
+			  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/tinker/3tinker.png" alt="">
+			  <p>A pre-processor script that acts as a parser to convert comma-separated-value files into readable Unity inspector properties. No matter how big the dataset, the algorithm efficiently parses the data correctly, and organizes them into custom classes (Element 0, ELement 1 ...) with custom properties (Case no, IUCR, ...). In this case, the Chicago Crime (Homicide) dataset was used.</p>
+			  <hr style="height:2px;border-width:0;color:gray;background-image:linear-gradient(to right, rgba(0, 0, 0, 0), rgba(129, 129, 129, 0.75), rgba(0, 0, 0, 0))">	
+
+			  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/tinker/4tinker.png" alt="">
+			  <p>Using the previous CSV parser, a small game was developed that mapped all the points over approximately correct geographic locations (over a map image). The player could then click on each green "hotspot" and look into the details of the homicide that happened in that area.</p>
+			  <hr style="height:2px;border-width:0;color:gray;background-image:linear-gradient(to right, rgba(0, 0, 0, 0), rgba(129, 129, 129, 0.75), rgba(0, 0, 0, 0))">
+																		  
+			  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/tinker/5tinker.png" alt="">
+			  <p>Grid visibility detection script. The initial purpose was to use it in a project for a <a href="https://doi.org/10.1016/j.gvc.2021.200020">publication</a>, where the level optimized the location of a treasure piece, based on several cost terms (one of which was "initial visibility of the player"). The tiles in red are the ones that detect the yellow treasure. Since it is inside a room (white blocks), the green tiles do not "see" it, thus implementing an effective visibility algorithm.</p>
+			  <hr style="height:2px;border-width:0;color:gray;background-image:linear-gradient(to right, rgba(0, 0, 0, 0), rgba(129, 129, 129, 0.75), rgba(0, 0, 0, 0))">
+
+			  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/tinker/6tinker.png" alt="">
+			  <p>A slot machine simulator (Procedural Random Number generator) I made, to demonstrate the ill effects of gambling (and also to serve as a fidget satisfying tool). One of the main parameters I was investigating was whether the same levels of intrinsic motivation and enjoyment are achieved, even whene the monetary aspect of it is removed. Turns out, that similar levels are somewhat achieved, although I would need to do further investigation.</p>
+			  <hr style="height:2px;border-width:0;color:gray;background-image:linear-gradient(to right, rgba(0, 0, 0, 0), rgba(129, 129, 129, 0.75), rgba(0, 0, 0, 0))">
+
+			  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/3d/1model.png" alt="">
+			  <p>Developing a 3D environment of a bedroom for a game where the protagonist is a toy.</p>
 			  
-			  Strawberry Milk Carton (Autodesk Maya)
-			  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/3d/2model.png" alt="">
-			  
-			  The Donut (Blender)																			  
-			  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/3d/3model.png" alt="">
-																							  
-			  Television - Front (Autodesk Maya)
-			  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/3d/4model.png" alt="">
-																							  
-			  Television - Back (Autodesk Maya)
-			  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/3d/5model.png" alt="">
-			  
-			  Convention Center (Autodesk Maya)																			  
-			  <img class="img-responsive img-centered" src="./images/portfolio/major-projects/3d/6model.png" alt="">
-              
               <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close project</button>
             </div>
           </div>
@@ -568,176 +620,6 @@
       </div>
     </div>
 	</div>
-  
-  
-
-<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
-
-</section>
-
-<!-- apparently i need to set horizontal rules this way lol idkwatw -->
-	<!-- <hr style="height: 2px;" /> -->
-
-	<!-- <div class="container"> -->
-	<!-- <section id="art-portfolio" class="bg-light-gray"> -->
-		<!-- <button class="collapsible"><h2 class="section-heading">MY OTHER ESCAPADES</h2></button> -->
-		
-		<!-- <div class="collapsible-content"> -->
-		
-		<!-- <div class="container"> -->
-			<!-- <div class="row"> -->
-			  <!-- <div class="col-lg-12 text-center"> -->
-				<!-- <h2 class="section-heading"></h2> -->
-				<!-- <p class="section-subheading text-muted"></p> -->
-				<!-- <br> -->
-			  <!-- </div> -->
-			<!-- </div> -->
-			
-			<!-- <br> -->
-			
-			<!-- <div class="row row-no-gutters" align="center"> -->
-			
-				<!-- <div class="col-md-4 col-sm-6 art-portfolio-item"> -->
-				  <!-- <a href="#portfolioArtModal1" class="art-portfolio-link" data-toggle="modal"> -->
-					
-					<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/nbKuebM3dA4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-				  <!-- </a> -->
-				  
-				  <!-- <div class="art-portfolio-caption"> -->
-					<!-- <h4>PERFECT DATE CARD GAME</h4> -->
-					<!-- <p class="text-muted">A digital version of the card game Red Flags, that I am currently making so as to polish my skills in game development and graphic design.</p> -->
-				  <!-- </div> -->
-				<!-- </div> -->
-				<!-- </div> -->
-				
-				<!-- <div class="col-md-4 col-sm-6 art-portfolio-item"> -->
-				  <!-- <a href="#portfolioArtModal1" class="art-portfolio-link" data-toggle="modal"> -->
-					
-					<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/nbKuebM3dA4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-				  <!-- </a> -->
-				  
-				  <!-- <div class="art-portfolio-caption"> -->
-					<!-- <h4>PERFECT DATE CARD GAME</h4> -->
-					<!-- <p class="text-muted">A digital version of the card game Red Flags, that I am currently making so as to polish my skills in game development and graphic design.</p> -->
-				  <!-- </div> -->
-				<!-- </div> -->
-				<!-- </div> -->
-				
-		  <!-- </div> -->
-		<!-- </div> -->
-	<!-- </section>	 -->
-	<!-- </div> -->
-
-<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
-
-<!-- <br> -->
-
-<!-- <div class="container"> -->
-<!-- <section id="art-portfolio" class="bg-light-gray"> -->
-	<!-- <button class="collapsible"><h2 class="section-heading">DIGITAL COMPOSITIONS</h2></button> -->
-	
-	<!-- <div class="collapsible-content"> -->
-	
-	<!-- <div class="container"> -->
-		<!-- <div class="row"> -->
-		  <!-- <div class="col-lg-12 text-center"> -->
-			<!-- <h2 class="section-heading"></h2> -->
-			<!-- <p class="section-subheading text-muted"></p> -->
-			<!-- <br> -->
-		  <!-- </div> -->
-		<!-- </div> -->
-		
-		<!-- <br> -->
-		
-		<!-- <div class="row row-no-gutters" align="center"> -->
-		
-			<!-- <div class="col-md-4 col-sm-6 art-portfolio-item"> -->
-			  <!-- <a href="#portfolioArtModal1" class="art-portfolio-link" data-toggle="modal"> -->
-				<!-- <div class="art-portfolio-hover"> -->
-				  <!-- <div class="art-portfolio-hover-content"> -->
-					<!-- <i class="fa fa-plus fa-3x"></i> -->
-				  <!-- </div> -->
-				<!-- </div> -->
-				
-				<!-- <img src="./images/portfolio/art2/assam.png" class="img-responsive" alt=""> -->
-			  <!-- </a> -->
-			  <!-- <div class="art-portfolio-caption"> -->
-				<!-- <h4>REPRESENTING ASSAMESE CULTURE</h4> -->
-				<!-- <p class="text-muted">Featured in an <a href="http://thevibe.asia/the-art-of-citizenry-the-art-from-politics/" target="_blank">Article</a></p> -->
-			  <!-- </div> -->
-			<!-- </div> -->
-		  
-			<!-- <div class="col-md-4 col-sm-6 art-portfolio-item"> -->
-			  <!-- <a href="#portfolioArtModal2" class="art-portfolio-link" data-toggle="modal"> -->
-				<!-- <div class="art-portfolio-hover"> -->
-				  <!-- <div class="art-portfolio-hover-content"> -->
-					<!-- <i class="fa fa-plus fa-3x"></i> -->
-				  <!-- </div> -->
-				<!-- </div> -->
-				
-				<!-- <img src="./images/portfolio/art2/geralt.png" class="img-responsive" alt=""> -->
-			  <!-- </a> -->
-			  <!-- <div class="art-portfolio-caption"> -->
-				<!-- <h4>THE WITCHER</h4> -->
-				<!-- <p class="text-muted">Fan art for the video game - The Witcher 3</p> -->
-			  <!-- </div> -->
-			<!-- </div> -->
-			
-			<!-- <div class="col-md-4 col-sm-6 art-portfolio-item"> -->
-			  <!-- <a href="#portfolioArtModal2" class="art-portfolio-link" data-toggle="modal"> -->
-				<!-- <div class="art-portfolio-hover"> -->
-				  <!-- <div class="art-portfolio-hover-content"> -->
-					<!-- <i class="fa fa-plus fa-3x"></i> -->
-				  <!-- </div> -->
-				<!-- </div> -->
-				
-				<!-- <img src="./images/portfolio/art2/docneon.png" class="img-responsive" alt=""> -->
-			  <!-- </a> -->
-			  <!-- <div class="art-portfolio-caption"> -->
-				<!-- <h4>VIOLENCE, SPEED, MOMENTUM</h4> -->
-				<!-- <p class="text-muted">80s neon themed wallpaper with Dr. Disrespect's catchphrase.</p> -->
-			  <!-- </div> -->
-			<!-- </div> -->
-			
-			<!-- <div class="col-md-4 col-sm-6 art-portfolio-item"> -->
-			  <!-- <a href="#portfolioArtModal2" class="art-portfolio-link" data-toggle="modal"> -->
-				<!-- <div class="art-portfolio-hover"> -->
-				  <!-- <div class="art-portfolio-hover-content"> -->
-					<!-- <i class="fa fa-plus fa-3x"></i> -->
-				  <!-- </div> -->
-				<!-- </div> -->
-				
-				<!-- <img src="./images/portfolio/art2/puma_fake.jpg" class="img-responsive" alt=""> -->
-			  <!-- </a> -->
-			  <!-- <div class="art-portfolio-caption"> -->
-				<!-- <h4>PUMA EVENT (MOCK)</h4> -->
-				<!-- <p class="text-muted">Created for a competition held by Puma</p> -->
-			  <!-- </div> -->
-			<!-- </div> -->
-			
-			<!-- <div class="col-md-4 col-sm-6 art-portfolio-item"> -->
-			  <!-- <a href="#portfolioArtModal2" class="art-portfolio-link" data-toggle="modal"> -->
-				<!-- <div class="art-portfolio-hover"> -->
-				  <!-- <div class="art-portfolio-hover-content"> -->
-					<!-- <i class="fa fa-plus fa-3x"></i> -->
-				  <!-- </div> -->
-				<!-- </div> -->
-				
-				<!-- <img src="./images/portfolio/art2/sci-fi_fake.png" class="img-responsive" alt=""> -->
-			  <!-- </a> -->
-			  <!-- <div class="art-portfolio-caption"> -->
-				<!-- <h4>SCI-FI CONVENTION (MOCK)</h4> -->
-				<!-- <p class="text-muted">Created for using as a texture in my animated short.</p> -->
-			  <!-- </div> -->
-			<!-- </div> -->
-			
-		<!-- </div> -->
-	  <!-- </div> -->
-	<!-- </div> -->
-<!-- </section>	 -->
-<!-- </div> -->
-
-<!-- <br> -->
 
 <!-- ///////////////////////////////////////////////ART STUFF/////////////////////////////////////// -->
 
@@ -806,24 +688,8 @@
 				<img src="./images/portfolio/art2/1_3.png" class="img-responsive" alt="">
 			  </a>
 			  <div class="art-portfolio-caption">
-				<h4>LIGHTSHOT</h4>
+				<h4>SILA</h4>
 				<p class="text-muted">Extraterrestrial Humanoid</p>
-			  </div>
-			</div>
-		  
-			<div class="col-md-4 col-sm-6 art-portfolio-item">
-			  <a href="#portfolioArtModal4" class="art-portfolio-link" data-toggle="modal">
-				<div class="art-portfolio-hover">
-				  <div class="art-portfolio-hover-content">
-					<i class="fa fa-plus fa-3x"></i>
-				  </div>
-				</div>
-				
-				<img src="./images/portfolio/art2/1_4.png" class="img-responsive" alt="">
-			  </a>
-			  <div class="art-portfolio-caption">
-				<h4>JUNI DEKA</h4>
-				<p class="text-muted">Secret Agent</p>
 			  </div>
 			</div>
 		  
@@ -875,151 +741,6 @@
 			  </div>
 			</div>
 			
-			<div class="col-md-4 col-sm-6 art-portfolio-item">
-			  <a href="#portfolioArtModal8" class="art-portfolio-link" data-toggle="modal">
-				<div class="art-portfolio-hover">
-				  <div class="art-portfolio-hover-content">
-					<i class="fa fa-plus fa-3x"></i>
-				  </div>
-				</div>
-				
-				<img src="./images/portfolio/art2/1_8.PNG" class="img-responsive" alt="">
-			  </a>
-			  <div class="art-portfolio-caption">
-				<h4>SNOWCONE EARTH</h4>
-				<p class="text-muted">Save our planet!</p>
-			  </div>
-			</div>
-			
-			
-			<div class="col-md-4 col-sm-6 art-portfolio-item">
-			  <a href="#portfolioArtModal9" class="art-portfolio-link" data-toggle="modal">
-				<div class="art-portfolio-hover">
-				  <div class="art-portfolio-hover-content">
-					<i class="fa fa-plus fa-3x"></i>
-				  </div>
-				</div>
-				
-				<img src="./images/portfolio/art2/1_9.png" class="img-responsive" alt="">
-			  </a>
-			  <div class="art-portfolio-caption">
-				<h4>LENNY</h4>
-				<p class="text-muted">And Bob.</p>
-			  </div>
-			</div>
-			
-			<div class="col-md-4 col-sm-6 art-portfolio-item">
-			  <a href="#portfolioArtModal10" class="art-portfolio-link" data-toggle="modal">
-				<div class="art-portfolio-hover">
-				  <div class="art-portfolio-hover-content">
-					<i class="fa fa-plus fa-3x"></i>
-				  </div>
-				</div>
-				
-				<img src="./images/portfolio/art2/1_10.png" class="img-responsive" alt="">
-			  </a>
-			  <div class="art-portfolio-caption">
-				<h4>HONK</h4>
-				<p class="text-muted">Peace was never an option</p>
-			  </div>
-			</div>
-			
-			<div class="col-md-4 col-sm-6 art-portfolio-item">
-			  <a href="#portfolioArtModal11" class="art-portfolio-link" data-toggle="modal">
-				<div class="art-portfolio-hover">
-				  <div class="art-portfolio-hover-content">
-					<i class="fa fa-plus fa-3x"></i>
-				  </div>
-				</div>
-				
-				<img src="./images/portfolio/art2/1_11.png" class="img-responsive" alt="">
-			  </a>
-			  <div class="art-portfolio-caption">
-				<h4>SLIPSTREAM</h4>
-				<p class="text-muted">Super Speed Meta-Human</p>
-			  </div>
-			</div>
-			
-			<div class="col-md-4 col-sm-6 art-portfolio-item">
-			  <a href="#portfolioArtModal12" class="art-portfolio-link" data-toggle="modal">
-				<div class="art-portfolio-hover">
-				  <div class="art-portfolio-hover-content">
-					<i class="fa fa-plus fa-3x"></i>
-				  </div>
-				</div>
-				
-				<img src="./images/portfolio/art2/1_12.png" class="img-responsive" alt="">
-			  </a>
-			  <div class="art-portfolio-caption">
-				<h4>JON JAMAL</h4>
-				<p class="text-muted">Air Force Specialist</p>
-			  </div>
-			</div>
-			
-			<div class="col-md-4 col-sm-6 art-portfolio-item">
-			  <a href="#portfolioArtModal13" class="art-portfolio-link" data-toggle="modal">
-				<div class="art-portfolio-hover">
-				  <div class="art-portfolio-hover-content">
-					<i class="fa fa-plus fa-3x"></i>
-				  </div>
-				</div>
-				
-				<img src="./images/portfolio/art2/1_13.png" class="img-responsive" alt="">
-			  </a>
-			  <div class="art-portfolio-caption">
-				<h4>REY</h4>
-				<p class="text-muted">A Newer Hope</p>
-			  </div>
-			</div>
-			
-			<div class="col-md-4 col-sm-6 art-portfolio-item">
-			  <a href="#portfolioArtModal14" class="art-portfolio-link" data-toggle="modal">
-				<div class="art-portfolio-hover">
-				  <div class="art-portfolio-hover-content">
-					<i class="fa fa-plus fa-3x"></i>
-				  </div>
-				</div>
-				
-				<img src="./images/portfolio/art2/1_14.png" class="img-responsive" alt="">
-			  </a>
-			  <div class="art-portfolio-caption">
-				<h4>BALAHOFF</h4>
-				<p class="text-muted">Guardian Dragon</p>
-			  </div>
-			</div>
-			
-			<div class="col-md-4 col-sm-6 art-portfolio-item">
-			  <a href="#portfolioArtModal15" class="art-portfolio-link" data-toggle="modal">
-				<div class="art-portfolio-hover">
-				  <div class="art-portfolio-hover-content">
-					<i class="fa fa-plus fa-3x"></i>
-				  </div>
-				</div>
-				
-				<img src="./images/portfolio/art2/1_15.png" class="img-responsive" alt="">
-			  </a>
-			  <div class="art-portfolio-caption">
-				<h4>COMMANDER SHEPARD</h4>
-				<p class="text-muted">Service No. 5923-AC-2826</p>
-			  </div>
-			</div>
-			
-			<div class="col-md-4 col-sm-6 art-portfolio-item">
-			  <a href="#portfolioArtModal16" class="art-portfolio-link" data-toggle="modal">
-				<div class="art-portfolio-hover">
-				  <div class="art-portfolio-hover-content">
-					<i class="fa fa-plus fa-3x"></i>
-				  </div>
-				</div>
-				
-				<img src="./images/portfolio/art2/1_16.png" class="img-responsive" alt="">
-			  </a>
-			  <div class="art-portfolio-caption">
-				<h4>EZIO</h4>
-				<p class="text-muted">Master Assassin</p>
-			  </div>
-			</div>
-			
 		</div>
 	  </div>
 	</div>
@@ -1042,8 +763,10 @@
 	function scrollFunction() {
 	  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
 		document.getElementById("myBtn").style.display = "block";
+		document.getElementById("myBtn-modal").style.display = "block";
 	  } else {
 		document.getElementById("myBtn").style.display = "none";
+		document.getElementById("myBtn-modal").style.display = "none";
 	  }
 	}
 
@@ -1051,6 +774,11 @@
 	function topFunction() {
 	  document.body.scrollTop = 0;
 	  document.documentElement.scrollTop = 0;
+	}
+
+	//Close modal
+	function closeModal() {
+
 	}
 
 
@@ -1077,16 +805,11 @@
 <!-- Footer -->
 <div class="footer">
 
-	© Angshuman Mazumdar, 2021
+	<p> <a href="#">© Angshuman Mazumdar, 2023</a></p>
 	<p> <a href="http://elrumordelaluz.github.io/csshake/" target="_blank">Animated Shake Effect</a></p>
+	<p> <a href="https://blog.stackfindover.com/html-css-scroll-down-arrow-examples/" target="_blank">Scrolling Mouse Effect (#8)</a></p>
 	
 </div>
-
-<!-- ||||||||||||||||||||||| STICKY BAR |||||||||||||||||||||||||||||| -->
-
-
-
-<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
 
 </body>
 </html>
