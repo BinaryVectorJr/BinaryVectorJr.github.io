@@ -3,84 +3,23 @@
 <title>Home</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
 
 <style>
 
-	.w3-row-padding img {margin-bottom: 12px}
-	<!-- /* Remove margins from "page content" on small screens */ -->
-	<!-- @media only screen and (max-width: 600px) {#main {margin-left: 0}} -->
-	.wrapper { text-align: center; }
+	/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+	@media (max-width: 600px) {
+	section {
+		-webkit-flex-direction: column;
+		flex-direction: column;
+	}
+	}
 	.button {
 		position: absolute;
 		top: 50%;
 	}
 
-	hr{
-		height: 2px;
-		background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-
-		border:0;
-		height:1px;
-	}
-
-	footer{
-		background-color: #222;
-	}
-
-	body {
-		font-family: ubuntu;
-		padding: 0;
-		margin: 0;
-		font-size: 18px;
-	}
-
-	.img-circle{
-		border-radius: 50%;
-	}
-
-	.container {
-	  position: relative;
-	  font-size: 18px;
-	}
-
-	.overlay {
-	  position: absolute;
-	  top: 0;
-	  bottom: 0;
-	  left: 0;
-	  right: 0;
-	  height: 100%;
-	  width: 100%;
-	  opacity: 0;
-	  transition: .5s ease;
-	  background-color: #008080;
-	}
-
-	.container:hover .overlay {
-	  	opacity: 3;
-		filter: alpha(opacity=30);
-
-		transition: all 0.5s ease-in-out;
-		-webkit-transition: all 0.5s ease-in-out;
-		-moz-transition: all 0.5s ease-in-out;
-		-o-transition: all 0.5s ease-in-out;
-	}
-
-	.text {
-	  color: white;
-	  font-size: 18px;
-	  position: absolute;
-	  top: 50%;
-	  left: 50%;
-	  -webkit-transform: translate(-50%, -50%);
-	  -ms-transform: translate(-50%, -50%);
-	  transform: translate(-50%, -50%);
-	  text-align: center;
-	}
-
-		#myBtn {
+	#toggleModeBtn {
 		display: none;
 		position: fixed;
 		bottom: 15px;
@@ -96,35 +35,119 @@
 		border-radius: 4px;
 	}
 
-	#myBtn:hover {
+	body{
+		font-size: 16px;
+	}
+
+	footer {
+	background-color: #777;
+	padding: 10px;
+	text-align: center;
+	color: white;
+	}
+	#toggleModeBtn:hover {
 		background-color: #555;
 	}
+
+	.tab { 
+       display:inline-block; 
+       margin-left: 40px; 
+	}
+
+	.title
+	{
+    display: block;
+    height: 22px;
+    line-height: 22px;
+    padding: 4px 6px;
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 13px;
+	}
+	.title .left-float { float:left }
+	.title .right-float { float:right }
+
+	.content .sub-content .left-float { float:left }
+	.content .sub-content .right-float { float:right }
+
+	.content{
+		padding: 10px;
+	}
+
+	.sub-content{
+		padding: 10px;
+	}
+
 </style>
 
-<body class="w3-white">
+<body>
 
-	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+	<button onclick="toggle_visibility('cvsection')" id="toggleModeBtn" title="Go to top">Show Details</button>
 
 	<!-- BEGIN PAGE CONTENT -->
 	<div id="main">
 		<!-- Header/Home -->
-		<header class="w3-container w3-center w3-white" id="home">
-			<h1 class="w3-xxxlarge"><span class="w3-hide-small">Hello there....it's been a while since anyone has been here.</strong></h1>
+		<header id="home">
+			<h1>Angshuman Mazumdar</h1>
+			<h2>Games and Simulation Researcher</h2>
+			<!-- My Portfolio Link -->
+			<div class="title">
+				<span class="right-float"><a href="./portfolio.html">Click here for visual examples of my work. Promise, this is not a scam :)</a></span>
+				<span class="left-float"><i>West Lafayette</i></span>
+			</div>
+			<hr>
 		</header>
 
 		<!-- ABOUT SECTION -->
-		<div class="w3-content w3-justify w3-text-grey w3-padding-large w3-center" id="about">
-			<p> You seem lost. Oh, you are? </p>
-			<p>No worries! Let me guide you through the exit!</p>
-
-			<br>
-
-			<!-- My Portfolio Link -->
-			<div class="w3-container w3-center" id="links">
-				<a href="./portfolio.html"> <img class="img-square" src="./images/door.png" alt="Exit" style="width:100px">
-				<!-- <a href="https://www.flaticon.com/free-icons/door" title="door icons">Door icons created by Retinaicons - Flaticon</a> -->
+		<div class="content" id="skills">
+			<b>KEY SKILLS AND ABILITIES</b>
 			</div>
+			<div class="sub-content">
+				<b>Computer Vision and Graphics</b><br>
+				<p><span class="tab">Unreal Engine (Blueprint & C++), Unity (Desktop, Mobile, & Oculus SDK), World Machine, AnyLogic, NetLogo</span></p>
 
+				<b>Deveopment</b><br>
+				<p><span class="tab">C#, C++, CUDA, Vulkan, Visual Basic for Applications (VBA), Full stack (HTML, CSS, JavaScript, Django)</span></p>
+
+				<b>Research and Management</b><br>
+				<p><span class="tab">Microsoft Power Automate, Microsoft Forms, Git, Jira, Overleaf</span></p>
+
+				<b>Soft Skills</b><br>
+				<p><span class="tab">Team Management and leadership, public speaking, mentoring, detail-oriented decision making</span></p>
+			</div>
+		</div>
+		<hr>
+		<div class="content" id="education">
+			<b>EDUCATION</b>
+			</div>
+			<div class="sub-content">
+				<span class="left-float"><b>Doctor of Philosophy – Technology (Agent Based Simulation)</b> &emsp; Aug 2021 - Present</span>
+				<p><span class="tab"><i>Purdue University, West Lafayette, IN</i></span></p>
+	
+				<span class="left-float"><b>Master of Science – Computer Graphics Technology </b> &emsp; Aug 2019 - May 2021</span>
+				<p><span class="tab"><i>Purdue University, West Lafayette, IN</i></span></p>
+	
+				<span class="left-float"><b>Semester Exchange Program – Capstone Project (Robotics)</b> &emsp; Jan 2019 - May 2019</span>
+				<p><span class="tab"><i>Rochester Institute of Technology, Rochester, NY</i></span></p>
+	
+				<span class="left-float"><b>Bachelor of Technology – Electronics and Communication Engineering</b> &emsp; Jul 2015 - May 2019</span>
+				<p><span class="tab"><i>Vellore Institute of Technology, Vellore, Tamil Nadu (India)</i></span></p>
+			</div>
+		</div>
+		<hr>
+		<div class="content" id="experience">
+			<b>PROFESSIONAL EXPERIENCE</b>
+			</div>
+			<div class="sub-content">
+				<span class="left-float"><b>Lead Graduate Teaching Assistant</b></span>
+				<p><span class="tab"><i>Purdue University, West Lafayette, IN</i></span></p>
+	
+				<span class="left-float"><b>Interaction Mechanic Developer (Contract)</b></span>
+				<p><span class="tab"><i>Purdue University, West Lafayette, IN</i></span></p>
+	
+				<span class="left-float"><b>Summer Trainee Intern</b></span>
+				<p><span class="tab"><i>Bharti Airtel, Chandigarh, Punjab, India</i></span></p>
+			</div>
 		</div>
 
 	</div>
@@ -132,18 +155,17 @@
 	<!-- w3-text-white makes the black icons into white -->
 
 	<!-- Footer -->
-	<footer class="w3-bottom w3-padding-16 w3-hover-opacity-on w3-text-white">
-		<div class="w3-large w3-center">
-			<a href="https://twitter.com/BinaryVectorJr" target="_blank"><i class="fa fa-twitter w3-text-white w3-hover-opacity"></i></a>&nbsp
-			<a href="https://www.linkedin.com/in/angshuman-mazumdar-a0b75a130/" target="_blank"><i class="fa fa-linkedin w3-text-white w3-hover-opacity"></i></a>&nbsp
-		</div>
+	<footer class="w3-bottom">
 		<p class="w3-large w3-center">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-grey">w3.css</a> and <a href="https://www.flaticon.com/free-icons/door" title="door icons">Door icons created by Retinaicons - Flaticon</a> </p>
 	</footer>
 
 <!-- END PAGE CONTENT -->
 </body>
 
-<script>
+<script type="text/javascript">
+
+	document.getElementById("toggleModeBtn").style.display = "block";
+
 	// Used to trigger the accordion
 	function myFunction1(id) {
 		var x = document.getElementById(id);
@@ -155,21 +177,37 @@
 	}
 
 	// When the user scrolls down 20px from the top of the document, show the button
-	window.onscroll = function() {scrollFunction()};
+	// window.onscroll = function() {scrollFunction()};
 
-	function scrollFunction() {
-	  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-		document.getElementById("myBtn").style.display = "block";
-	  } else {
-		document.getElementById("myBtn").style.display = "none";
-	  }
-	}
+	// function scrollFunction() {
+	//   if (document.body.scrollTop > 1 || document.documentElement.scrollTop > 20) {
+	// 	document.getElementById("toggleModeBtn").style.display = "block";
+	//   } else {
+	// 	document.getElementById("toggleModeBtn").style.display = "none";
+	//   }
+	// }
 
 	// When the user clicks on the button, scroll to the top of the document
 	function topFunction() {
 	  document.body.scrollTop = 0;
 	  document.documentElement.scrollTop = 0;
 	}
+
+	   	function toggle_visibility(cvsection) {
+       	var e = document.getElementById(cvsection);
+	   	document.getElementById("toggleModeBtn").textContent = 'Show Details';
+       	if(e.style.display == 'block')
+	   	{
+          	e.style.display = 'none';
+			document.getElementById("toggleModeBtn").textContent = 'Show Details';
+	   	}
+	   	else
+		{
+			e.style.display = 'block';
+			document.getElementById("toggleModeBtn").textContent = 'Hide Details';
+		}
+
+   }
 
 </script>
 
