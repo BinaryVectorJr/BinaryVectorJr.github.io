@@ -34,7 +34,7 @@ hr{
 }
 
 .shake-slow {
-	display:inherit;
+	display:inline-block;
 	transform-origin:center center
 }
 
@@ -156,17 +156,17 @@ hr{
 }
 
 .hero a:hover{
-	color: white;
+	color: #d2b983;
 	text-decoration: none;
 }
 
 .hero a:active{
-	color: teal;
+	color: #d2b983;
 	text-decoration: none;
 }
 
-.hero a:active{
-	color: teal;
+.hero a:focus{
+	color: #d2b983;
 	text-decoration: none;
 }
 
@@ -201,13 +201,28 @@ hr{
 	margin-left: 15px;
 }
 
+.footer a:hover{
+	color: #d2b983;
+	text-decoration: none;
+}
+
+.footer a:active{
+	color: #d2b983;
+	text-decoration: none;
+}
+
+.footer a:focus{
+	color: #d2b983;
+	text-decoration: none;
+}
+
 a{
 	color: white;
 	text-decoration: none;
 }
 
 a:hover{
-	color: teal;
+	color: #d2b983;
 	text-decoration: none;
 }
 
