@@ -1,180 +1,398 @@
-<!DOCTYPE html>
-<html>
-<title>Home</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+<!doctype html>
+<html lang="en">
+<head>
 
-<style>
+  <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style_new.css">
+  
+  <!-- Preload Header Image -->
+  <link rel="preload" as="image" href="./images/header-bg.jpg">
+  <link rel="preload" as="image" href="./images/header-bg-dnd.jpg">
+  
+  <!-- Extra font for Header Text (every other font is system font based on OS) -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel&display=swap">
+  
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+  <title>Angshuman's Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
 
-	/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
-	@media (max-width: 600px) {
-	section {
-		-webkit-flex-direction: column;
-		flex-direction: column;
-	}
-	}
-	.button {
-		position: absolute;
-		top: 50%;
-	}
-
-	#toggleModeBtn {
-		display: none;
-		position: fixed;
-		bottom: 15px;
-		right: 20px;
-		z-index: 99;
-		font-size: 18px;
-		border: none;
-		outline: none;
-		background-color: teal;
-		color: white;
-		cursor: pointer;
-		padding: 15px;
-		border-radius: 4px;
-	}
-
-	body{
-		font-size: 16px;
-	}
-
-	footer {
-	background-color: #777;
-	padding: 10px;
-	text-align: center;
-	color: white;
-	}
-	#toggleModeBtn:hover {
-		background-color: #555;
-	}
-
-	.tab { 
-       display:inline-block; 
-       margin-left: 40px; 
-	}
-
-	.title
-	{
-    display: block;
-    height: 22px;
-    line-height: 22px;
-    padding: 4px 6px;
-    font-size: 16px;
-    color: #000;
-    margin-bottom: 13px;
-	}
-	.title .left-float { float:left }
-	.title .right-float { float:right }
-
-	.content .sub-content .left-float { float:left }
-	.content .sub-content .right-float { float:right }
-
-	.content{
-		padding: 10px;
-	}
-
-	.sub-content{
-		padding: 10px;
-	}
-
-</style>
+</head>
 
 <body>
 
-	<button onclick="toggle_visibility('cvsection')" id="toggleModeBtn" title="Go to top">Show Details</button>
+<button onclick="topFunction()" id="gotoTopBtn" title="Go to top">Top</button>
 
-	<!-- BEGIN PAGE CONTENT -->
-	<div id="main">
-		<!-- Header/Home -->
-		<header id="home">
-			<h1>Angshuman Mazumdar</h1>
-			<h2>Games and Simulation Researcher</h2>
-			<!-- My Portfolio Link -->
-			<div class="title">
-				<span class="right-float"><a href="./portfolio.html">Click here for my portfolio. Promise, this is not a scam :)</a></span>
-				<span class="left-float">
-					<i>West Lafayette, IN</i> |
-					<i><a>Email</a></i> | 
-					<i><a>ORCiD</a></i> | 
-					<i><a>Google Scholar</a></i>
-				</span>
-			</div>
-			<hr>
-		</header>
+<!-- Header with Parallax features - still looks cool -->
+<div class="parallax-header">
+  <div class="header-content">
+    <h1 class="header-title">THE WORLD OF <span><a href="https://scholar.google.com/citations?user=rse5AfMAAAAJ&hl=en" target="_blank">MOZ</a></span></h1>
 
-		<!-- ABOUT SECTION -->
-		<div class="content" id="skills">
-			<b>KEY SKILLS AND ABILITIES</b>
-			</div>
-			<div class="sub-content">
-				<b>Computer Vision and Graphics</b><br>
-				<p><span class="tab">Unreal Engine (Blueprint & C++), Unity (Desktop, Mobile, & Oculus SDK), World Machine, AnyLogic, NetLogo</span></p>
+    <div class="header-buttons">
 
-				<b>Deveopment</b><br>
-				<p><span class="tab">C#, C++, CUDA, Vulkan, Visual Basic for Applications (VBA), Full stack (HTML, CSS, JavaScript, Django)</span></p>
+      <a href="https://orcid.org/0000-0003-1632-5152" target="_blank" class="header-btn" title="ORCiD">
+        <i class="fa-brands fa-orcid"></i>
+      </a>
 
-				<b>Research and Management</b><br>
-				<p><span class="tab">Microsoft Power Automate, Microsoft Forms, Git, Jira, Overleaf</span></p>
+      <a href="https://github.com/BinaryVectorJr" target="_blank"  class="header-btn" title="Github">
+        <i class="fa-brands fa-github"></i>
+      </a>
 
-				<b>Soft Skills</b><br>
-				<p><span class="tab">Team Management and leadership, public speaking, mentoring, detail-oriented decision making</span></p>
-			</div>
+      <a href="https://www.linkedin.com/in/angshuman-mazumdar-a0b75a130/" target="_blank"  class="header-btn" title="LinkedIn">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+
+      <a href="https://twitter.com/BinaryVectorJr" target="_blank"  class="header-btn" title="Twitter">
+        <i class="fa-brands fa-twitter"></i>
+      </a>
+
+      <a href="https://www.youtube.com/channel/UCGe7rFYUrm_CAA6aZnBMCdA/" target="_blank"  class="header-btn" title="Youtube">
+        <i class="fa-brands fa-youtube"></i>
+      </a>
+
+      <a href="https://drive.google.com/file/d/1tP_ZLyPOytGnwMyztfgf-LHpxIvs-6-C/view?usp=sharing" target="_blank"  class="header-btn" title="Curriculum Vitae - Under Construction">
+        <img src="./images/cv.png" alt="CV">
+      </a>
+
+      <a href="https://drive.google.com/file/d/1ShhSP_O0cNF8q0f3l9jaGOmgbQpHVXlI/view?usp=sharing" target="_blank"  class="header-btn" title="Resume">
+        <img src="./images/resume.png" alt="Resume">
+      </a>
+
+    </div>
+  </div>
+</div>
+
+<!-- Borrorwed code for scroll down mouse animation - Credit: https://codepen.io/josedavidfumo/pen/KVGejW-->
+	<a href="#contentArea">
+		<div id="mouse-scroll">
+		  <div class="mouse">
+			<div class="mouse-in"></div>
+		  </div>
+		  <div>
+			  <span class="down-arrow-1"></span>
+			  <span class="down-arrow-2"></span>
+			  <span class="down-arrow-3"></span>
+		   </div>
 		</div>
-		<hr>
-		<div class="content" id="education">
-			<b>EDUCATION</b>
-			</div>
-			<div class="sub-content">
-				<span class="left-float"><b>Doctor of Philosophy – Technology (Agent Based Simulation)</b>, Aug 2021 - Present</span>
-				<p><span class="tab"><i>Purdue University, West Lafayette, IN</i></span></p>
-	
-				<span class="left-float"><b>Master of Science – Computer Graphics Technology</b>, Aug 2019 - May 2021</span>
-				<p><span class="tab"><i>Purdue University, West Lafayette, IN</i></span></p>
-	
-				<span class="left-float"><b>Semester Exchange Program – Capstone Project (Robotics)</b>, Jan 2019 - May 2019</span>
-				<p><span class="tab"><i>Rochester Institute of Technology, Rochester, NY</i></span></p>
-	
-				<span class="left-float"><b>Bachelor of Technology – Electronics and Communication Engineering</b>, Jul 2015 - May 2019</span>
-				<p><span class="tab"><i>Vellore Institute of Technology, Vellore, Tamil Nadu (India)</i></span></p>
-			</div>
-		</div>
-		<hr>
-		<div class="content" id="experience">
-			<b>PROFESSIONAL EXPERIENCE</b>
-			</div>
-			<div class="sub-content">
-				<span class="left-float"><b>Lead Graduate Teaching Assistant</b>, Aug 2020 - Present</span>
-				<p><span class="tab"><i>Purdue University, West Lafayette, IN</i></span></p>
-	
-				<span class="left-float"><b>Interaction Mechanic Developer (Contract)</b>, Aug 2022 - Dec 2022</span>
-				<p><span class="tab"><i>Purdue University, West Lafayette, IN</i></span></p>
-	
-				<span class="left-float"><b>Summer Trainee Internship</b>, May 2018 - June 2018</span>
-				<p><span class="tab"><i>Bharti Airtel, Chandigarh, India</i></span></p>
-			</div>
-		</div>
-		<hr>
-		<div class="content" id="experience">
-			<b>GAME PROJECTS</b>
-			</div>
-			<div class="sub-content">
-				<span class="left-float"><b><a>"Sonata Theory" (Steam)</a></b>, Jan 2021 - May 2021</span>
-				<p><span class="tab"><i>MAYJ Studios (Audio Producer)</i></span></p>
+	</a>
 
-				<span class="left-float"><b><a>"Topplots" (Unpublished)</a></b>, Jan 2021 - May 2021</span>
-				<p><span class="tab"><i>MAYJ Studios (Audio Producer)</i></span></p>
-			</div>
-		</div>
+<!-- MAIN CONTENT -->
+<div class="main">
+  <div class="wrapper">
 
-	</div>
+    <!-- Tabs for each page - FINALLY BRUH (works like filter technically but diff cotnent) -->
+    <div class="tab-buttons">
+      <button class="tab-btn active" data-tab="tab1">Featured Work</button>
+      <button class="tab-btn" data-tab="tab2">More Projects</button>
+      <button class="tab-btn" data-tab="tab3">Research & Achievements</button>
+      <button class="tab-btn" data-tab="tab4">Teaching Resources</button>
+      <button id="dungeon-btn" class="tab-btn" data-tab="tab5">Dungeon Master</button>
+    </div>
 
-	<!-- Footer -->
-	<footer class="w3-bottom">
-		<p class="w3-large w3-center"></p>
-	</footer>
+    <!-- Main Content Area -->
+    <div class="tabs" id="contentArea">
 
-<!-- END PAGE CONTENT -->
+      <!-- MAIN TAB -->
+      <div class="tab-content active" id="tab1">
+        <!-- Main Featured Grid for projects -->
+        <div class="grid" id="cardGrid"></div>
+      </div>
+
+      <!-- OTHER TABS -->
+      <div class="tab-content" id="tab2">
+        <!-- <h2>Details</h2>
+        <p> Extra stuff if you want above the grid </p> -->
+        <div class="grid" id="cardGrid2"></div>
+      </div>
+
+      <div class="tab-content" id="tab3">
+        <h2>Current Research Area(s)</h2>
+        <ul>
+          <li>Agent Based Modelling Simulation</li>
+          <li>Engineering Change Management Curriculum Design</li>
+          <li>Game Development Education Curriculum Design</li>
+        </ul>
+
+        <h2>Publications</h2>
+        <ul>
+          <li>Enterprise PDM as Digital Backbone in a Large First-Year Engineering Course (ASEE, 2025)&nbsp;<span><a href="https://doi.org/10.18260/1-2--56431" target="_blank"><i class="fa-brands fa-readme"></i></a></span></li>
+          <li>Engineering Graphics Education for the Digital Enterprise: A Practical Example in a Large Freshman Engineering Course (ASEE, 2024)&nbsp;<span><a href="https://doi.org/10.18260/1-2--47283" target="_blank"><i class="fa-brands fa-readme"></i></a></span></li>
+          <li>Synthesizing affective virtual reality multicharacter experiences (CASA, 2021)&nbsp;<span><a href="https://doi.org/10.1002/cav.2004" target="_blank"><i class="fa-brands fa-readme"></i></a></span></li>
+          <li>Virtual reality game level layout design for real environment constraints (CCADG, 2021)&nbsp;<span><a href="https://doi.org/10.1016/j.gvc.2021.200020" target="_blank"><i class="fa-brands fa-readme"></i></a></span></li>
+          <li>Walking in a Crowd Full of Virtual Characters: Effects of Virtual Character Appearance on Human Movement Behavior (ISVC, 2020)&nbsp;<span><a href="https://doi.org/10.1109/ICCSP.2018.8523831" target="_blank"><i class="fa-brands fa-readme"></i></a></span></li>
+          <li>Embodiment for the Difference: A VR Experience of Bipolar Disorder (IEEEVR, 2020)&nbsp;<span><a href="https://doi.org/10.1109/VRW50115.2020.00108" target="_blank"><i class="fa-brands fa-readme"></i></a></span></li>
+          <li>Parkinson's Disease Assist Device Using Machine Learning and Internet of Things (ICCSP, 2018)&nbsp;<span><a href="https://doi.org/10.1109/ICCSP.2018.8523831" target="_blank"><i class="fa-brands fa-readme"></i></a></span></li>
+        </ul>
+
+        <h2>Awards</h2>
+        <ul>
+          <li>Graduate Teaching Award (Purdue University, 2025)&nbsp;<span><a href="https://drive.google.com/file/d/16CAJfQ_EmRmyAsiCivm_5ViSyNnlgs-g/view?usp=sharing" target="_blank"><i class="fa-solid fa-award"></i></a></span></li>
+          <li>Purdue Polytechnic Graduate School Summer Research Grant (2023)</li>
+          <li>Daniel & Martina Lewis Graduate Endowment Scholarship (2020)</li>
+        </ul>
+
+        <h2>In The News</h2>
+        <ul>
+          <li>Purdue Polytechnic game development program rises to No. 15 in Princeton Review ranking (2026)&nbsp;<span><a href="https://polytechnic.purdue.edu/newsroom/purdue-polytechnic-game-development-program-rises-no-15-princeton-review-ranking" target="_blank"><i class="fa-regular fa-newspaper"></i></a></span></li>
+          <li>Learn how Purdue University is preparing undergraduate engineering students for the digital enterprise at Realize LIVE Americas 2025 (2025)&nbsp;<span><a href="https://blogs.sw.siemens.com/academic/how-purdue-university-prepare-engineering-students-digital-enterprise-realize-live/" target="_blank"><i class="fa-regular fa-newspaper"></i></a></span></li>
+          <li>New student-run digital enterprise group manages engineering projects for clubs across Purdue (2024)&nbsp;<span><a href="https://web.archive.org/web/20250516022945/https:/polytechnic.purdue.edu/newsroom/new-student-run-digital-enterprise-group-manages-engineering-projects-for-clubs-across" target="_blank"><i class="fa-regular fa-newspaper"></i></a></span></li>
+          <li>Computer graphics programs climb national rankings in animation, game design, UX (2024)&nbsp;<span><a href="https://web.archive.org/web/20250717092951/https://polytechnic.purdue.edu/newsroom/computer-graphics-programs-climb-national-rankings-animation-game-design-ux" target="_blank"><i class="fa-regular fa-newspaper"></i></a></span></li>
+          <li>Polytechnic grad students design the future of Purdue sports in the metaverse (2023)&nbsp;<span><a href="https://web.archive.org/web/20250718101827/https:/polytechnic.purdue.edu/newsroom/polytechnic-grad-students-design-future-of-purdue-sports-metaverse" target="_blank"><i class="fa-regular fa-newspaper"></i></a></span></li>
+        </ul>
+
+      </div>
+
+      <div class="tab-content" id="tab4">
+        <div class="grid" id="cardGrid4"></div>
+        
+        <!-- <h2>Recommended Reading</h2>
+        <ul>
+          <li>Agent Based Modelling Simulation</li>
+          <li>Engineering Change Management Curriculum Design</li>
+          <li>Game Development Education Curriculum Design</li>
+        </ul> -->
+      </div>
+
+      <div class="tab-content" id="tab5">
+        <div class="grid" id="cardGrid5"></div>
+        
+        <hr>
+        <h2>Resources For DMs</h2>
+        <ul>
+          <li>D&D Basic Rules&nbsp;&nbsp;<span><a href="https://media.wizards.com/2018/dnd/downloads/DnD_BasicRules_2018.pdf" target="_blank"><i class="fa-solid fa-semibold fa-arrow-up-right-from-square" style="color: rgba(241, 216, 125, 1.00);"></i></a></span></li>
+          <li>Dungeon Scrawl&nbsp;&nbsp;<span><a href="https://www.dungeonscrawl.com/" target="_blank"><i class="fa-solid fa-semibold fa-arrow-up-right-from-square" style="color: rgba(241, 216, 125, 1.00);"></i></a></span></li>
+          <li>D&D Statblock Generator&nbsp;&nbsp;<span><a href="https://tetra-cube.com/dnd/dnd-statblock.html" target="_blank"><i class="fa-solid fa-semibold fa-arrow-up-right-from-square" style="color: rgba(241, 216, 125, 1.00);"></i></a></span></li>
+          <li>D&D 5e Quick Reference&nbsp;&nbsp;<span><a href="https://crobi.github.io/dnd5e-quickref/preview/quickref.html" target="_blank"><i class="fa-solid fa-semibold fa-arrow-up-right-from-square" style="color: rgba(241, 216, 125, 1.00);"></i></a></span></li>
+          <li>Lore Frog&nbsp;&nbsp;<span><a href="https://lorefrog.com/" target="_blank"><i class="fa-solid fa-semibold fa-arrow-up-right-from-square" style="color: rgba(241, 216, 125, 1.00);"></i></a></span></li>
+          <li>Watabou's Procgen Arcana&nbsp;&nbsp;<span><a href="https://watabou.github.io/" target="_blank"><i class="fa-solid fa-semibold fa-arrow-up-right-from-square" style="color: rgba(241, 216, 125, 1.00);"></i></a></span></li>
+          <li>Dyson's Dodecahedron&nbsp;&nbsp;<span><a href="https://dysonlogos.blog/" target="_blank"><i class="fa-solid fa-semibold fa-arrow-up-right-from-square" style="color: rgba(241, 216, 125, 1.00);"></i></a></span></li>
+          <li>DM Reading List (Page Nos)&nbsp;&nbsp;<span><a href="https://docs.google.com/document/d/1Fo6uzBdI9qft_6__GfzWOsv7NTVxGQJD44epnJ63JOo/edit?tab=t.0#heading=h.bwb35445nupa" target="_blank"><i class="fa-solid fa-semibold fa-arrow-up-right-from-square" style="color: rgba(241, 216, 125, 1.00);"></i></a></span></li>
+          <li>d20 Monster Filter&nbsp;&nbsp;<span><a href="https://www.d20srd.org/extras/d20monsterfilter/" target="_blank"><i class="fa-solid fa-semibold fa-arrow-up-right-from-square" style="color: rgba(241, 216, 125, 1.00);"></i></a></span></li>
+          <li>RPTools&nbsp;&nbsp;<span><a href="https://www.rptools.net/" target="_blank"><i class="fa-solid fa-semibold fa-arrow-up-right-from-square" style="color: rgba(241, 216, 125, 1.00);"></i></a></span></li>
+          <li>DiceRight&nbsp;&nbsp;<span><a href="https://www.diceright.com/" target="_blank"><i class="fa-solid fa-semibold fa-arrow-up-right-from-square" style="color: rgba(241, 216, 125, 1.00);"></i></a></span></li>
+          <li>NPC Generator&nbsp;&nbsp;<span><a href="https://www.monstershuffler.com/monsters/generator.php" target="_blank"><i class="fa-solid fa-semibold fa-arrow-up-right-from-square" style="color: rgba(241, 216, 125, 1.00);"></i></a></span></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Footer - keep simple (put links to creits of stuff in comments) -->
+<footer class="page-footer">
+  <div class="footer-inner">
+    © 2026 Angshuman Mazumdar — All rights reserved.
+  </div>
+</footer>
+
+<!-- Modal Container (all data and images load on clicking it) -->
+<div id="modalContainer"></div>
+
+<script>
+
+/* JSON Load Logic and build interface */
+fetch("portfolio-data.json")
+    .then(res => res.json())
+    .then(data => {
+
+      // If you want to add more grids, add line here - MUST
+      buildCards(data.cardsTab1, "cardGrid");
+      buildCards(data.cardsTab2, "cardGrid2");
+      buildCards(data.cardsTab4, "cardGrid4");
+      buildCards(data.cardsTab5, "cardGrid5");
+
+      // Every time you add a grid above, add a line here for the card tab - MUST
+      buildModals(data.cardsTab1);
+      buildModals(data.cardsTab2);
+      buildModals(data.cardsTab4);
+      buildModals(data.cardsTab5);
+
+      activateModals();
+    });
+
+/* Card rendering logic per tab - divided into modal containing cards containing img, title, desc */
+function buildCards(cards, targetTabID) {
+  const grid = document.getElementById(targetTabID);
+
+  cards.forEach(card => {
+    const el = document.createElement("div");
+    el.className = "card";
+    el.dataset.modal = card.id;
+    el.dataset.full = card.full;
+
+    el.innerHTML = `
+      <div class="card-image-wrapper">
+        <img 
+          src="${card.image}"
+          loading="lazy"
+          decoding="async"
+        >
+      </div>
+      <div class="card-text">
+        <div class="card-title">${card.title}</div>
+        <div class="card-desc">${card.desc}</div>
+      </div>
+    `;
+
+    grid.appendChild(el);
+  });
+}
+
+/* Dungeon Master Mode */
+document.querySelector("#dungeon-btn").addEventListener("click", () => {
+    document.body.classList.add("dungeon-mode");
+});
+
+document.querySelectorAll(".tab-btn:not(#dungeon-btn)").forEach(btn => {
+    btn.addEventListener("click", () => {
+        document.body.classList.remove("dungeon-mode");
+    });
+});
+
+/* Modals are build using the full image and the thumbnail image */
+function buildModals(cards) {
+  const container = document.getElementById("modalContainer");
+
+  cards.forEach(card => {
+    const modal = document.createElement("div");
+    modal.className = "modal";
+    modal.id = card.id;
+
+    modal.innerHTML = `
+      <div class="modal-content">
+        <span class="close-btn" data-close="${card.id}">X</span>
+
+        <img class="modal-main-img" src="" alt="">
+
+        <div class="thumb-row">
+          ${card.thumbnails
+            .map(t => `<img src="${t.thumb}" data-full="${t.full}" data-desc="${t.desc}" decoding="async">`)
+            .join("")}
+        </div>
+
+        <div class="modal-description">${card.description}</div>
+
+        <div class="modal-links">
+          ${card.links
+            .map(l => `<a href="${l.url}" target="_blank">${l.label}</a>`)
+            .join("")}
+        </div>
+      </div>
+    `;
+
+    container.appendChild(modal);
+  });
+}
+
+	/* Once user scrolls 20 pixels from top, show the "GOTO TOP" vutton */
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+	  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		document.getElementById("gotoTopBtn").style.display = "block";
+	  } else {
+		document.getElementById("gotoTopBtn").style.display = "none";
+	  }
+	}
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+
+function activateModals() {
+
+  /* Logic to switch tabs */
+  document.querySelectorAll(".tab-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+      document.querySelectorAll(".tab-content").forEach(c => c.classList.remove("active"));
+
+      btn.classList.add("active");
+      document.getElementById(btn.dataset.tab).classList.add("active");
+    });
+  });
+
+  /* Logic to open modal - images should load only on click */
+  document.querySelectorAll(".card").forEach(card => {
+    card.addEventListener("click", () => {
+      const modalID = card.dataset.modal;
+      const modal = document.getElementById(modalID);
+      modal.style.display = "flex";
+      
+      const isFirst = modal.querySelector(".thumb-row img");
+      const mainImg = modal.querySelector(".modal-main-img");
+      const descBox = modal.querySelector(".modal-description");
+
+      if(isFirst)
+      {
+        mainImg.src = isFirst.dataset.full; // load only when opened
+        descBox.textContent = isFirst.dataset.desc;
+      }
+      
+      document.body.classList.add("body-no-scroll"); // disable background scroll
+    });
+  });
+
+
+  /* Logic to close modal */
+  document.querySelectorAll(".close-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const modal = document.getElementById(btn.dataset.close);
+      modal.style.display = "none";
+
+      modal.querySelector(".modal-main-img").src = ""; // unload image
+      document.body.classList.remove("body-no-scroll"); // re-enable scroll
+    });
+  });
+
+
+  /* Extra close logic - clicking outside the modal closes it - FINALLY -__- */
+  document.querySelectorAll(".modal").forEach(modal => {
+    modal.addEventListener("click", e => {
+      if (e.target === modal) {
+        modal.style.display = "none";
+        modal.querySelector(".modal-main-img").src = "";
+        document.body.classList.remove("body-no-scroll");
+      }
+    });
+  });
+
+  /* Extra Extra close logic - escape key closes modal - IDK why it took so long for me to implement it */
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      document.querySelectorAll(".modal").forEach(modal => {
+        if (modal.style.display === "flex") {
+          modal.style.display = "none";
+          modal.querySelector(".modal-main-img").src = "";
+          document.body.classList.remove("body-no-scroll");
+        }
+      });
+    }
+  });
+
+
+  /* Logic to switch images (click on thumbnail to load full version) */
+  document.querySelectorAll(".modal").forEach(modal => {
+    const mainImg = modal.querySelector(".modal-main-img");
+    const descBox = modal.querySelector(".modal-description")
+    const thumbs = modal.querySelectorAll(".thumb-row img");
+
+    thumbs.forEach(thumb => {
+      thumb.addEventListener("click", () => {
+        mainImg.src = thumb.dataset.full;
+        descBox.textContent = thumb.dataset.desc;
+      });
+    });
+  });
+}
+
+
+</script>
+
 </body>
-
 </html>

@@ -1,0 +1,281 @@
+{
+  "cardsTab1": [
+    {
+        "id": "modalt1-1",
+        "title": "Optimized Affect-Based Multi-Character Generation (Unity) (Masters)",
+        "desc": "VR NPC Generation Optimization",
+        "image": "./images/portfolio/major-projects/thesis/3thesis.png",
+        "full": "./images/portfolio/major-projects/thesis/3thesis.png",
+        "thumbnails": [
+            { "thumb": "./images/portfolio/major-projects/thesis/3thesis-thumb.png", "full": "./images/portfolio/major-projects/thesis/3thesis.png", "desc": "This virtual reality project was made for my Masters thesis at Purdue University. Everything (except the 3D models) was made from scratch. The basic idea was to develop a system that could quickly synthesize a multi-character scenario (which can be extrapolated to crowds), with each character having their own levels of 'perceived negative emotion by the player' (a.k.a. affect). Each character came with proxemics logic that enabled them to have a concept of personal space. This project also demonstrated how to optimize this scenario using Simulated Annealing, so that the algorithm can adjust itself towards a target 'overall negative affect' of the scene."},
+            { "thumb": "./images/portfolio/major-projects/thesis/1thesis-thumb.png", "full": "./images/portfolio/major-projects/thesis/1thesis.png", "desc":"Pictured above is the final setup of the characters - optimized for a target value of negative affect (emotion). The characters walk from these points to the player's position, as the player 'walks' the street." },
+            { "thumb": "./images/portfolio/major-projects/thesis/2thesis-thumb.png", "full": "./images/portfolio/major-projects/thesis/2thesis.png", "desc":"An example of a female character displaying 'no-look at' and 'look-at' behavior." },
+            { "thumb": "./images/portfolio/major-projects/thesis/4thesis-thumb.png", "full": "./images/portfolio/major-projects/thesis/4thesis.png","desc":"The main script for a Markov Chain Monte Carlo method called Simulated Annealing." },
+            { "thumb": "./images/portfolio/major-projects/thesis/5thesis-thumb.png", "full": "./images/portfolio/major-projects/thesis/5thesis.png", "desc":"Flowchart of the overall experiement." }
+        ],
+        "links": [
+        { "label": "Full Thesis", "url": "https://doi.org/10.25394/PGS.14489202.v1" },
+        { "label": "Published Article", "url": "https://doi.org/10.1002/cav.2004" }
+        ]
+    },
+
+    {
+        "id": "modalt1-2",
+        "title": "Collection Quest (Unity)",
+        "desc": "VR Simulation & NPC Intelligence System Design",
+        "image": "./images/portfolio/major-projects/collection/1collection.png",
+        "full": "./images/portfolio/major-projects/collection/1collection.png",
+        "thumbnails": [
+            { "thumb": "./images/portfolio/major-projects/collection/1collection.png", "full": "./images/portfolio/major-projects/collection/1collection.png", "desc": "AI Patrol Agents for a game (used for a published article) that move between 'n' checkpoints randomly to simulate enemy guard behavior. The agent also comes with a player detection zone (light blue zone using a sphere-overlap), to simulate enemy chase behavior."},
+            { "thumb": "./images/portfolio/major-projects/collection/2collection.png", "full": "./images/portfolio/major-projects/collection/2collection.png", "desc":"Once the player enters the detection zone (light blue), the patrol agent notices the player and starts following it, overriding the checkpoint patrol behavior. The zone also turns black indicating that the player is seen, and the agent will follow with a slightly higher speed, until the player comes out of the detection zone." },
+            { "thumb": "./images/portfolio/major-projects/collection/3collection.png", "full": "./images/portfolio/major-projects/collection/3collection.png", "desc":"Grid visibility detection script used in a game level for a published article. Here the level was optimized for the location of multiple pieces of a treasure. The factors were several cost terms (one of which was 'initial visibility of the player'). The tiles in red are the ones that have detected the yellow treasure  (high visibility). Since it is inside a room (white blocks), the green tiles do not 'see' it, thus implementing an effective visibility algorithm." }
+        ],
+        "links": [
+        { "label": "Published Article", "url": "https://doi.org/10.1016/j.gvc.2021.200020" }
+        ]
+    },
+
+    {
+        "id": "modalt1-3",
+        "title": "Virtual Sports Experience (Unity | Vasoo)",
+        "desc": "Lead Mechanics Developer, Project Management, & Level Design",
+        "image": "./images/portfolio/major-projects/vasoo/2vasoo.jpg",
+        "full": "./images/portfolio/major-projects/vasoo/2vasoo.jpg",
+        "thumbnails": [
+            { "thumb": "./images/portfolio/major-projects/vasoo/2vasoo.jpg", "full": "./images/portfolio/major-projects/vasoo/2vasoo.jpg", "desc": "Worked with Iconic Engine's in-house SDK (Vasoo Engine) to develop a metaverse sports experience for the Oculus Quest. I was a Project Manager and Lead Mechanics Developer for the Interior Experience team, whose goal was to create a skybox area for multiple avatars to hang out, watch the actual match, and have social interactions with other users."},
+            { "thumb": "./images/portfolio/major-projects/vasoo/1vasoo.jpg", "full": "./images/portfolio/major-projects/vasoo/1vasoo.jpg", "desc":"The outdoor stadium developed by the Outdoor Experience team. I assisted with level design for both teams as well as code integration, and documentation." },
+            { "thumb": "./images/portfolio/major-projects/vasoo/3vasoo.jpg", "full": "./images/portfolio/major-projects/vasoo/3vasoo.jpg", "desc":"An aerial view of the final experience with the outdoor stadium and the indoor 'lounge' area." }
+        ],
+        "links": [
+        { "label": "Featured News Article", "url": "https://web.archive.org/web/20250718101827/https:/polytechnic.purdue.edu/newsroom/polytechnic-grad-students-design-future-of-purdue-sports-metaverse" }
+        ]
+    },
+
+    {
+        "id": "modalt1-4",
+        "title": "Topplots (Unreal Engine)",
+        "desc": "VR Physics Based Game",
+        "image": "./images/portfolio/major-projects/topplots/1topplots.png",
+        "full": "./images/portfolio/major-projects/topplots/1topplots.png",
+        "thumbnails": [
+            { "thumb": "./images/portfolio/major-projects/topplots/1topplots.png", "full": "./images/portfolio/major-projects/topplots/1topplots.png", "desc": "A virtual reality game I worked on for the CGT 555 (Game Development II) class, at Purdue University for my Masters. I fulfilled the role as a Creative Director and Level Designer (for 3 out of the 4 levels). This was also the start of Hammerand Studios - the starting point of having my own game development team. Topplots puts you in the shoes of a young child whose sole aim is to take down the towers of blocks in front of them, to get to the unique toys at the top of it. Take charge and gradually advance to locations that will take you on a wild journey fueled by the child's imagination. The images represent the levels I worked on."},
+            { "thumb": "./images/portfolio/major-projects/topplots/2topplots.png", "full": "./images/portfolio/major-projects/topplots/2topplots.png", "desc":"Underworld (Level 3)- playspace in the middle is marked with the white and red mat." },
+            { "thumb": "./images/portfolio/major-projects/topplots/3topplots.png", "full": "./images/portfolio/major-projects/topplots/3topplots.png", "desc":"Mole World (Level 2) - playspace is in the mesa in the middle." },
+            { "thumb": "./images/portfolio/major-projects/topplots/4topplots.png", "full": "./images/portfolio/major-projects/topplots/4topplots.png","desc":"Mole World (Level 2) - playspace is in the mesa in the middle." },
+            { "thumb": "./images/portfolio/major-projects/topplots/5topplots.png", "full": "./images/portfolio/major-projects/topplots/5topplots.png", "desc":"The Mines (Level 1) - playspace is on the blue blueprint map." },
+            { "thumb": "./images/portfolio/major-projects/topplots/6topplots.png", "full": "./images/portfolio/major-projects/topplots/6topplots.png", "desc":"The Mines (Level 1) - playspace is on the blue blueprint map." }
+        ],
+        "links": [
+        { "label": "Demo Video", "url": "https://youtu.be/dhZ-EVdMEBo" }
+        ]
+    }
+  ],
+
+  "cardsTab2": [
+    {
+        "id": "modalt2-1",
+        "title": "Invader Defense (OpenGL)",
+        "desc": "Real-Time Graphics Programming",
+        "image": "./images/portfolio/major-projects/alienshooter/2alien.png",
+        "full": "./images/portfolio/major-projects/alienshooter/2alien.png",
+        "thumbnails": [
+            { "thumb": "./images/portfolio/major-projects/alienshooter/2alien.png", "full": "./images/portfolio/major-projects/alienshooter/2alien.png", "desc": "The primary focus was to understand the mechanics behind the design of video games without the help of a game engine, by recreating elements of a classic video game. Some of the fundamental concepts explored were keyboard inputs for gameplay, GLSL Shader coding, Non-Photorealistic Rendering (that function as power-up effects, collisions between elements, and basic fundamental game mechanics. Levels consisted of unbreakable blocks and enemies. Each type of enemy when destroyed drops a power-up."},
+            { "thumb": "./images/portfolio/major-projects/alienshooter/5alien.png", "full": "./images/portfolio/major-projects/alienshooter/5alien.png", "desc":"Power-up 1 activated (Chaos mode - where the screen moves around changing perspective). An interesting by-product of this mode was the changed appearance of the enemies due to changing the shader buffers (which was a happy and unexpected accident)." },
+            { "thumb": "./images/portfolio/major-projects/alienshooter/6alien.png", "full": "./images/portfolio/major-projects/alienshooter/6alien.png", "desc":"Power-up 2 activated (Inversion - Turns the game upside down)." },
+            { "thumb": "./images/portfolio/major-projects/alienshooter/4alien.png", "full": "./images/portfolio/major-projects/alienshooter/4alien.png","desc":"Win screen." }
+        ],
+        "links": [
+        { "label": "Demo Video", "url": "https://youtu.be/N-4uOiCmmj4" }
+        ]
+    },
+
+        {
+        "id": "modalt2-2",
+        "title": "Lost In Space (Unity)",
+        "desc": "One Button Pseudo-Virtual Reality Simulation",
+        "image": "./images/portfolio/major-projects/roomvr/1roomvr.jpg",
+        "full": "./images/portfolio/major-projects/roomvr/1roomvr.jpg",
+        "thumbnails": [
+            { "thumb": "./images/portfolio/major-projects/roomvr/1roomvr.jpg", "full": "./images/portfolio/major-projects/roomvr/1roomvr.jpg", "desc": "This virtual reality demo was created as a part of the edX course I did, entitled “Creating Virtual Reality Applications” (UCSanDiegoX:CSE190x). A major focus was to build a 'one-button' system for virtual reality based environments. The application comprises of two parts - creation of game objects in a virtual room and manipulating them (along with existing objects in the scene). The user is able to freely create objects and them relocate, rotate, and scale them, using three different modes of locomotion - teleport, walk, and an automatic hover mode. Diegetic menu for instantiating items was also implemented"},
+            { "thumb": "./images/portfolio/major-projects/roomvr/2roomvr.jpg", "full": "./images/portfolio/major-projects/roomvr/2roomvr.jpg", "desc":"All items in the level are rigidbodies, which enables the player to interact with them." },
+            { "thumb": "./images/portfolio/major-projects/roomvr/4roomvr.jpg", "full": "./images/portfolio/major-projects/roomvr/4roomvr.jpg", "desc":"A minimap also exists to display a top down view of the room." },
+            { "thumb": "./images/portfolio/major-projects/roomvr/5roomvr.jpg", "full": "./images/portfolio/major-projects/roomvr/5roomvr.jpg","desc":"An object highlight feature is also implemented. If the raycast from the player detects a rigidbody with a custom tag, the algorithm applies a red overlay on top of it, to indicate context." },
+            { "thumb": "./images/portfolio/major-projects/roomvr/6roomvr.jpg", "full": "./images/portfolio/major-projects/roomvr/6roomvr.jpg", "desc":"One of my first dives into virtual reality game development (2018). However, this was back when I did not have access to proper equipment, thus having to make this 'one-button controller' simulation." }
+        ],
+        "links": [
+        { "label": "Certificate", "url": "https://courses.edx.org/certificates/635c10afabdf4cc895f7ceafa3f7f4c0" }
+        ]
+    },
+
+    {
+        "id": "modalt2-3",
+        "title": "Pose Recognized Hand Tracking (Unity)",
+        "desc": "VR Simulation & Gameplay Design",
+        "image": "./images/portfolio/major-projects/handtrack/7hand.png",
+        "full": "./images/portfolio/major-projects/handtrack/7hand.png",
+        "thumbnails": [
+            { "thumb": "./images/portfolio/major-projects/handtrack/6hand.png", "full": "./images/portfolio/major-projects/handtrack/6hand.png", "desc": "A project I made to harnesses the power of hand tracking that is provided by Oculus Quest. A major focus of the application was to implement pose recognition. The user is able to set custom gestures, and spawn in objects, and interact with them. Some of the implemented features are custom pose setup, pose recognition, use gesture to 'force call' objects towards player and 'force blast' it away, physics interaction with environment elements (springs, rigidbodies, buttons etc.), and it all comes together in a minigame, where the player has to blast the ball towards a randomly generated target on the wall for points."},
+            { "thumb": "./images/portfolio/major-projects/handtrack/1hand.png", "full": "./images/portfolio/major-projects/handtrack/1hand.png", "desc":"There was also a minigame included where players could make objects float (using one hand sign) and then blast them towards a target to score points (using another hand sign)." },
+            { "thumb": "./images/portfolio/major-projects/handtrack/4hand.png", "full": "./images/portfolio/major-projects/handtrack/4hand.png", "desc":"The player stood in front of physics accurate buttons, that could be used to record custom poses, and map them to custom functions." }
+        ],
+        "links": [
+        { "label": "Demo Video", "url": "https://youtu.be/2H_TBvRzL0w" }
+        ]
+    },
+
+    {
+        "id": "modalt2-4",
+        "title": "Cabin in the Woods (Unreal Engine)",
+        "desc": "Open World Level Design",
+        "image": "./images/portfolio/major-projects/forest/1forest.jpg",
+        "full": "./images/portfolio/major-projects/forest/1forest.jpg",
+        "thumbnails": [
+            { "thumb": "./images/portfolio/major-projects/forest/1forest.jpg", "full": "./images/portfolio/major-projects/forest/1forest.jpg", "desc": "A level design project, that primarily focuses on environment design. Primary goals were to work with foliage (LoD levels) and terrain design tools, as well as lighting scenarions. It also includes a log cabin, as well as smoke and fire particle effects. The First Person Shooter template of Unreal Engine has been used here, to allow the player to roam about, and experience the environment. Natural vegetation is prevalent in this 4 KM x 4 KM world."},
+            { "thumb": "./images/portfolio/major-projects/forest/2forest.jpg", "full": "./images/portfolio/major-projects/forest/2forest.jpg", "desc":"Rock formations were manually placed, and oriented." },
+            { "thumb": "./images/portfolio/major-projects/forest/3forest.jpg", "full": "./images/portfolio/major-projects/forest/3forest.jpg", "desc":"The cabin is an Unreal Marketplace asset. The campfire includes particle effects and sound." },
+            { "thumb": "./images/portfolio/major-projects/forest/4forest.jpg", "full": "./images/portfolio/major-projects/forest/4forest.jpg","desc":"The aesthetic was made to mimic classic 'lost in the forest' style games, that displayed themes of horror and solitary survivalism." },
+            { "thumb": "./images/portfolio/major-projects/forest/5forest.jpg", "full": "./images/portfolio/major-projects/forest/5forest.jpg", "desc":"As you look into the woods, maybe something looks back?" }
+        ],
+        "links": [
+        { "label": "", "url": "#" }
+        ]
+    },
+
+    {
+        "id": "modalt2-5",
+        "title": "Oasis (Unreal Engine)",
+        "desc": "Linear Level Design",
+        "image": "./images/portfolio/major-projects/fantasy/1fantasy.png",
+        "full": "./images/portfolio/major-projects/fantasy/1fantasy.png",
+        "thumbnails": [
+            { "thumb": "./images/portfolio/major-projects/fantasy/1fantasy.png", "full": "./images/portfolio/major-projects/fantasy/1fantasy.png", "desc": "A level design project created using assets from Quixel Megascans. The idea here was to generate a small settlement, surrounded by rocky mountains, in a desolate area. The main theme of the level design is to create a semi-fantasy based habitation area, and night time was chosen for aesthetic appeal."},
+            { "thumb": "./images/portfolio/major-projects/fantasy/2fantasy.png", "full": "./images/portfolio/major-projects/fantasy/2fantasy.png", "desc":"A peaceful village called 'Oasis' on the edge of an asteroid." },
+            { "thumb": "./images/portfolio/major-projects/fantasy/4fantasy.png", "full": "./images/portfolio/major-projects/fantasy/4fantasy.png", "desc":"Main focus was to integrate Quixel Megascans assets into the world, for a linear game level." },
+            { "thumb": "./images/portfolio/major-projects/fantasy/5fantasy.png", "full": "./images/portfolio/major-projects/fantasy/5fantasy.png","desc":"The level design was done by hand. The layout follows closely with a place I am very familiar with. Terrain manipulation and heightmaps were generated using World Machine." },
+            { "thumb": "./images/portfolio/major-projects/fantasy/9fantasy.png", "full": "./images/portfolio/major-projects/fantasy/9fantasy.png", "desc":"To make the scene more interesting, a night scene was decided on. Along with that, the lamps are custom blueprints, and the trees have wind animations built in." }
+        ],
+        "links": [
+        { "label": "Demo Video", "url": "https://youtu.be/YVoPLTxPFAs" }
+        ]
+    },
+
+    {
+        "id": "modalt2-6",
+        "title": "Procedural Furniture Generator (Unity)",
+        "desc": "Procedural Asset Generation",
+        "image": "./images/portfolio/major-projects/procseat/1procseat.png",
+        "full": "./images/portfolio/major-projects/procseat/1procseat.png",
+        "thumbnails": [
+            { "thumb": "./images/portfolio/major-projects/procseat/1procseat.png", "full": "./images/portfolio/major-projects/procseat/1procseat.png", "desc": "Fully procedural seating generator. The user just needs to click on the generate button (and set the starter parameters on the left if they wish to) and everytime, a new form of sittable furniture will be generated."},
+            { "thumb": "./images/portfolio/major-projects/procseat/2procseat.png", "full": "./images/portfolio/major-projects/procseat/2procseat.png", "desc":"One feature this algorithm also has is the edge (red blocks) and corner (yellow blocks without the grey pegs) detection abilities of the base, thus making it very versatile, and providing with the ability to generate any form of seats (from ottomans to sofas to barstools)." }
+        ],
+        "links": [
+        { "label": "Demo Video", "url": "https://youtu.be/Wv7M7NUwZKk" }
+        ]
+    },
+
+    {
+        "id": "modalt2-7",
+        "title": "Crime Visualizer (Unity)",
+        "desc": "Data Parser and Data-Driven Game Design",
+        "image": "./images/portfolio/major-projects/crimeviz/1crimeviz.png",
+        "full": "./images/portfolio/major-projects/crimeviz/1crimeviz.png",
+        "thumbnails": [
+            { "thumb": "./images/portfolio/major-projects/crimeviz/1crimeviz.png", "full": "./images/portfolio/major-projects/crimeviz/1crimeviz.png", "desc": "A small game was developed that mapped all the points over approximately correct geographic locations (over a map image). The player could then click on each green 'hotspot' and look into the details of the homicide that happened in that area."},
+            { "thumb": "./images/portfolio/major-projects/crimeviz/2crimeviz.png", "full": "./images/portfolio/major-projects/crimeviz/2crimeviz.png", "desc":"A pre-processor script that acts as a parser to convert comma-separated-value files into readable Unity inspector properties. No matter how big the dataset, the algorithm efficiently parses the data correctly, and organizes them into custom classes (Element 0, ELement 1 ...) with custom properties (Case no, IUCR, ...). In this case, the Chicago Crime (Homicide) dataset was used." }
+        ],
+        "links": [
+        { "label": "", "url": "#" }
+        ]
+    },
+
+    {
+        "id": "modalt2-8",
+        "title": "Basic Slot Machine (Unity)",
+        "desc": "Game Design for Social Cause",
+        "image": "./images/portfolio/major-projects/tinker/1tinker.png",
+        "full": "./images/portfolio/major-projects/tinker/1tinker.png",
+        "thumbnails": [
+            { "thumb": "./images/portfolio/major-projects/tinker/1tinker.png", "full": "./images/portfolio/major-projects/tinker/1tinker.png", "desc": "A slot machine simulator (Procedural Random Number generator) I made, to demonstrate the ill effects of gambling (and also to serve as a fidget satisfying tool). One of the main parameters I was investigating was whether the same levels of intrinsic motivation and enjoyment are achieved, even whene the monetary aspect of it is removed. Turns out, that priliminary evidence suggested that the same levels of enjoyment and motivation are achieved due to the 'no risk - high reward' mechanic, although further formal investigation is needed."}
+        ],
+        "links": [
+        { "label": "", "url": "#" }
+        ]
+    }
+  ],
+
+    "cardsTab4": [
+    {
+        "id": "modalt4-1",
+        "title": "Assignment Requirement Document Template",
+        "desc": "Standardized template for classroom assignment. (ADA Compliant)",
+        "image": "./images/portfolio/major-projects/teaching/1teaching.png",
+        "full": "./images/portfolio/major-projects/teaching/1teaching.png",
+        "thumbnails": [
+            { "thumb": "./images/portfolio/major-projects/teaching/1teaching.png", "full": "./images/portfolio/major-projects/teaching/1teaching.png", "desc": "This template was developed for using in Manufacturing Engineering Technology classes that I TA for. Feel free to use this template as a starting point when creating your documents. Features include compartmentalization between assignment steps and resources, visual sectioning to guide readers, organized silos for functional information, and table based grid layout."},
+            { "thumb": "./images/portfolio/major-projects/teaching/2teaching.png", "full": "./images/portfolio/major-projects/teaching/2teaching.png", "desc":"The rubric table is highly customizable and uses the standardized 100-point assignment structure. Rubric items can be divided into major items and minor items for clarity purposes." },
+            { "thumb": "./images/portfolio/major-projects/teaching/3teaching.png", "full": "./images/portfolio/major-projects/teaching/3teaching.png", "desc":"Please save this template as a .dotx initially in this location first. Then you can create a new file in MS Word and use the template, to make the process easier." }
+        ],
+        "links": [
+        { "label": "Download .docx File", "url": "https://doi.org/10.25394/PGS.14489202.v1" }
+        ]
+    },
+
+    {
+        "id": "modalt4-2",
+        "title": "Assignment and Project Grading Tool",
+        "desc": "Unity based tool to create a grading tool from .txt data sources.",
+        "image": "./images/portfolio/major-projects/teaching/1grading.png",
+        "full": "./images/portfolio/major-projects/teaching/1grading.png",
+        "thumbnails": [
+            { "thumb": "./images/portfolio/major-projects/teaching/1grading.png", "full": "./images/portfolio/major-projects/teaching/1grading.png", "desc": "Grading tool separates regular assignments (with just rubric items) and projects (contains multi-level rubric items). The data gets pre-loaded before the grading interface loads, thus making grading faster and more responsive."},
+            { "thumb": "./images/portfolio/major-projects/teaching/2grading.png", "full": "./images/portfolio/major-projects/teaching/2grading.png", "desc":"Graders can select from a lost of assignments (same goes for project). Instructors can follow the syntax of the assignments data file to populate this list. They can also add custom rubric items, as long as the correct rubric item ID is mentioned." },
+            { "thumb": "./images/portfolio/major-projects/teaching/3grading.png", "full": "./images/portfolio/major-projects/teaching/3grading.png", "desc":"The grading screen with rubric gets auto generated based on the data source. The base shell generates the assignment specific screen during runtime and all score manipulation and feedback generation is done real time. If the score obtained is less than the total score of the rubric iten, the background of the element changes color to indicate a change has been made. The Total Score also updates real time." },
+            { "thumb": "./images/portfolio/major-projects/teaching/4grading.png", "full": "./images/portfolio/major-projects/teaching/4grading.png", "desc":"The project grading screen builds upon the regular assignment grading shell, however since the project has multiple levels of data, the grader can switch between all the components and grade each individually. The feedback format also changes and tracks each level's feedback. The buttons are also generated real time, since the data is already preloaded." },
+            { "thumb": "./images/portfolio/major-projects/teaching/5grading.png", "full": "./images/portfolio/major-projects/teaching/5grading.png", "desc":"An example of what the feedback looks like for the project. Each line contains the Level 0 data (Assembly), Level 1 data (Part), and Level 2 data (rubric item) as well as the deduction. Once the Copy Feedback button is pressed, it auto copies this formatted feedback to the clipboard, so the grader only needs to paste it into the appropriate place in the Learning Management System." },
+            { "thumb": "./images/portfolio/major-projects/teaching/0grading.png", "full": "./images/portfolio/major-projects/teaching/0grading.png", "desc":"The current iteration of the tool uses three data sources, each as a TXT file (data is stored as CSV). The ID is used as the Primary Key to establish links in between the sources." }
+        ],
+        "links": [
+        { "label": "Demo (Under Construction)", "url": "" }
+        ]
+    }
+  ],
+
+  "cardsTab5": [
+    {
+        "id": "modalt5-1",
+        "title": "Characters",
+        "desc": "Original characters created for various homebrew campaigns.",
+        "image": "./images/portfolio/dungeon/3art.png",
+        "full": "./images/portfolio/dungeon/3art.png",
+        "thumbnails": [
+            { "thumb": "./images/portfolio/dungeon/3art.png", "full": "./images/portfolio/dungeon/3art.png", "desc": "PATAAL DAITYA | Earth Elemental Lord (Beast) | AC: 17\n\nSTR: 20 (+5) | DEX: 9 (-1) | CON: 16 (+3) | INT: 8 (-1) | WIS: 8 (-1) | CHA: 12 (+1)"},
+            { "thumb": "./images/portfolio/dungeon/1art.png", "full": "./images/portfolio/dungeon/1art.png", "desc": "LIA VANDERLAY | Fighter (Human) | AC: 14\n\nSTR: 12 (+1) | DEX: 18 (+4) | CON: 15 (+2) | INT: 11 (+0) | WIS: 9 (-1) | CHA: 9 (-1)"},
+            { "thumb": "./images/portfolio/dungeon/2art.png", "full": "./images/portfolio/dungeon/2art.png", "desc":"SHAYNA 'Loco' ESTRALLIS | Rogue (Human) | AC: 13\n\nSTR: 9 (-1) | DEX: 16 (+3) | CON: 11 (+0) | INT: 11 (+0) | WIS: 12 (+1) | CHA: 14 (+2)" },
+            { "thumb": "./images/portfolio/dungeon/4art.png", "full": "./images/portfolio/dungeon/4art.png", "desc":"BAAK JOKHINI | Darkwater Entity | AC: 14\n\nSTR: 18 (+4) | DEX: 17 (+3) | CON: 15 (+2) | INT: 14 (+2) | WIS: 9 (-1) | CHA: 8 (-1)" },
+            { "thumb": "./images/portfolio/dungeon/5art.png", "full": "./images/portfolio/dungeon/5art.png", "desc":"PUWALI | Forest Avian (Beast) | AC: 10\n\nSTR: 12 (+1) | DEX: 14 (+2) | CON: 10 (+0) | INT: 2 (-4) | WIS: 9 (-1) | CHA: 9 (-1)" },
+            { "thumb": "./images/portfolio/dungeon/6art.png", "full": "./images/portfolio/dungeon/6art.png", "desc":"BALAHOFF | Elder Dragon Lord (Beast) | AC: 19\n\nSTR: 18 (+4) | DEX: 12 (+1) | CON: 15 (+2) | INT: 12 (+1) | WIS: 10 (+0) | CHA: 10 (+0)" }
+        ],
+        "links": [
+        { "label": "Procreate", "url": "https://procreate.com/" }
+        ]
+    },
+
+    {
+        "id": "modalt5-2",
+        "title": "Dungeon Maps",
+        "desc": "Custom One-Shot maps made for adventuring with friends.",
+        "image": "./images/portfolio/dungeon/1map.png",
+        "full": "./images/portfolio/dungeon/1map.png",
+        "thumbnails": [
+            { "thumb": "./images/portfolio/dungeon/1map.png", "full": "./images/portfolio/dungeon/1map.png", "desc": "MATKA KING GALLERY\n\nA large open space map for a gallery filled with historical artifacts. From Knights of Armor to wonders of marble, this gallery displays one of the most impressive collections in South East Asia. There are whispers of an armory holding even more valuable artifacts only displayed on certain occassions. An interesting thing to note - the owner apparently lives on site. Quite...intriguing."},
+            { "thumb": "./images/portfolio/dungeon/2map.png", "full": "./images/portfolio/dungeon/2map.png", "desc":"THANDA FOREST CLEARING\n\nA mysterious clearing in the middle of a large, luscious forest. There are signs of life, however special stones lay on the ground. These stones vibrate with some magical energy. What could this be?" }
+        ],
+        "links": [
+        { "label": "Dungeon Scrawl", "url": "https://www.dungeonscrawl.com/" },
+        { "label": "Procreate", "url": "https://procreate.com/" }
+        ]
+    }
+    
+]
+}
