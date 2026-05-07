@@ -217,7 +217,7 @@
             { "thumb": "./images/portfolio/major-projects/teaching/3teaching.png", "full": "./images/portfolio/major-projects/teaching/3teaching.png", "desc":"Please save this template as a .dotx initially in this location first. Then you can create a new file in MS Word and use the template, to make the process easier." }
         ],
         "links": [
-        { "label": "Download .docx File", "url": "https://doi.org/10.25394/PGS.14489202.v1" }
+        { "label": "Download .docx File", "url": "./pdf/AssignmentRequirementsDocument-Template.docx" }
         ]
     },
 
@@ -236,7 +236,6 @@
             { "thumb": "./images/portfolio/major-projects/teaching/0grading.png", "full": "./images/portfolio/major-projects/teaching/0grading.png", "desc":"The current iteration of the tool uses three data sources, each as a TXT file (data is stored as CSV). The ID is used as the Primary Key to establish links in between the sources." }
         ],
         "links": [
-        { "label": "Demo (Under Construction)", "url": "" }
         ]
     }
   ],
