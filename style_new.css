@@ -1,62 +1,60 @@
-    :root {
-        --card-size: 500px; /* Change this to resize all cards */
-    }
+:root {
+    --card-size: 500px; /* Change this to resize all cards */
+}
 
-    body {
-        margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-        background: #f5f5f5;
-    }
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    background: #f5f5f5;
+}
 
-    .body-no-scroll {
-        overflow: hidden;
-        height: 100vh;
-    }
+.body-no-scroll {
+    overflow: hidden;
+    height: 100vh;
+}
 
-    /* Goto top button */
-    #gotoTopBtn {
-        display: none;
-        position: fixed;
-        bottom: 15px;
-        right: 50px;
-        z-index: 99;
-        font-size: 18px;
-        border: none;
-        outline: none;
-        background-color: teal;
-        color: white;
-        cursor: pointer;
-        padding: 15px;
-        border-radius: 4px;
-        /* font-family: 'Abel', sans-serif; */
-    }
+/* Goto top button */
+#gotoTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 15px;
+    right: 50px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: teal;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
 
+/* Parallax Header */
+.parallax-header {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('./images/header-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 48px;
+    font-weight: 600;
+}
 
-    /* Parralax Header (full) */
-    .parallax-header {
-        height: 100vh;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('./images/header-bg.jpg');
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        font-size: 48px;
-        font-weight: 600;
-    }
-
-    /* Header wrapper */
-    .header-content {
+/* Header wrapper */
+.header-content {
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    }
+}
 
-    /* Header Title */
-    .header-title {
+/* Header Title */
+.header-title {
     font-family: 'Cinzel', serif;
     font-size: 96px;
     font-weight: 0;
@@ -64,402 +62,381 @@
     letter-spacing: 2px;
     color: white;
     text-shadow: 0 2px 8px rgba(0,0,0,0.4);
-    }
+}
 
-    .header-title a {
-		text-decoration: none;
-		color: #ffffff;
-    }
+.header-title a {
+    text-decoration: none;
+    color: #ffffff;
+}
 
-	.header-title a:hover {
-		text-decoration: none;
-		color: #ffcc66;
-    }
+.header-title a:hover {
+    text-decoration: none;
+    color: #ffcc66;
+}
 
-    /* Header buttons (social media) */
-    .header-buttons {
+/* Header buttons */
+.header-buttons {
     margin-top: 40px;
     display: flex;
     gap: 25px;
-    }
+}
 
-    /* No background buttons (icons only) */
-    .header-btn {
+.header-btn {
     width: 60px;
     height: 60px;
     padding: 0;
     border: none;
-    background: none;       /* no background */
+    background: none;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: transform 0.25s ease, color 0.25s ease;
     text-decoration: none;
-    }
+}
 
-    /* Icon Style */
-    .header-btn i {
+.header-btn i {
     font-size: 32px;
     color: white;
     text-shadow: 0 2px 6px rgba(0,0,0,0.4);
-    }
+}
 
-    /* Icon hover effect */
-    .header-btn:hover {
+.header-btn:hover {
     transform: translateY(-6px) scale(1.1);
-    }
+}
 
-    .header-btn:hover i {
-    color: #ffcc66; /* gold highlight on hover */
-    }
+.header-btn:hover i {
+    color: #ffcc66;
+}
 
-    /* Text buttons (not used but if i want a word for button) */
-    .header-btn span {
+.header-btn span {
     font-size: 20px;
     font-weight: 0;
     color: white;
     text-shadow: 0 2px 6px rgba(0,0,0,0.4);
     letter-spacing: 1px;
-    }
+}
 
-    .header-btn:hover span {
-    color: #ffcc66; /* gold highlight */
-    }
+.header-btn:hover span {
+    color: #ffcc66;
+}
 
-    /* Image buttons - for CV and Resume icons */
-    .header-btn img {
+.header-btn img {
     width: 32px;
     height: 32px;
     object-fit: contain;
     filter: drop-shadow(0 2px 6px rgba(0,0,0,0.4));
     transition: filter 0.25s ease, transform 0.25s ease;
-    }
+}
 
-    /* Image buttons hover - for CV and Resume icons */
-    .header-btn:hover img {
+.header-btn:hover img {
     transform: translateY(-6px) scale(1.1);
     filter: drop-shadow(0 2px 6px rgba(255,204,102,0.8));
+}
+
+/* Mobile header adjustments */
+@media (max-width: 600px) {
+    .header-title {
+        font-size: 32px;
     }
 
-    /* Flexbox adjustments for mobiles and narrow screen media */
-    @media (max-width: 600px) {
-        .header-title {
-            font-size: 42px;
-        }
-
-        .header-buttons {
-            gap: 18px;
-        }
-
-        .header-btn {
-            width: 50px;
-            height: 50px;
-        }
-
-        .header-btn i {
-            font-size: 26px;
-        }
-    }
-
-    /* MAIN Content */
-    .main {
-        min-height: 200px;
-        display: flex;
-        justify-content: center;
-        padding: 40px 0;
-    }
-
-    .wrapper {
-        width: 80vw;
-        display: flex;
+    .header-buttons {
         gap: 30px;
     }
 
-    /* Tabs (Vertically arranged) */
-    .tab-buttons {
-        display: flex;
-        flex-direction: column;
-        width: 180px;
-        position: sticky;
-        top: 20px;
-        align-self: flex-start;
+    .header-btn {
+        width: 30px;
+        height: 30px;
     }
 
-    /* Each tab button */
-    .tab-btn {
-        padding: 12px 14px;
-        background: #e9e9e9;
-        border: none;
-        border-radius: 6px;
-        cursor: pointer;
-        font-size: 15px;
-        margin-bottom: 8px;
-        text-align: left;
-        transition: background 0.15s;
+    .header-btn i {
+        font-size: 30px;
     }
+}
 
-    .tab-btn.active {
-        color: white;
-        background: teal;
-        font-weight: 600;
-    }
+/* MAIN Content */
+.main {
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
 
-    /* MANIN Content render area */
-    .tabs {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        background: white;
-        border-radius: 6px;
-        padding: 24px;
+.wrapper {
+    width: 80vw;
+    display: flex;
+    gap: 30px;
+}
 
-        /* Dont fill the entire screen, just specific area in the middle */
-        align-self: flex-start;
-        height: auto;
-    }
+/* Tabs */
+.tab-buttons {
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+    position: sticky;
+    top: 20px;
+    align-self: flex-start;
+}
 
-    .tab-content {
-        display: none;
-        padding-left: 3rem;
-    }
+.tab-btn {
+    padding: 12px 14px;
+    background: #e9e9e9;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-bottom: 8px;
+    text-align: left;
+    transition: background 0.15s;
+}
 
-    .tab-content.active {
-        display: block;
-    }
+.tab-btn.active {
+    color: white;
+    background: teal;
+    font-weight: 600;
+}
 
-    /* Defining the grid - flex based so things can order */
+/* Tabs content */
+.tabs {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 6px;
+    padding: 24px;
+    align-self: flex-start;
+    height: auto;
+}
+
+.tab-content {
+    display: none;
+    padding-left: 3rem; /* Cause of grid shift - remove later */
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* GRID */
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* CARD */
+.card {
+    width: var(--card-size);
+    height: var(--card-size);
+    background: #fafafa;
+    border-radius: 6px;
+    overflow: hidden;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-image-wrapper {
+    width: 100%;
+    height: calc(var(--card-size) - 60px);
+    overflow: hidden;
+    border-radius: 6px 6px 0 0;
+}
+
+.card-image-wrapper img {
+    will-change: transform;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%);
+    transform: scale(1);
+    transition: filter 0.4s ease, transform 0.4s ease;
+}
+
+.card:hover .card-image-wrapper img {
+    filter: grayscale(0%);
+    transform: scale(1.03);
+}
+
+.card-text {
+    padding: 10px;
+    background: #fff;
+    height: auto;
+    min-height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 6px 0;
+    font-size: clamp(14px, 2vw, 18px);
+}
+
+.card-desc {
+    font-size: 13px;
+    color: #666;
+    margin: 0;
+    font-size: clamp(12px, 1.6vw, 14px);
+}
+
+/* MODAL */
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    z-index: 999;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    background: white;
+    padding: 20px;
+    width: 960px;
+    height: 80vh;
+    max-width: 95vw;
+    max-height: 95vh;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.modal-main-img {
+    width: 100%;
+    height: 500px;
+    max-height: 50vh;
+    object-fit: contain;
+    border-radius: 6px;
+}
+
+.thumb-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.thumb-row img {
+    width: 120px;
+    height: 85px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 2px solid transparent;
+}
+
+.thumb-row img.active-thumb {
+    border-color: #333;
+}
+
+.modal-description {
+    white-space: pre-line;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 90%;
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.4;
+    color: #444;
+    height: auto; /* overwritten on mobile */
+}
+
+.modal-links {
+    margin: 20px auto 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.modal-links a {
+    color: #0077cc;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.close-btn {
+    position: sticky;
+    align-self: flex-end;
+    top: 10px;
+    right: 10px;
+    margin-bottom: 20px;
+    z-index: 100;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+    color: #444
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
     .grid {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        justify-content: center;
-    }
-
-    /* MAIN Card */
-    .card {
-        width: var(--card-size);
-        height: var(--card-size);
-        background: #fafafa;
-        border-radius: 6px;
-        overflow: hidden;
-        cursor: pointer;
-        border: 1px solid #ddd;
-        display: flex;
-        flex-direction: column;
-    }
-
-    /* MAIN Card Image */
-    .card-image-wrapper {
+        display: grid;
         width: 100%;
-        height: calc(var(--card-size) - 60px);
-        overflow: hidden;
-        border-radius: 6px 6px 0 0;
+        grid-template-columns: 1fr;
+        justify-items: center;
     }
 
-    /* MAIN Card Image hover */
-    .card-image-wrapper img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-
-        filter: grayscale(100%);
-        transform: scale(1);
-
-        transition:
-        filter 0.4s ease,
-        transform 0.4s ease;
+    /* Remove left padding that caused grid shift */
+    .tab-content {
+        padding-left: 0;
     }
 
-    /* Image on hover turns greyscale off and increases size slightly */
-    .card:hover .card-image-wrapper img {
-        filter: grayscale(0%);
-        transform: scale(1.08);
-    }
-
-    /* Card Text (overall) */
-    .card-text {
-        padding: 10px;
-        background: #fff;
-        height: 60px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-    }
-
-    .card-title {
-        font-size: 16px;
-        font-weight: 600;
-        margin: 0 0 6px 0; /* added spacing */
-    }
-
-    .card-desc {
-        font-size: 13px;
-        color: #666;
-        margin: 0;
-    }
-
-    /* MODAL after click background */
-    .modal {
-        display: none;
-        position: fixed;
-        inset: 0;
-        background: rgba(0,0,0,0.6);
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
-        z-index: 999;
-    }
-
-    /* MODAL MAIN CONTAINER */
-    /* If you want to make modal wider, change the values here */
-    .modal-content {
-        overflow-y: auto;
-        background: white;
-        padding: 20px;
-        width: 960px;
-        height: 70vh;
-        max-width: 95vw;
-        max-height: 95vh;
-        overflow-y: auto;
-        border-radius: 6px;
-        box-sizing: border-box;
-    }
-
-    /* MODAL main image (first image to load and full image) */
-    /* If you want to make modal taller, change the values here */
-    .modal-main-img {
-        width: 100%;
-        height: 500px;
-        max-height: 50vh;
-        object-fit: contain; /* change this to "cover" for sleeker look */
-        border-radius: 6px;
-    }
-
-    /* Small thumbnail row below main image */
-    .thumb-row {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 10px;
-        margin-top: 12px;
-    }
-
-    /* Each Image for row */
-    .thumb-row img {
-        width: 120px;
-        height: 85px;
-        object-fit: cover;
-        cursor: pointer;
-        border-radius: 4px;
-        border: 2px solid transparent;
-    }
-
-    .thumb-row img.active-thumb {
-        border-color: #333;
-    }
-
-    /* Description of the image */
     .modal-description {
-        white-space: pre-line;
-        margin: 25px auto 0 auto; /* CENTER BOX */
-        text-align: center;
-        font-size: 15px;
-        line-height: 1.4;
-        color: #444;
-        height: 15%;
-        width: 85%;
+        height: auto;
+        width: 90%;
+        margin-top: 20px;
     }
 
-    /* Links underneath the text */
     .modal-links {
-        margin: 20px auto 0 auto;
-        display: flex;
-        justify-content: center;
-        gap: 50px;
-    }
-
-    .modal-links a {
-        color: #0077cc;
-        text-decoration: none;
-        font-weight: 600;
-    }
-
-    /* Buttonm to close modal */
-    .close-btn {
-        float: right;
-        cursor: pointer;
-        font-weight: bold;
-        font-size: 20px;
-        color: #444
-    }
-
-    /* Readjust modal due to screensizes - flex based - not really sure how to explain but need */
-    @media (max-width: 900px) {
-        .modal-content {
-        width: 95vw;
-        }
-        .modal-main-img {
-        height: 380px;
-        }
-        .thumb-row img {
-        width: 100px;
-        height: 70px;
-        }
-    }
-
-    @media (max-width: 600px) {
-        .modal-content {
-        width: 100vw;
-        height: 100vh;
-        max-height: none;
-        border-radius: 0;
-        }
-        .modal-main-img {
-        height: 260px;
-        max-height: 40vh;
-        }
-        .thumb-row img {
-        width: 80px;
-        height: 55px;
-        }
-        .modal-links {
         flex-direction: column;
-        gap: 10px;
-        }
-    }
-
-    /* MAIN Footer */
-    .page-footer {
+        margin-bottom: 20px;
+        gap: 12px;
+        align-items: center;
         width: 100%;
-        display: flex;
-        justify-content: center;
-        padding: 30px 0;
-        background: #222222;
-        margin-top: 60px;
-        border-top: 1px solid #ddd;
     }
+}
 
-    .footer-inner {
-        width: 80vw;
-        text-align: center;
-        color: white;
-        font-size: 14px;
-    }
+/* FOOTER */
+.page-footer {
+    min-height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+    background: #222222;
+    margin-top: 60px;
+    border-top: 1px solid #ddd;
+}
 
-    /* For mobile devices, set the Flex and media details */
+.footer-inner {
+    width: min(80vw, 1200 px);
+    text-align: center;
+    color: white;
+    font-size: 14px;
+}
 
-    /* Wrapper becomes vertical */
-    @media (max-width: 800px) {
+/* Verticalize the tabs wrapper*/
+@media (max-width: 600px) {
     .wrapper {
         width: 95vw;
         flex-direction: column;
     }
-    }
+}
 
-    /* Sidebar becomes horizontal */
-    @media (max-width: 800px) {
+/* Horizontal the tab buttons on left */
+@media (max-width: 600px) {
     .tab-buttons {
         flex-direction: row;
         width: 100%;
@@ -475,34 +452,205 @@
         white-space: nowrap;
         text-align: center;
     }
-    }
+}
 
-    /* Card size scales down */
-    @media (max-width: 800px) {
+/* Scale down card to match screen shize*/
+@media (max-width: 600px) {
     :root {
-        --card-size: 300px;
+        --card-size: 80vw;
     }
-    }
+}
 
-    @media (max-width: 500px) {
-    :root {
-        --card-size: 90vw;
-    }
-    }
-
-    /* Center grid on mobile */
-    @media (max-width: 800px) {
-    .grid {
-        justify-content: center;
-    }
-    }
-
-    /* Footer width */
-    @media (max-width: 800px) {
+/* Control footer width properly based on screensize*/
+@media (max-width: 600px) {
     .footer-inner {
-        width: 95vw;
+        width: 80vw;
     }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .wrapper {
+        width: 95vw; /* Had to add this separately; prevents grid overflow on 820px tablets */
     }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .tab-content {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .modal-content {
+        height: 90vh;
+        max-height: 95vh;
+    }
+}
+
+@media (max-width: 600px) {
+    .modal-content {
+        height: 90vh;
+    }
+}
+
+/* TABLET (601px–900px) - had to do this separately*/
+@media (min-width: 601px) and (max-width: 900px) {
+
+    .wrapper {
+        width: 90vw;
+    }
+
+    .tab-buttons {
+        width: 140px;
+        flex-direction: column;
+    }
+
+    .grid {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        justify-items: center;
+        gap: 20px;
+    }
+
+    .card {                          
+        width: 100%;
+        height: auto;
+    }
+
+    .card-image-wrapper {   
+        height: auto;
+        aspect-ratio: 4 / 3; /* Keeps it squareish */
+    }
+
+    .modal-content {
+        position: relative;
+        width: 85vw;
+        height: 80vh;
+        max-height: 85vh;
+    }
+
+    .modal-description {
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    .tab-content {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+
+/* DUNGEON MODE */
+body.dungeon-mode .parallax-header {
+    height: 100vh;
+    min-height: 100vh;
+    background-image: url('./images/header-bg-dnd.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 48px;
+    font-weight: 600;
+    transition: background-image 0.4s ease, opacity 0.4s ease;
+}
+
+#dungeon-btn:hover {
+    background: #8b0000;
+    color: #ffe9d6;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+#dungeon-btn.active {
+    background: #5a0000;
+    color: #ffb48a;
+    border: 2px solid #ffcc66;
+    font-family: "Cinzel", serif;
+}
+
+body.dungeon-mode {
+    background: linear-gradient(#1a0000, #5c0000);
+    color: #f8e7d0;
+    font-family: "Cinzel", serif;
+    font-display: swap;
+}
+
+body.dungeon-mode .header-title a {
+    color: #ffffff;
+}
+
+body.dungeon-mode .header-title a:hover {
+    color: #ffcc66;
+}
+
+body.dungeon-mode a {
+    color: #3c3c3c;
+    text-shadow: 0 0 6px #ffcc66;
+}
+
+body.dungeon-mode .card-title {
+    color: #3c3c3c;
+    font-family: "Cinzel", serif;
+    text-shadow: 0 0 6px #ffcc66;
+    letter-spacing: 0.5px;
+}
+
+body.dungeon-mode .card-text {
+    color: #f8e7d0;
+    font-family: Georgia, "Times New Roman";
+    line-height: 1.45;
+    text-shadow: 0 0 4px rgba(0,0,0,0.4);
+}
+
+body.dungeon-mode .card-image-wrapper img {
+    will-change: transform;
+    filter: grayscale(0);
+}
+
+body.dungeon-mode .tabs {
+    background: rgba(0, 0, 0, 0.45);
+    border: 1px solid rgba(212, 160, 71, 0.4);
+    backdrop-filter: blur(2px);
+}
+
+body.dungeon-mode .modal-description {
+    color: #3c3c3c;
+    font-family: Georgia, "Times New Roman"; 
+    line-height: 1.45;
+    text-shadow: 0 0 4px rgba(0,0,0,0.4);
+}
+
+body.dungeon-mode .grid > * {
+    background: 2a0f00;
+    border: 1px solid rgba(212, 160, 71);
+}
+
+
+/* FORCE dungeon mode to override tablet rules */
+body.dungeon-mode .parallax-header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url('./images/header-bg-dnd.jpg');
+}
+
+body.dungeon-mode .tabs { 
+    background: rgba(0, 0, 0, 0.45);
+}
+
+body.dungeon-mode .grid > * { 
+    background: rgba(255, 120, 0.15);
+}
+
+/* iOS Safari fix */
+@supports (-webkit-touch-callout: none) {
+    body.dungeon-mode .parallax-header {
+        background-attachment: scroll;
+    }
+}
+
 
 /* SCROLL DOWN MOUSE */
 /* MOUSE SCROLL ANIMATION: https://codepen.io/josedavidfumo/pen/KVGejW*/
@@ -621,117 +769,3 @@
         opacity: 1;
     }
     }
-
-/* Dungeon Master Mode */
-
-/* Parralax Header (full) */
-body.dungeon-mode .parallax-header {
-    height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url('./images/header-bg-dnd.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 48px;
-    font-weight: 600;
-    transition: background-image 0.4s ease, opacity 0.4s ease;
-}
-
-/* Tab class becomes dungeon-btn coz of ID */
-#dungeon-btn:hover {
-    background: #8b0000;
-    color: #ffe9d6;
-    transition: background 0.3s ease, color 0.3s ease;
-}
-
-/* Tab class becomes dungeon-btn coz of ID */
-#dungeon-btn.active {
-    background: #5a0000;
-    color: #ffb48a;
-    border: 2px solid #ffcc66;
-    border-color: #ffcc66;
-    font-family: "Cinzel", serif;
-}
-
-body.dungeon-mode {
-background: linear-gradient(
-        180deg,
-        #1a0000 0%,
-        #3b0000 25%,
-        #5c0000 50%,
-        #8b1a00 75%,
-        #ff3c00 100%
-    );
-    color: #f8e7d0;
-    font-family: "Cinzel", serif;
-}
-
-body.dungeon-mode .header-title a {
-	text-decoration: none;
-	color: #ffffff;
-}
-
-body.dungeon-mode .header-title a:hover {
-	text-decoration: none;
-	color: #ffcc66;
-}
-
-/* Make links glow */
-body.dungeon-mode a {
-    color: #3c3c3c;
-    text-shadow: 0 0 6px #ffcc66;
-}
-
-/* Change tab area */
-
-body.dungeon-mode .card-title {
-    color: #3c3c3c;
-    font-family: "Cinzel", serif;
-    text-shadow: 0 0 6px #ffcc66;
-    letter-spacing: 0.5px;
-}
-
-body.dungeon-mode .card-text {
-    color: #f8e7d0;
-    font-family: Georgia, "Times New Roman"; 
-    line-height: 1.45;
-    text-shadow: 0 0 4px rgba(0,0,0,0.4);
-}
-
-body.dungeon-mode .tabs {
-    background: rgba(0, 0, 0, 0.45);
-    border: 1px solid rgba(212, 160, 71, 0.4);
-    backdrop-filter: blur(6px);
-}
-
-body.dungeon-mode .modal-description {
-    color: #3c3c3c;
-    font-family: Georgia, "Times New Roman"; 
-    line-height: 1.45;
-    text-shadow: 0 0 4px rgba(0,0,0,0.4);
-}
-
-/* Change grid area */
-body.dungeon-mode .grid > * {
-    background: rgba(255, 120, 0, 0.08);
-    border: 1px solid rgba(212, 160, 71, 0.25);
-    color: #f8e7d0;
-    box-shadow: 0 0 12px rgba(255, 80, 0, 0.2);
-}
-
-/* Special horizontal divider */
-body.dungeon-mode hr {
-    border: none;
-    margin: 2rem 2rem;
-    height: 3px;
-    background: linear-gradient(
-        90deg,
-        rgba(255, 204, 102, 0) 0%,
-        #ffcc66 20%,
-        #ffcc66 80%,
-        rgba(255, 204, 102, 0) 100%
-    );
-}

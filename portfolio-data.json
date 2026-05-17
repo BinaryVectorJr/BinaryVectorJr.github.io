@@ -245,8 +245,8 @@
         "id": "modalt5-1",
         "title": "Characters",
         "desc": "Original characters created for various homebrew campaigns.",
-        "image": "./images/portfolio/dungeon/3art.png",
-        "full": "./images/portfolio/dungeon/3art.png",
+        "image": "./images/portfolio/dungeon/3art-500.png",
+        "full": "./images/portfolio/dungeon/3art-500.png",
         "thumbnails": [
             { "thumb": "./images/portfolio/dungeon/3art.png", "full": "./images/portfolio/dungeon/3art.png", "desc": "PATAAL DAITYA | Earth Elemental Lord (Beast) | AC: 17\n\nSTR: 20 (+5) | DEX: 9 (-1) | CON: 16 (+3) | INT: 8 (-1) | WIS: 8 (-1) | CHA: 12 (+1)"},
             { "thumb": "./images/portfolio/dungeon/1art.png", "full": "./images/portfolio/dungeon/1art.png", "desc": "LIA VANDERLAY | Fighter (Human) | AC: 14\n\nSTR: 12 (+1) | DEX: 18 (+4) | CON: 15 (+2) | INT: 11 (+0) | WIS: 9 (-1) | CHA: 9 (-1)"},
@@ -264,8 +264,8 @@
         "id": "modalt5-2",
         "title": "Dungeon Maps",
         "desc": "Custom One-Shot maps made for adventuring with friends.",
-        "image": "./images/portfolio/dungeon/1map.png",
-        "full": "./images/portfolio/dungeon/1map.png",
+        "image": "./images/portfolio/dungeon/1map-500.png",
+        "full": "./images/portfolio/dungeon/1map-500.png",
         "thumbnails": [
             { "thumb": "./images/portfolio/dungeon/1map.png", "full": "./images/portfolio/dungeon/1map.png", "desc": "MATKA KING GALLERY\n\nA large open space map for a gallery filled with historical artifacts. From Knights of Armor to wonders of marble, this gallery displays one of the most impressive collections in South East Asia. There are whispers of an armory holding even more valuable artifacts only displayed on certain occassions. An interesting thing to note - the owner apparently lives on site. Quite...intriguing."},
             { "thumb": "./images/portfolio/dungeon/2map.png", "full": "./images/portfolio/dungeon/2map.png", "desc":"THANDA FOREST CLEARING\n\nA mysterious clearing in the middle of a large, luscious forest. There are signs of life, however special stones lay on the ground. These stones vibrate with some magical energy. What could this be?" }

@@ -6,17 +6,18 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style_new.css">
-  
+
   <!-- Preload Header Image -->
   <link rel="preload" as="image" href="./images/header-bg.jpg">
   <link rel="preload" as="image" href="./images/header-bg-dnd.jpg">
-  
+
   <!-- Extra font for Header Text (every other font is system font based on OS) -->
+   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&display=swap" as="style">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel&display=swap">
-  
+
   <!-- FONT AWESOME -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  
+
   <title>Angshuman's Portfolio</title>
   <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
 
@@ -147,7 +148,7 @@
 
       <div class="tab-content" id="tab4">
         <div class="grid" id="cardGrid4"></div>
-        
+
         <!-- <h2>Recommended Reading</h2>
         <ul>
           <li>Agent Based Modelling Simulation</li>
@@ -158,7 +159,7 @@
 
       <div class="tab-content" id="tab5">
         <div class="grid" id="cardGrid5"></div>
-        
+
         <hr>
         <h2>Resources For DMs</h2>
         <ul>
@@ -225,7 +226,7 @@ function buildCards(cards, targetTabID) {
 
     el.innerHTML = `
       <div class="card-image-wrapper">
-        <img 
+        <img
           src="${card.image}"
           loading="lazy"
           decoding="async"
@@ -263,7 +264,7 @@ function buildModals(cards) {
 
     modal.innerHTML = `
       <div class="modal-content">
-        <span class="close-btn" data-close="${card.id}">X</span>
+        <span class="close-btn" data-close="${card.id}">&#x2715;</span>
 
         <img class="modal-main-img" src="" alt="">
 
@@ -323,7 +324,7 @@ function activateModals() {
       const modalID = card.dataset.modal;
       const modal = document.getElementById(modalID);
       modal.style.display = "flex";
-      
+
       const isFirst = modal.querySelector(".thumb-row img");
       const mainImg = modal.querySelector(".modal-main-img");
       const descBox = modal.querySelector(".modal-description");
@@ -333,7 +334,7 @@ function activateModals() {
         mainImg.src = isFirst.dataset.full; // load only when opened
         descBox.textContent = isFirst.dataset.desc;
       }
-      
+
       document.body.classList.add("body-no-scroll"); // disable background scroll
     });
   });
