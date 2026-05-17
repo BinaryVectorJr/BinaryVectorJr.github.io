@@ -637,11 +637,11 @@ body.dungeon-mode .parallax-header {
 }
 
 body.dungeon-mode .tabs { 
-    background: rgba(0, 0, 0, 0.45);
+    background: rgb(14, 14, 14);
 }
 
 body.dungeon-mode .grid > * { 
-    background: rgba(255, 120, 0.15);
+    background: rgb(66, 51, 37);
 }
 
 /* iOS Safari fix */
@@ -650,7 +650,6 @@ body.dungeon-mode .grid > * {
         background-attachment: scroll;
     }
 }
-
 
 /* SCROLL DOWN MOUSE */
 /* MOUSE SCROLL ANIMATION: https://codepen.io/josedavidfumo/pen/KVGejW*/
@@ -701,7 +700,7 @@ body.dungeon-mode .grid > * {
         -moz-animation: mouse-scroll 1s infinite;
     }
 
-    #mouse-croll .down-arrow-1 {
+    #mouse-scroll .down-arrow-1 {
         -webkit-animation-delay: .1s; 
         -moz-animation-delay: .1s;
         -webkit-animation-direction: alternate;
