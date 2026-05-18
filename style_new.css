@@ -33,6 +33,7 @@ body {
 /* Parallax Header */
 .parallax-header {
     height: 100vh;
+    min-height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('./images/header-bg.jpg');
     background-size: cover;
     background-position: center;
@@ -57,7 +58,7 @@ body {
 .header-title {
     font-family: 'Cinzel', serif;
     font-size: 96px;
-    font-weight: 0;
+    font-weight: 400; /* Default */
     margin: 0;
     letter-spacing: 2px;
     color: white;
@@ -98,60 +99,40 @@ body {
 .header-btn i {
     font-size: 32px;
     color: white;
-    text-shadow: 0 2px 6px rgba(0,0,0,0.4);
 }
 
 .header-btn:hover {
-    transform: translateY(-6px) scale(1.1);
+    transform: translateY(-3px) scale(1.1);
+    filter: drop-shadow(0 2px 3px rgba(255,204,102));
 }
 
 .header-btn:hover i {
-    color: #ffcc66;
+    transform: translateY(-3px) scale(1.1);
+    filter: drop-shadow(0 2px 3px rgba(255,204,102));
 }
 
 .header-btn span {
     font-size: 20px;
-    font-weight: 0;
+    font-weight: 400;
     color: white;
-    text-shadow: 0 2px 6px rgba(0,0,0,0.4);
     letter-spacing: 1px;
 }
 
 .header-btn:hover span {
-    color: #ffcc66;
+    transform: translateY(-3px) scale(1.1);
+    filter: drop-shadow(0 2px 3px rgba(255,204,102));
 }
 
 .header-btn img {
     width: 32px;
     height: 32px;
     object-fit: contain;
-    filter: drop-shadow(0 2px 6px rgba(0,0,0,0.4));
-    transition: filter 0.25s ease, transform 0.25s ease;
+    transition: transform 0.25s ease;
 }
 
 .header-btn:hover img {
-    transform: translateY(-6px) scale(1.1);
-    filter: drop-shadow(0 2px 6px rgba(255,204,102,0.8));
-}
-
-/* Mobile header adjustments */
-@media (max-width: 600px) {
-    .header-title {
-        font-size: 32px;
-    }
-
-    .header-buttons {
-        gap: 30px;
-    }
-
-    .header-btn {
-        width: 30px;
-        height: 30px;
-    }
-
-    .header-btn i {
-        font-size: 30px;
-    }
+    transform: translateY(-3px) scale(1.1);
+    filter: drop-shadow(0 2px 3px rgba(255,204,102));
 }
 
 /* MAIN Content */
@@ -210,7 +191,6 @@ body {
 
 .tab-content {
     display: none;
-    padding-left: 3rem; /* Cause of grid shift - remove later */
 }
 
 .tab-content.active {
@@ -219,8 +199,7 @@ body {
 
 /* GRID */
 .grid {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
     gap: 20px;
     justify-content: center;
 }
@@ -246,7 +225,6 @@ body {
 }
 
 .card-image-wrapper img {
-    will-change: transform;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -256,6 +234,7 @@ body {
 }
 
 .card:hover .card-image-wrapper img {
+    will-change: transform;
     filter: grayscale(0%);
     transform: scale(1.03);
 }
@@ -295,6 +274,7 @@ body {
     align-items: center;
     padding: 20px;
     z-index: 999;
+    touch-action: none;
 }
 
 .modal-content {
@@ -304,17 +284,16 @@ body {
     overflow-y: auto;
     background: white;
     padding: 20px;
-    width: 960px;
-    height: 80vh;
-    max-width: 95vw;
-    max-height: 95vh;
+    width: 960px; /* should use clamp */ 
+    max-width: 90vw;
+    max-height: 90vh;
     border-radius: 6px;
     box-sizing: border-box;
 }
 
 .modal-main-img {
     width: 100%;
-    height: 500px;
+    aspect-ratio: 4 / 3;
     max-height: 50vh;
     object-fit: contain;
     border-radius: 6px;
@@ -342,7 +321,6 @@ body {
 }
 
 .modal-description {
-    white-space: pre-line;
     margin-top: 20px;
     margin-bottom: 20px;
     width: 90%;
@@ -379,35 +357,6 @@ body {
     color: #444
 }
 
-/* MOBILE */
-@media (max-width: 600px) {
-    .grid {
-        display: grid;
-        width: 100%;
-        grid-template-columns: 1fr;
-        justify-items: center;
-    }
-
-    /* Remove left padding that caused grid shift */
-    .tab-content {
-        padding-left: 0;
-    }
-
-    .modal-description {
-        height: auto;
-        width: 90%;
-        margin-top: 20px;
-    }
-
-    .modal-links {
-        flex-direction: column;
-        margin-bottom: 20px;
-        gap: 12px;
-        align-items: center;
-        width: 100%;
-    }
-}
-
 /* FOOTER */
 .page-footer {
     min-height: 80px;
@@ -421,22 +370,41 @@ body {
 }
 
 .footer-inner {
-    width: min(80vw, 1200 px);
+    width: min(80vw, 1200px);
     text-align: center;
     color: white;
     font-size: 14px;
 }
 
-/* Verticalize the tabs wrapper*/
+/* MOBILE — max-width: 600px */
+
 @media (max-width: 600px) {
+
+    /* HEADER */
+    .header-title {
+        font-size: 32px;
+    }
+
+    .header-buttons {
+        gap: 30px;
+    }
+
+    .header-btn {
+        width: 30px;
+        height: 30px;
+    }
+
+    .header-btn i {
+        font-size: 30px;
+    }
+
+    /* LAYOUT */
     .wrapper {
         width: 95vw;
         flex-direction: column;
     }
-}
 
-/* Horizontal the tab buttons on left */
-@media (max-width: 600px) {
+    /* TABS */
     .tab-buttons {
         flex-direction: row;
         width: 100%;
@@ -452,60 +420,73 @@ body {
         white-space: nowrap;
         text-align: center;
     }
-}
 
-/* Scale down card to match screen shize*/
-@media (max-width: 600px) {
+    /* TABS CONTENT */
+    .tab-content {
+        padding-left: 0; /* Fixes grid shift */
+    }
+
+    /* GRID */
+    .grid {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    /* CARDS */
     :root {
         --card-size: 80vw;
     }
-}
 
-/* Control footer width properly based on screensize*/
-@media (max-width: 600px) {
+    /* MODAL */
+    .modal-content {
+        height: 90vh;
+    }
+
+    .modal-description {
+        height: auto;
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    .modal-links {
+        flex-direction: column;
+        margin-bottom: 20px;
+        gap: 12px;
+        align-items: center;
+        width: 100%;
+    }
+
+    /* FOOTER */
     .footer-inner {
         width: 80vw;
     }
 }
 
+
+
+/* TABLET — 601px to 900px */
+
 @media (min-width: 601px) and (max-width: 900px) {
+
+    /* WRAPPER */
     .wrapper {
-        width: 95vw; /* Had to add this separately; prevents grid overflow on 820px tablets */
-    }
-}
-
-@media (min-width: 601px) and (max-width: 900px) {
-    .tab-content {
-        padding-left: 0;
-        padding-right: 0;
-    }
-}
-
-@media (min-width: 601px) and (max-width: 900px) {
-    .modal-content {
-        height: 90vh;
-        max-height: 95vh;
-    }
-}
-
-@media (max-width: 600px) {
-    .modal-content {
-        height: 90vh;
-    }
-}
-
-/* TABLET (601px–900px) - had to do this separately*/
-@media (min-width: 601px) and (max-width: 900px) {
-
-    .wrapper {
-        width: 90vw;
+        width: 90vw; /* Final intended width */
     }
 
+    /* TABS */
     .tab-buttons {
         width: 140px;
         flex-direction: column;
     }
 
+    .tab-content {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /* GRID */
     .grid {
         display: grid;
         width: 100%;
@@ -514,16 +495,18 @@ body {
         gap: 20px;
     }
 
-    .card {                          
+    /* CARDS */
+    .card {
         width: 100%;
         height: auto;
     }
 
-    .card-image-wrapper {   
+    .card-image-wrapper {
         height: auto;
-        aspect-ratio: 4 / 3; /* Keeps it squareish */
+        aspect-ratio: 4 / 3;
     }
 
+    /* MODAL */
     .modal-content {
         position: relative;
         width: 85vw;
@@ -535,29 +518,25 @@ body {
         width: 90%;
         margin-top: 20px;
     }
+}
 
-    .tab-content {
-        padding-left: 0;
-        padding-right: 0;
+
+
+/* PARALLAX FIX — Mobile & Tablet */
+
+@media (max-width: 900px) {
+    .parallax-header {
+        background-attachment: scroll;
     }
 }
 
 
 /* DUNGEON MODE */
 body.dungeon-mode .parallax-header {
-    height: 100vh;
-    min-height: 100vh;
     background-image: url('./images/header-bg-dnd.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: scroll;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: white;
     font-size: 48px;
-    font-weight: 600;
-    transition: background-image 0.4s ease, opacity 0.4s ease;
+    font-weight: 400;
 }
 
 #dungeon-btn:hover {
@@ -582,21 +561,42 @@ body.dungeon-mode {
 
 body.dungeon-mode .header-title a {
     color: #ffffff;
+    text-shadow: 0 0 6px #ffcc66;
 }
 
 body.dungeon-mode .header-title a:hover {
     color: #ffcc66;
 }
 
-body.dungeon-mode a {
+body.dungeon-mode i {
     color: #3c3c3c;
     text-shadow: 0 0 6px #ffcc66;
+}
+
+body.dungeon-mode .header-btn #cv{
+    content: url(./images/cv-dun.png);
+}
+
+body.dungeon-mode .header-btn #res{
+    content: url(./images/resume-dun.png);
+}
+
+body.dungeon-mode .header-btn img{
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    filter: drop-shadow(0 2px 3px #ffcc66);
+    transition: transform 0.25s ease;
+}
+
+body.dungeon-mode .header-btn:hover img {
+    transform: translateY(-3px) scale(1.1);
+    filter: drop-shadow(0 2px 3px rgba(255,204,102));
 }
 
 body.dungeon-mode .card-title {
     color: #3c3c3c;
     font-family: "Cinzel", serif;
-    text-shadow: 0 0 6px #ffcc66;
     letter-spacing: 0.5px;
 }
 
@@ -604,7 +604,6 @@ body.dungeon-mode .card-text {
     color: #f8e7d0;
     font-family: Georgia, "Times New Roman";
     line-height: 1.45;
-    text-shadow: 0 0 4px rgba(0,0,0,0.4);
 }
 
 body.dungeon-mode .card-image-wrapper img {
@@ -622,14 +621,12 @@ body.dungeon-mode .modal-description {
     color: #3c3c3c;
     font-family: Georgia, "Times New Roman"; 
     line-height: 1.45;
-    text-shadow: 0 0 4px rgba(0,0,0,0.4);
 }
 
 body.dungeon-mode .grid > * {
     background: 2a0f00;
     border: 1px solid rgba(212, 160, 71);
 }
-
 
 /* FORCE dungeon mode to override tablet rules */
 body.dungeon-mode .parallax-header {
