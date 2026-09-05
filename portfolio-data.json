@@ -14,13 +14,132 @@
             { "thumb": "./images/portfolio/major-projects/thesis/5thesis-thumb.png", "full": "./images/portfolio/major-projects/thesis/5thesis.png", "desc":"Flowchart of the overall experiement." }
         ],
         "links": [
-        { "label": "Full Thesis", "url": "https://doi.org/10.25394/PGS.14489202.v1" },
-        { "label": "Published Article", "url": "https://doi.org/10.1002/cav.2004" }
+            { "label": "Publication", "url": "https://doi.org/10.1002/cav.2004" },
+            { "label": "Full Thesis", "url": "https://doi.org/10.25394/PGS.14489202.v1" }
         ]
     },
 
     {
         "id": "modalt1-2",
+        "title": "Blockrun (Unreal Engine)",
+        "desc": "Singleplayer & Multiplayer Adventure and Puzzle Solving",
+        "image": "./images/portfolio/major-projects/blockrun/4blockrun.png",
+        "full": "./images/portfolio/major-projects/blockrun/4blockrun.png",
+        "thumbnails": [
+            { "thumb": "./images/portfolio/major-projects/blockrun/0blockrun.png", "full": "./images/portfolio/major-projects/blockrun/0blockrun.png", "desc": "Singleplayer - Adventure game where the point is to collect coins and keys to open a map area to start a minigame where you have to play tetris in a smart way to form a bridge, so that you can help the penguins cross the lave lake its over."},
+            { "thumb": "./images/portfolio/major-projects/blockrun/1blockrun.png", "full": "./images/portfolio/major-projects/blockrun/1blockrun.png", "desc":"The Tetromino Creation Lab. Here the player (Adventurer role) will be able to create their own tetromino shapes dynamically and use those during the tetris minigame to be used to complete it. In the multiplayer setup, the adventurer will create the shapes and if the Puzzle Solver is also in the same minigame room, the created tetromino can be sent to the puzzle solver in-real time. So, in case a non-traditional tetromino shape is needed, the players can communicate and get the correct shape. This is done to promote collaborative puzzle solving." },
+            { "thumb": "./images/portfolio/major-projects/blockrun/2blockrun.png", "full": "./images/portfolio/major-projects/blockrun/2blockrun.png", "desc":"A completed tetris minigame, where a 'bridge' has been made for the penguins to cross. There are a certain number of penguins that need to be saved and if they don't see a path in front of them, they are killed off and the player loses points. The red surface is supposed to be lava. The green objects are the penguins." },
+            { "thumb": "./images/portfolio/major-projects/blockrun/3blockrun.png", "full": "./images/portfolio/major-projects/blockrun/3blockrun.png", "desc":"Multiplayer - on the left the host (Puzzle Solver role) starts the server. On the right the client can join in a lobby supporting 5 players max. The multiplayer lobby settings are configurable and so are the character colors. The code automatically assigns the other player as the Adventurer." },
+            { "thumb": "./images/portfolio/major-projects/blockrun/4blockrun.png", "full": "./images/portfolio/major-projects/blockrun/4blockrun.png", "desc":"Two player session with Puzzle Solver and Adventurer." },
+            { "thumb": "./images/portfolio/major-projects/blockrun/5blockrun.png", "full": "./images/portfolio/major-projects/blockrun/5blockrun.png", "desc":"Another feature is only the player (usually the Adventurer role) that holds the key can open the door (other players can see the door but it will appear 'Locked' to them). " },
+            { "thumb": "./images/portfolio/major-projects/blockrun/6blockrun.png", "full": "./images/portfolio/major-projects/blockrun/6blockrun.png", "desc":"Animations and actor objects are synced across the network. Here the Adventurer sees the Puzzle solver go in and start the tetris minigame with the default tetrominos. At this point the Adventurer can go to the Tetromino Creation Room and create shapes to send to the Puzzle Solver." },
+            { "thumb": "./images/portfolio/major-projects/blockrun/7blockrun.png", "full": "./images/portfolio/major-projects/blockrun/7blockrun.png", "desc":"Flowchart of the entire game logic." },
+            { "thumb": "./images/portfolio/major-projects/blockrun/8blockrun.png", "full": "./images/portfolio/major-projects/blockrun/8blockrun.png", "desc":"Flowcharts depicting the logic for each of the minigame subsystems (Puzzle Solving Tetris miniagem and Tetromino Creation Lab subsystem)" },
+            { "thumb": "./images/portfolio/major-projects/blockrun/9blockrun.png", "full": "./images/portfolio/major-projects/blockrun/9blockrun.png", "desc":"As a research component, a diegetic feedback screen was added after the completion of the Puzzle Solver's Tetris minigame to collect feedback." }
+        ],
+        "links": [
+        { "label": "Preprint", "url": "./images/portfolio/major-projects/blockrun/EDCI 556-Blockrun-FinalDesignDocument.pdf"},
+        { "label": "Demo Video (To Be Uploaded Soon)", "url": "#"}
+        ]
+    },
+
+    {
+        "id": "modalt1-3",
+        "title": "Traits Extension to Schelling's Segregation Model",
+        "desc": "Extending Schelling's Segregation model by comparing similarity of trait vectors",
+        "image": "./images/portfolio/major-projects/schelling/1schelling.png",
+        "full": "./images/portfolio/major-projects/schelling/1schelling.png",
+        "thumbnails": [
+            { "thumb": "./images/portfolio/major-projects/schelling/1schelling.png", "full": "./images/portfolio/major-projects/schelling/1schelling.png", "desc": "This research presented a preliminary exploration into traits-based extension of Schelling's Model of Segregation. Two simulations were developed and compared for agent behavior and dynamics- the Multi-Agent Schelling Model (MASM) and the High-Dimensional Personality Schelling Model (HDPSM). Better images will be available soon."},
+            { "thumb": "./images/portfolio/major-projects/schelling/2schelling.png", "full": "./images/portfolio/major-projects/schelling/2schelling.png", "desc":"Interface for setting parameters for HDPSM. This enabled five different types of population, each with their own unique dominant trait based personality vector. Even within a population, each individual agent had slight variation in their personality as well." },
+            { "thumb": "./images/portfolio/major-projects/schelling/3schelling.png", "full": "./images/portfolio/major-projects/schelling/3schelling.png", "desc":"The HDPSM running in two agent types mode, which effectively turns it into the Classical Schelling's Model (CSM). The method was able to preserve the expected behavior of the CSM, thus providing significant evidence towards the success of this approach." },
+            { "thumb": "./images/portfolio/major-projects/schelling/4schelling.png", "full": "./images/portfolio/major-projects/schelling/4schelling.png", "desc":"Display's the Morans I Spatial Distribution map of Agent A, after testing for significance. Clustered behavior is also as expected of the CSM, thus ensuring that the arrangement patterns were not just by random chance. (Red = HH, Light Red = HL, Light Blue = LH, Blue = LL)" },
+            { "thumb": "./images/portfolio/major-projects/schelling/5schelling.png", "full": "./images/portfolio/major-projects/schelling/5schelling.png", "desc":"Display's the Morans I Spatial Distribution map of Agent B. Notice that it is an 'inverted' map of the Moran's I map of Agent A (since this is a two agent system). (Red = HH, Light Red = HL, Light Blue = LH, Blue = LL)" }
+        ],
+        "links": [
+        { "label": "Publication (In Press)", "url": "#" }
+        ]
+    },
+
+    {
+        "id": "modalt1-4",
+        "title": "Multi-Agent Run-Hide-Fight Simulation (Unity)",
+        "desc": "Dynamic Threat-Response agent simulation",
+        "image": "./images/portfolio/major-projects/rhf/0rhf.png",
+        "full": "./images/portfolio/major-projects/rhf/0rhf.png",
+        "thumbnails": [
+            { "thumb": "./images/portfolio/major-projects/rhf/0rhf.png", "full": "./images/portfolio/major-projects/rhf/0rhf.png", "desc": "Multi agent simualtion where each agent displays a run-hide-fight decision-making mechanic. The idea is that when a threat comes into a safezone, based on the characteristics of the blue colored agent, they can either choose to stay and hide, run away, or run towards threat and fight. The color of the agent denotes their state."},
+            { "thumb": "./images/portfolio/major-projects/rhf/1rhf.png", "full": "./images/portfolio/major-projects/rhf/1rhf.png", "desc": "The user's mouse controls a 'threat', the green circles are safezones - each with its own max capacity, and the blue squares are agents that each have their own preference towards addressing a threat and have their own comfort level with how many people are around them. "},
+            { "thumb": "./images/portfolio/major-projects/rhf/2rhf.png", "full": "./images/portfolio/major-projects/rhf/2rhf.png", "desc":"An example simulation where a red-colored fight agent is seeking out the threat to actively take it down." },
+            { "thumb": "./images/portfolio/major-projects/rhf/3rhf.png", "full": "./images/portfolio/major-projects/rhf/3rhf.png", "desc":"Safe spots can detect all non-threat agents in range. The red lines (yellow lines seen previously) are just debug lines to calculate distance of the threat from that safezone." },
+            { "thumb": "./images/portfolio/major-projects/rhf/4rhf.png", "full": "./images/portfolio/major-projects/rhf/4rhf.png", "desc":"The non-threat agent's decision making logic. At the end, they either choose and commit to running away to a new safezone, staying and hiding in the current safezone, or running towards the threat to take it down." },
+            { "thumb": "./images/portfolio/major-projects/rhf/5rhf.png", "full": "./images/portfolio/major-projects/rhf/5rhf.png", "desc":"The underlying Neuroticism (from Five Factor Model) equation that dictates the agent's neuroticism level that determines how they perceive the threat and how they respond to it." },
+            { "thumb": "./images/portfolio/major-projects/rhf/6rhf.png", "full": "./images/portfolio/major-projects/rhf/6rhf.png", "desc":"The agent's script that contains all logic of neuroticism. The boolean flags array works as a state machine. " },
+            { "thumb": "./images/portfolio/major-projects/rhf/7rhf.png", "full": "./images/portfolio/major-projects/rhf/7rhf.png", "desc":"This is a conceptual behavioral diagram I created based on how the societal balance is being upheld by its constituent's needs being satisfied, which in turn upholds the three pillars of societal sustenance. If there is an imbalance in needs, then the balance is off, which means that society will focus unequally on one of the three pillars of sustenance (in this case the social pillar since the divide among the constituents contributes to major societal problems). As a result, progress will be skewed towards that component while the other pillars might be addressed with a regressive mindset." }
+        ],
+        "links": [
+        { "label": "Preprint", "url": "./images/portfolio/major-projects/rhf/CNIT581JD-ABM-HighStress.pdf" },
+        { "label": "Demo Video (To Be Uploaded Soon)", "url": "#"}
+        ]
+    },
+
+    {
+        "id": "modalt1-5",
+        "title": "Agent Based Modelling (Unity) - Work In Progress",
+        "desc": "Cellular Automata & MANTIS based projects for Ph.D. Dissertation",
+        "image": "./images/portfolio/major-projects/abm/5abm.png",
+        "full": "./images/portfolio/major-projects/abm/5abm.png",
+        "thumbnails": [
+            { "thumb": "./images/portfolio/major-projects/abm/4abm.png", "full": "./images/portfolio/major-projects/abm/4abm.png", "desc":"Modular Conway's Game of Life experiment, where rule values can be changed real time to study cellular automata behavior. Here is an example configuration where the shape was very square-based and only expanded from the corners. Conditions were: Underpopulation = 1, Survival = [3,4], Overpopulation = 4, Reproduction = 1" },
+            { "thumb": "./images/portfolio/major-projects/abm/5abm.png", "full": "./images/portfolio/major-projects/abm/5abm.png", "desc":"This was one of the setups that produced an ever expanding organic 'brain-like' shape. Conditions were: Underpopulation = 2, Survival = [2,3], Overpopulation = 4, Reproduction = 3" },
+            { "thumb": "./images/portfolio/major-projects/abm/tbu.png", "full": "./images/portfolio/major-projects/abm/tbu.png", "desc":"More images will be available after publication is printed." }
+        ],
+        "links": [
+        { "label": "Publication", "url": "https://doi.org/10.21125/edulearn.2026.1293" }
+        ]
+    },
+
+    {
+        "id": "modalt1-6",
+        "title": "Virtual Sports Experience (Unity | Vasoo)",
+        "desc": "Community VR sports watching experience",
+        "image": "./images/portfolio/major-projects/vasoo/2vasoo.jpg",
+        "full": "./images/portfolio/major-projects/vasoo/2vasoo.jpg",
+        "thumbnails": [
+            { "thumb": "./images/portfolio/major-projects/vasoo/2vasoo.jpg", "full": "./images/portfolio/major-projects/vasoo/2vasoo.jpg", "desc": "Worked with Iconic Engine's in-house SDK (Vasoo Engine) to develop a metaverse sports experience for the Oculus Quest. I was a Project Manager and Lead Mechanics Developer for the Interior Experience team, whose goal was to create a skybox area for multiple avatars to hang out, watch the actual match, and have social interactions with other users."},
+            { "thumb": "./images/portfolio/major-projects/vasoo/1vasoo.jpg", "full": "./images/portfolio/major-projects/vasoo/1vasoo.jpg", "desc":"The outdoor stadium developed by the Outdoor Experience team. I assisted with level design for both teams as well as code integration, and documentation." },
+            { "thumb": "./images/portfolio/major-projects/vasoo/3vasoo.jpg", "full": "./images/portfolio/major-projects/vasoo/3vasoo.jpg", "desc":"An aerial view of the final experience with the outdoor stadium and the indoor 'lounge' area." }
+        ],
+        "links": [
+        { "label": "Featured News Article", "url": "https://web.archive.org/web/20250718101827/https:/polytechnic.purdue.edu/newsroom/polytechnic-grad-students-design-future-of-purdue-sports-metaverse" }
+        ]
+    },
+
+    {
+        "id": "modalt1-7",
+        "title": "Diegetic vs. Minimap VR Navigation (Unity)",
+        "desc": "Diegetic navigation aid against traditional 2D (in-world) minimap for VR navigation",
+        "image": "./images/portfolio/major-projects/diegetic/1diegetic.png",
+        "full": "./images/portfolio/major-projects/diegetic/1diegetic.png",
+        "thumbnails": [
+            { "thumb": "./images/portfolio/major-projects/diegetic/1diegetic.png", "full": "./images/portfolio/major-projects/diegetic/1diegetic.png", "desc": "Developed a virtual reality simulation that focused on comparing the enjoyment levels, ease of use, and usability of diegetic (in-world user-interfaces) navigational aids compared to traditional minimaps. In this image, the player can only open the gate if their “card” credentials match that gate's lock combination."},
+            { "thumb": "./images/portfolio/major-projects/diegetic/2diegetic.png", "full": "./images/portfolio/major-projects/diegetic/2diegetic.png", "desc":"The minimap provides a top-down view of the entire map (player in pink and destination in yellow). The map is a simple texture on a plane object and has no signs of being an in-world object (non-diegetic)." },
+            { "thumb": "./images/portfolio/major-projects/diegetic/3diegetic.png", "full": "./images/portfolio/major-projects/diegetic/3diegetic.png", "desc":"Game view that shows the eye-level POV of the player. This environment is meant to evoke the feeling of being in the streets of a crowded city with many alleys and cul-de-sacs." },
+            { "thumb": "./images/portfolio/major-projects/diegetic/4diegetic.png", "full": "./images/portfolio/major-projects/diegetic/4diegetic.png","desc":"Diegetic mode shows if correct key is inserted." },
+            { "thumb": "./images/portfolio/major-projects/diegetic/5diegetic.png", "full": "./images/portfolio/major-projects/diegetic/5diegetic.png", "desc":"Diegetic mode shows if incorrect key is inserted. " },
+            { "thumb": "./images/portfolio/major-projects/diegetic/6diegetic.png", "full": "./images/portfolio/major-projects/diegetic/6diegetic.png", "desc":"Top-down view of the map displaying the layout of the world. During gameplay, it displays the player's realtime location and the destination as well." }
+        ],
+        "links": [
+        { "label": "Preprint", "url": "./images/portfolio/major-projects/diegetic/CGT581DK-Diegetic-vs-2D-MapNav.pdf" },
+        { "label": "Demo Video (To Be Uploaded Soon)", "url": "#" }
+        ]
+    }
+  ],
+
+  "cardsTab2": 
+  [
+    {
+        "id": "modalt2-1",
         "title": "Collection Quest (Unity)",
         "desc": "VR Simulation & NPC Intelligence System Design",
         "image": "./images/portfolio/major-projects/collection/1collection.png",
@@ -36,44 +155,7 @@
     },
 
     {
-        "id": "modalt1-3",
-        "title": "Virtual Sports Experience (Unity | Vasoo)",
-        "desc": "Lead Mechanics Developer, Project Management, & Level Design",
-        "image": "./images/portfolio/major-projects/vasoo/2vasoo.jpg",
-        "full": "./images/portfolio/major-projects/vasoo/2vasoo.jpg",
-        "thumbnails": [
-            { "thumb": "./images/portfolio/major-projects/vasoo/2vasoo.jpg", "full": "./images/portfolio/major-projects/vasoo/2vasoo.jpg", "desc": "Worked with Iconic Engine's in-house SDK (Vasoo Engine) to develop a metaverse sports experience for the Oculus Quest. I was a Project Manager and Lead Mechanics Developer for the Interior Experience team, whose goal was to create a skybox area for multiple avatars to hang out, watch the actual match, and have social interactions with other users."},
-            { "thumb": "./images/portfolio/major-projects/vasoo/1vasoo.jpg", "full": "./images/portfolio/major-projects/vasoo/1vasoo.jpg", "desc":"The outdoor stadium developed by the Outdoor Experience team. I assisted with level design for both teams as well as code integration, and documentation." },
-            { "thumb": "./images/portfolio/major-projects/vasoo/3vasoo.jpg", "full": "./images/portfolio/major-projects/vasoo/3vasoo.jpg", "desc":"An aerial view of the final experience with the outdoor stadium and the indoor 'lounge' area." }
-        ],
-        "links": [
-        { "label": "Featured News Article", "url": "https://web.archive.org/web/20250718101827/https:/polytechnic.purdue.edu/newsroom/polytechnic-grad-students-design-future-of-purdue-sports-metaverse" }
-        ]
-    },
-
-    {
-        "id": "modalt1-4",
-        "title": "Topplots (Unreal Engine)",
-        "desc": "VR Physics Based Game",
-        "image": "./images/portfolio/major-projects/topplots/1topplots.png",
-        "full": "./images/portfolio/major-projects/topplots/1topplots.png",
-        "thumbnails": [
-            { "thumb": "./images/portfolio/major-projects/topplots/1topplots.png", "full": "./images/portfolio/major-projects/topplots/1topplots.png", "desc": "A virtual reality game I worked on for the CGT 555 (Game Development II) class, at Purdue University for my Masters. I fulfilled the role as a Creative Director and Level Designer (for 3 out of the 4 levels). This was also the start of Hammerand Studios - the starting point of having my own game development team. Topplots puts you in the shoes of a young child whose sole aim is to take down the towers of blocks in front of them, to get to the unique toys at the top of it. Take charge and gradually advance to locations that will take you on a wild journey fueled by the child's imagination. The images represent the levels I worked on."},
-            { "thumb": "./images/portfolio/major-projects/topplots/2topplots.png", "full": "./images/portfolio/major-projects/topplots/2topplots.png", "desc":"Underworld (Level 3)- playspace in the middle is marked with the white and red mat." },
-            { "thumb": "./images/portfolio/major-projects/topplots/3topplots.png", "full": "./images/portfolio/major-projects/topplots/3topplots.png", "desc":"Mole World (Level 2) - playspace is in the mesa in the middle." },
-            { "thumb": "./images/portfolio/major-projects/topplots/4topplots.png", "full": "./images/portfolio/major-projects/topplots/4topplots.png","desc":"Mole World (Level 2) - playspace is in the mesa in the middle." },
-            { "thumb": "./images/portfolio/major-projects/topplots/5topplots.png", "full": "./images/portfolio/major-projects/topplots/5topplots.png", "desc":"The Mines (Level 1) - playspace is on the blue blueprint map." },
-            { "thumb": "./images/portfolio/major-projects/topplots/6topplots.png", "full": "./images/portfolio/major-projects/topplots/6topplots.png", "desc":"The Mines (Level 1) - playspace is on the blue blueprint map." }
-        ],
-        "links": [
-        { "label": "Demo Video", "url": "https://youtu.be/dhZ-EVdMEBo" }
-        ]
-    }
-  ],
-
-  "cardsTab2": [
-    {
-        "id": "modalt2-1",
+        "id": "modalt2-2",
         "title": "Invader Defense (OpenGL)",
         "desc": "Real-Time Graphics Programming",
         "image": "./images/portfolio/major-projects/alienshooter/2alien.png",
@@ -89,8 +171,75 @@
         ]
     },
 
+    {
+        "id": "modalt2-3",
+        "title": "Procedurally Generated Infinite Dungeon Sidescroller",
+        "desc": "Game that creates procedural dungeons and repeats the chunks for an endless sidescroller.",
+        "image": "./images/portfolio/major-projects/dungeon/1dungeon.png",
+        "full": "./images/portfolio/major-projects/dungeon/1dungeon.png",
+        "thumbnails": [
+            { "thumb": "./images/portfolio/major-projects/dungeon/1dungeon.png", "full": "./images/portfolio/major-projects/dungeon/1dungeon.png", "desc": "This project covered the development of an infinite sidescroller, where the “level” chunks are generated procedurally. These chunks behave as pooled objects that always number in three (i.e. after the second dungeon chunk is cleared, the third one acts as the first in the next series of three."},
+            { "thumb": "./images/portfolio/major-projects/dungeon/2dungeon.png", "full": "./images/portfolio/major-projects/dungeon/2dungeon.png", "desc": "Each dungeon in a chunk is comprised of a gridlike system which is always optimized for one escape route. All dungeons are randomized and procedural."},
+            { "thumb": "./images/portfolio/major-projects/dungeon/3dungeon.png", "full": "./images/portfolio/major-projects/dungeon/3dungeon.png", "desc": "Gameplay screenshot of a player traversing the dungeon 'terrain' and on top the chunks can be seen."}
+        ],
+        "links": [
+        { "label": "Writeup", "url": "./images/portfolio/major-projects/dungeon/CGT581CM-Assm2-Writeup-Moz.pdf" }
+        ]
+    },
+
         {
-        "id": "modalt2-2",
+        "id": "modalt2-4",
+        "title": "Procedural Furniture Generator (Unity)",
+        "desc": "Procedural Asset Generation",
+        "image": "./images/portfolio/major-projects/procseat/1procseat.png",
+        "full": "./images/portfolio/major-projects/procseat/1procseat.png",
+        "thumbnails": [
+            { "thumb": "./images/portfolio/major-projects/procseat/1procseat.png", "full": "./images/portfolio/major-projects/procseat/1procseat.png", "desc": "Fully procedural seating generator. The user just needs to click on the generate button (and set the starter parameters on the left if they wish to) and everytime, a new form of sittable furniture will be generated."},
+            { "thumb": "./images/portfolio/major-projects/procseat/2procseat.png", "full": "./images/portfolio/major-projects/procseat/2procseat.png", "desc":"One feature this algorithm also has is the edge (red blocks) and corner (yellow blocks without the grey pegs) detection abilities of the base, thus making it very versatile, and providing with the ability to generate any form of seats (from ottomans to sofas to barstools)." }
+        ],
+        "links": [
+            { "label": "Demo Video", "url": "https://youtu.be/Wv7M7NUwZKk" },
+            { "label": "Writeup", "url": "./images/portfolio/major-projects/procseat/CGT581CM-Assm1-Writeup-Moz.pdf" }
+        ]
+    },
+
+    {
+        "id": "modalt2-5",
+        "title": "Crime Visualizer and Detective Game (Unity)",
+        "desc": "Data Parser and Data-Driven Game Design",
+        "image": "./images/portfolio/major-projects/crimeviz/1crimeviz.png",
+        "full": "./images/portfolio/major-projects/crimeviz/1crimeviz.png",
+        "thumbnails": [
+            { "thumb": "./images/portfolio/major-projects/crimeviz/1crimeviz.png", "full": "./images/portfolio/major-projects/crimeviz/1crimeviz.png", "desc": "A small game was developed that mapped all the points over approximately correct geographic locations (over a map image). The player could then click on each green 'hotspot' and look into the details of the homicide that happened in that area."},
+            { "thumb": "./images/portfolio/major-projects/crimeviz/3crimeviz.png", "full": "./images/portfolio/major-projects/crimeviz/3crimeviz.png", "desc":"Main play screen ('PLAY' state); The red hat is the player icon, and the green marks are the crime 'hotspots' containing the information from the dataset. " },
+            { "thumb": "./images/portfolio/major-projects/crimeviz/4crimeviz.png", "full": "./images/portfolio/major-projects/crimeviz/4crimeviz.png", "desc": "Clicking on a location puts the game in the 'INSPECT' state reveals the details about the crime there and the player can play a sound byte from that location to see if it matches with the culprit or not."},
+            { "thumb": "./images/portfolio/major-projects/crimeviz/5crimeviz.png", "full": "./images/portfolio/major-projects/crimeviz/5crimeviz.png", "desc": "An example of a hint given to the player (the information in the curly brackets is supposed to be what the hint alludes to). "},
+            { "thumb": "./images/portfolio/major-projects/crimeviz/6crimeviz.png", "full": "./images/portfolio/major-projects/crimeviz/6crimeviz.png", "desc": "If the user successfully finds the location with the same sound clip as given in the clue. If the user is unsuccessful in finding the correct location with the same sound clip as given in the clue. "},
+            { "thumb": "./images/portfolio/major-projects/crimeviz/2crimeviz.png", "full": "./images/portfolio/major-projects/crimeviz/2crimeviz.png", "desc": "A small game was developed that mapped all the points over approximately correct geographic locations (over a map image). The player could then click on each green 'hotspot' and look into the details of the homicide that happened in that area."}
+        ],
+        "links": [
+        { "label": "Preprint", "url": "./images/portfolio/major-projects/crimeviz/CGT513-InteractiveCrimeViz.pdf" }
+        ]
+    },
+
+        {
+        "id": "modalt2-6",
+        "title": "Knowledge Management of Video Game Postmortems",
+        "desc": "An exploration into developing a novel visualization for game postmortems",
+        "image": "./images/portfolio/major-projects/graph/1graph.png",
+        "full": "./images/portfolio/major-projects/crimeviz/1graph.png",
+        "thumbnails": [
+            { "thumb": "./images/portfolio/major-projects/graph/1graph.png", "full": "./images/portfolio/major-projects/graph/1graph.png", "desc": "An example of the end result of the methodology of taking a video game's postmortem, vectorizing it, and reducing the dimensions to major problem spaces."},
+            { "thumb": "./images/portfolio/major-projects/graph/2graph.png", "full": "./images/portfolio/major-projects/graph/2graph.png", "desc":"The proposed process where after vectorization and tokenizing, a wordy postmortem can be reduced in terms of how it is represented (with minimal additions for context) and still preserve the information communicated by the original postmortem." },
+            { "thumb": "./images/portfolio/major-projects/graph/3graph.png", "full": "./images/portfolio/major-projects/graph/3graph.png", "desc": "A sie-by-side comparison between using the same vectorization and plotting technique for the original postmortem and the reduced postmortem text."}
+        ],
+        "links": [
+        { "label": "Presentation", "url": "./images/portfolio/major-projects/graph/CGT575VB-VizGraphGameDev.pdf" }
+        ]
+    },
+
+    {
+        "id": "modalt2-7",
         "title": "Lost In Space (Unity)",
         "desc": "One Button Pseudo-Virtual Reality Simulation",
         "image": "./images/portfolio/major-projects/roomvr/1roomvr.jpg",
@@ -108,7 +257,7 @@
     },
 
     {
-        "id": "modalt2-3",
+        "id": "modalt2-8",
         "title": "Pose Recognized Hand Tracking (Unity)",
         "desc": "VR Simulation & Gameplay Design",
         "image": "./images/portfolio/major-projects/handtrack/7hand.png",
@@ -124,7 +273,26 @@
     },
 
     {
-        "id": "modalt2-4",
+        "id": "modalt2-9",
+        "title": "Topplots (Unreal Engine)",
+        "desc": "VR Physics Based Game",
+        "image": "./images/portfolio/major-projects/topplots/1topplots.png",
+        "full": "./images/portfolio/major-projects/topplots/1topplots.png",
+        "thumbnails": [
+            { "thumb": "./images/portfolio/major-projects/topplots/1topplots.png", "full": "./images/portfolio/major-projects/topplots/1topplots.png", "desc": "A virtual reality game I worked on for the CGT 555 (Game Development II) class, at Purdue University for my Masters. I fulfilled the role as a Creative Director and Level Designer (for 3 out of the 4 levels). This was also the start of Hammerand Studios - the starting point of having my own game development team. Topplots puts you in the shoes of a young child whose sole aim is to take down the towers of blocks in front of them, to get to the unique toys at the top of it. Take charge and gradually advance to locations that will take you on a wild journey fueled by the child's imagination. The images represent the levels I worked on."},
+            { "thumb": "./images/portfolio/major-projects/topplots/2topplots.png", "full": "./images/portfolio/major-projects/topplots/2topplots.png", "desc":"Underworld (Level 3)- playspace in the middle is marked with the white and red mat." },
+            { "thumb": "./images/portfolio/major-projects/topplots/3topplots.png", "full": "./images/portfolio/major-projects/topplots/3topplots.png", "desc":"Mole World (Level 2) - playspace is in the mesa in the middle." },
+            { "thumb": "./images/portfolio/major-projects/topplots/4topplots.png", "full": "./images/portfolio/major-projects/topplots/4topplots.png","desc":"Mole World (Level 2) - playspace is in the mesa in the middle." },
+            { "thumb": "./images/portfolio/major-projects/topplots/5topplots.png", "full": "./images/portfolio/major-projects/topplots/5topplots.png", "desc":"The Mines (Level 1) - playspace is on the blue blueprint map." },
+            { "thumb": "./images/portfolio/major-projects/topplots/6topplots.png", "full": "./images/portfolio/major-projects/topplots/6topplots.png", "desc":"The Mines (Level 1) - playspace is on the blue blueprint map." }
+        ],
+        "links": [
+        { "label": "Demo Video", "url": "https://youtu.be/dhZ-EVdMEBo" }
+        ]
+    },
+
+    {
+        "id": "modalt2-10",
         "title": "Cabin in the Woods (Unreal Engine)",
         "desc": "Open World Level Design",
         "image": "./images/portfolio/major-projects/forest/1forest.jpg",
@@ -142,7 +310,7 @@
     },
 
     {
-        "id": "modalt2-5",
+        "id": "modalt2-11",
         "title": "Oasis (Unreal Engine)",
         "desc": "Linear Level Design",
         "image": "./images/portfolio/major-projects/fantasy/1fantasy.png",
@@ -157,58 +325,15 @@
         "links": [
         { "label": "Demo Video", "url": "https://youtu.be/YVoPLTxPFAs" }
         ]
-    },
-
-    {
-        "id": "modalt2-6",
-        "title": "Procedural Furniture Generator (Unity)",
-        "desc": "Procedural Asset Generation",
-        "image": "./images/portfolio/major-projects/procseat/1procseat.png",
-        "full": "./images/portfolio/major-projects/procseat/1procseat.png",
-        "thumbnails": [
-            { "thumb": "./images/portfolio/major-projects/procseat/1procseat.png", "full": "./images/portfolio/major-projects/procseat/1procseat.png", "desc": "Fully procedural seating generator. The user just needs to click on the generate button (and set the starter parameters on the left if they wish to) and everytime, a new form of sittable furniture will be generated."},
-            { "thumb": "./images/portfolio/major-projects/procseat/2procseat.png", "full": "./images/portfolio/major-projects/procseat/2procseat.png", "desc":"One feature this algorithm also has is the edge (red blocks) and corner (yellow blocks without the grey pegs) detection abilities of the base, thus making it very versatile, and providing with the ability to generate any form of seats (from ottomans to sofas to barstools)." }
-        ],
-        "links": [
-        { "label": "Demo Video", "url": "https://youtu.be/Wv7M7NUwZKk" }
-        ]
-    },
-
-    {
-        "id": "modalt2-7",
-        "title": "Crime Visualizer (Unity)",
-        "desc": "Data Parser and Data-Driven Game Design",
-        "image": "./images/portfolio/major-projects/crimeviz/1crimeviz.png",
-        "full": "./images/portfolio/major-projects/crimeviz/1crimeviz.png",
-        "thumbnails": [
-            { "thumb": "./images/portfolio/major-projects/crimeviz/1crimeviz.png", "full": "./images/portfolio/major-projects/crimeviz/1crimeviz.png", "desc": "A small game was developed that mapped all the points over approximately correct geographic locations (over a map image). The player could then click on each green 'hotspot' and look into the details of the homicide that happened in that area."},
-            { "thumb": "./images/portfolio/major-projects/crimeviz/2crimeviz.png", "full": "./images/portfolio/major-projects/crimeviz/2crimeviz.png", "desc":"A pre-processor script that acts as a parser to convert comma-separated-value files into readable Unity inspector properties. No matter how big the dataset, the algorithm efficiently parses the data correctly, and organizes them into custom classes (Element 0, ELement 1 ...) with custom properties (Case no, IUCR, ...). In this case, the Chicago Crime (Homicide) dataset was used." }
-        ],
-        "links": [
-        { "label": "", "url": "#" }
-        ]
-    },
-
-    {
-        "id": "modalt2-8",
-        "title": "Basic Slot Machine (Unity)",
-        "desc": "Game Design for Social Cause",
-        "image": "./images/portfolio/major-projects/tinker/1tinker.png",
-        "full": "./images/portfolio/major-projects/tinker/1tinker.png",
-        "thumbnails": [
-            { "thumb": "./images/portfolio/major-projects/tinker/1tinker.png", "full": "./images/portfolio/major-projects/tinker/1tinker.png", "desc": "A slot machine simulator (Procedural Random Number generator) I made, to demonstrate the ill effects of gambling (and also to serve as a fidget satisfying tool). One of the main parameters I was investigating was whether the same levels of intrinsic motivation and enjoyment are achieved, even whene the monetary aspect of it is removed. Turns out, that priliminary evidence suggested that the same levels of enjoyment and motivation are achieved due to the 'no risk - high reward' mechanic, although further formal investigation is needed."}
-        ],
-        "links": [
-        { "label": "", "url": "#" }
-        ]
     }
   ],
 
-    "cardsTab4": [
+    "cardsTab4": 
+    [
     {
         "id": "modalt4-1",
         "title": "Assignment Requirement Document Template",
-        "desc": "Standardized template for classroom assignment. (ADA Compliant)",
+        "desc": "Standardized template for classroom assignment (ADA Compliant)",
         "image": "./images/portfolio/major-projects/teaching/1teaching.png",
         "full": "./images/portfolio/major-projects/teaching/1teaching.png",
         "thumbnails": [
@@ -222,9 +347,26 @@
     },
 
     {
+        "id": "modalt4-3",
+        "title": "Codesign for CAD Evaluation",
+        "desc": "Precursor to grading tool when it was a research idea",
+        "image": "./images/portfolio/major-projects/codesign/2codesign.png",
+        "full": "./images/portfolio/major-projects/codesign/2codesign.png",
+        "thumbnails": [
+            { "thumb": "./images/portfolio/major-projects/codesign/1codesign.png", "full": "./images/portfolio/major-projects/codesign/1codesign.png", "desc": "Wireframe created in Balsamiq for the Home screen that displays the list of all assignments. Each assignment links to a grading interface that an instructor can use to evaluate the part and copy formatted feedback for student."},
+            { "thumb": "./images/portfolio/major-projects/codesign/2codesign.png", "full": "./images/portfolio/major-projects/codesign/2codesign.png", "desc":"Wireframe created in Balsamiq for an assignment evaluation page that displays the rubric for a specific assignment. This screen displays web-design principles focusing on enhancing the user experience for quick evaluations." },
+            { "thumb": "./images/portfolio/major-projects/codesign/3codesign.png", "full": "./images/portfolio/major-projects/codesign/3codesign.png", "desc":"Demo website deployed using Node.js that displays the home page." },
+            { "thumb": "./images/portfolio/major-projects/codesign/4codesign.png", "full": "./images/portfolio/major-projects/codesign/4codesign.png", "desc":"Demo website deployed using Node.js that displays the assignment evaluation page with the rubric and a component that allows the instructor to view the base model and morphed model (after changing dimensions according tot he assignment)." }
+        ],
+        "links": [
+        { "label": "Preprint", "url": "./images/portfolio/major-projects/codesign/CNIT581TL-Project-FinalReport-Moz.pdf" }
+        ]
+    },
+
+    {
         "id": "modalt4-2",
         "title": "Assignment and Project Grading Tool",
-        "desc": "Unity based tool to create a grading tool from .txt data sources.",
+        "desc": "Unity based tool to create a grading tool from .txt data sources",
         "image": "./images/portfolio/major-projects/teaching/1grading.png",
         "full": "./images/portfolio/major-projects/teaching/1grading.png",
         "thumbnails": [
@@ -244,16 +386,16 @@
     {
         "id": "modalt5-1",
         "title": "Characters",
-        "desc": "Original characters created for various homebrew campaigns.",
+        "desc": "Original characters created for various homebrew campaigns",
         "image": "./images/portfolio/dungeon/3art-500.png",
         "full": "./images/portfolio/dungeon/3art-500.png",
         "thumbnails": [
-            { "thumb": "./images/portfolio/dungeon/3art.png", "full": "./images/portfolio/dungeon/3art.png", "desc": "PATAAL DAITYA | Earth Elemental Lord (Beast) | AC: 17\n\nSTR: 20 (+5) | DEX: 9 (-1) | CON: 16 (+3) | INT: 8 (-1) | WIS: 8 (-1) | CHA: 12 (+1)"},
-            { "thumb": "./images/portfolio/dungeon/1art.png", "full": "./images/portfolio/dungeon/1art.png", "desc": "LIA VANDERLAY | Fighter (Human) | AC: 14\n\nSTR: 12 (+1) | DEX: 18 (+4) | CON: 15 (+2) | INT: 11 (+0) | WIS: 9 (-1) | CHA: 9 (-1)"},
-            { "thumb": "./images/portfolio/dungeon/2art.png", "full": "./images/portfolio/dungeon/2art.png", "desc":"SHAYNA 'Loco' ESTRALLIS | Rogue (Human) | AC: 13\n\nSTR: 9 (-1) | DEX: 16 (+3) | CON: 11 (+0) | INT: 11 (+0) | WIS: 12 (+1) | CHA: 14 (+2)" },
-            { "thumb": "./images/portfolio/dungeon/4art.png", "full": "./images/portfolio/dungeon/4art.png", "desc":"BAAK JOKHINI | Darkwater Entity | AC: 14\n\nSTR: 18 (+4) | DEX: 17 (+3) | CON: 15 (+2) | INT: 14 (+2) | WIS: 9 (-1) | CHA: 8 (-1)" },
-            { "thumb": "./images/portfolio/dungeon/5art.png", "full": "./images/portfolio/dungeon/5art.png", "desc":"PUWALI | Forest Avian (Beast) | AC: 10\n\nSTR: 12 (+1) | DEX: 14 (+2) | CON: 10 (+0) | INT: 2 (-4) | WIS: 9 (-1) | CHA: 9 (-1)" },
-            { "thumb": "./images/portfolio/dungeon/6art.png", "full": "./images/portfolio/dungeon/6art.png", "desc":"BALAHOFF | Elder Dragon Lord (Beast) | AC: 19\n\nSTR: 18 (+4) | DEX: 12 (+1) | CON: 15 (+2) | INT: 12 (+1) | WIS: 10 (+0) | CHA: 10 (+0)" }
+            { "thumb": "./images/portfolio/dungeon/3art.png", "full": "./images/portfolio/dungeon/3art.png", "desc": "PATAAL DAITYA | Earth Elemental Lord (Beast)"},
+            { "thumb": "./images/portfolio/dungeon/1art.png", "full": "./images/portfolio/dungeon/1art.png", "desc": "LIA VANDERLAY | Fighter (Human)"},
+            { "thumb": "./images/portfolio/dungeon/2art.png", "full": "./images/portfolio/dungeon/2art.png", "desc":"SHAYNA 'Loco' ESTRALLIS | Rogue (Human)" },
+            { "thumb": "./images/portfolio/dungeon/4art.png", "full": "./images/portfolio/dungeon/4art.png", "desc":"BAAK JOKHINI | Darkwater Entity" },
+            { "thumb": "./images/portfolio/dungeon/5art.png", "full": "./images/portfolio/dungeon/5art.png", "desc":"PUWALI | Forest Avian (Beast)" },
+            { "thumb": "./images/portfolio/dungeon/6art.png", "full": "./images/portfolio/dungeon/6art.png", "desc":"BALAHOFF | Elder Dragon Lord (Beast)" }
         ],
         "links": [
         { "label": "Procreate", "url": "https://procreate.com/" }
@@ -263,7 +405,7 @@
     {
         "id": "modalt5-2",
         "title": "Dungeon Maps",
-        "desc": "Custom One-Shot maps made for adventuring with friends.",
+        "desc": "Custom One-Shot maps made for adventuring with friends",
         "image": "./images/portfolio/dungeon/1map-500.png",
         "full": "./images/portfolio/dungeon/1map-500.png",
         "thumbnails": [

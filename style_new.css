@@ -200,6 +200,7 @@ body {
 /* GRID */
 .grid {
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 500px));
     gap: 20px;
     justify-content: center;
 }
