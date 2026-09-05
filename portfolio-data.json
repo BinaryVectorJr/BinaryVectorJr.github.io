@@ -39,7 +39,7 @@
         ],
         "links": [
         { "label": "Preprint", "url": "./images/portfolio/major-projects/blockrun/EDCI 556-Blockrun-FinalDesignDocument.pdf"},
-        { "label": "Demo Video (To Be Uploaded Soon)", "url": "#"}
+        { "label": "Demo Video", "url": "https://youtu.be/xu8FvZm7S4Y"}
         ]
     },
 
@@ -57,7 +57,7 @@
             { "thumb": "./images/portfolio/major-projects/schelling/5schelling.png", "full": "./images/portfolio/major-projects/schelling/5schelling.png", "desc":"Display's the Morans I Spatial Distribution map of Agent B. Notice that it is an 'inverted' map of the Moran's I map of Agent A (since this is a two agent system). (Red = HH, Light Red = HL, Light Blue = LH, Blue = LL)" }
         ],
         "links": [
-        { "label": "Publication (In Press)", "url": "#" }
+        { "label": "Publication (In Press)", "url": "" }
         ]
     },
 
@@ -79,7 +79,7 @@
         ],
         "links": [
         { "label": "Preprint", "url": "./images/portfolio/major-projects/rhf/CNIT581JD-ABM-HighStress.pdf" },
-        { "label": "Demo Video (To Be Uploaded Soon)", "url": "#"}
+        { "label": "Demo Video", "url": "https://youtu.be/D1M9zy-Uw7Y"}
         ]
     },
 
@@ -131,7 +131,7 @@
         ],
         "links": [
         { "label": "Preprint", "url": "./images/portfolio/major-projects/diegetic/CGT581DK-Diegetic-vs-2D-MapNav.pdf" },
-        { "label": "Demo Video (To Be Uploaded Soon)", "url": "#" }
+        { "label": "Demo Video", "url": "https://youtu.be/vZThJRCXTwU" }
         ]
     }
   ],
@@ -150,7 +150,8 @@
             { "thumb": "./images/portfolio/major-projects/collection/3collection.png", "full": "./images/portfolio/major-projects/collection/3collection.png", "desc":"Grid visibility detection script used in a game level for a published article. Here the level was optimized for the location of multiple pieces of a treasure. The factors were several cost terms (one of which was 'initial visibility of the player'). The tiles in red are the ones that have detected the yellow treasure  (high visibility). Since it is inside a room (white blocks), the green tiles do not 'see' it, thus implementing an effective visibility algorithm." }
         ],
         "links": [
-        { "label": "Published Article", "url": "https://doi.org/10.1016/j.gvc.2021.200020" }
+        { "label": "Published Article", "url": "https://doi.org/10.1016/j.gvc.2021.200020" },
+        { "label": "Demo Video", "url": "https://youtu.be/jpOBoui14w4" }
         ]
     },
 
@@ -183,7 +184,8 @@
             { "thumb": "./images/portfolio/major-projects/dungeon/3dungeon.png", "full": "./images/portfolio/major-projects/dungeon/3dungeon.png", "desc": "Gameplay screenshot of a player traversing the dungeon 'terrain' and on top the chunks can be seen."}
         ],
         "links": [
-        { "label": "Writeup", "url": "./images/portfolio/major-projects/dungeon/CGT581CM-Assm2-Writeup-Moz.pdf" }
+            { "label": "Writeup", "url": "./images/portfolio/major-projects/dungeon/CGT581CM-Assm2-Writeup-Moz.pdf" },
+            { "label": "Demo Video", "url":"https://youtu.be/qsstrtISIDE"}
         ]
     },
 
@@ -198,8 +200,8 @@
             { "thumb": "./images/portfolio/major-projects/procseat/2procseat.png", "full": "./images/portfolio/major-projects/procseat/2procseat.png", "desc":"One feature this algorithm also has is the edge (red blocks) and corner (yellow blocks without the grey pegs) detection abilities of the base, thus making it very versatile, and providing with the ability to generate any form of seats (from ottomans to sofas to barstools)." }
         ],
         "links": [
-            { "label": "Demo Video", "url": "https://youtu.be/Wv7M7NUwZKk" },
-            { "label": "Writeup", "url": "./images/portfolio/major-projects/procseat/CGT581CM-Assm1-Writeup-Moz.pdf" }
+            { "label": "Writeup", "url": "./images/portfolio/major-projects/procseat/CGT581CM-Assm1-Writeup-Moz.pdf" },
+            { "label": "Demo Video", "url": "https://youtu.be/Wv7M7NUwZKk" }
         ]
     },
 
