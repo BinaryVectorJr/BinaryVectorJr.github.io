@@ -411,8 +411,8 @@
         "image": "./images/portfolio/dungeon/1map-500.png",
         "full": "./images/portfolio/dungeon/1map-500.png",
         "thumbnails": [
-            { "thumb": "./images/portfolio/dungeon/1map.png", "full": "./images/portfolio/dungeon/1map.png", "desc": "MATKA KING GALLERY\n\nA large open space map for a gallery filled with historical artifacts. From Knights of Armor to wonders of marble, this gallery displays one of the most impressive collections in South East Asia. There are whispers of an armory holding even more valuable artifacts only displayed on certain occassions. An interesting thing to note - the owner apparently lives on site. Quite...intriguing."},
-            { "thumb": "./images/portfolio/dungeon/2map.png", "full": "./images/portfolio/dungeon/2map.png", "desc":"THANDA FOREST CLEARING\n\nA mysterious clearing in the middle of a large, luscious forest. There are signs of life, however special stones lay on the ground. These stones vibrate with some magical energy. What could this be?" }
+            { "thumb": "./images/portfolio/dungeon/1map.png", "full": "./images/portfolio/dungeon/1map.png", "desc": "King Galleria\n\nA large open space map for a gallery filled with historical artifacts. From Knights of Armor to wonders of marble, this gallery displays one of the most impressive collections in South East Asia. There are whispers of an armory holding even more valuable artifacts only displayed on certain occassions. An interesting thing to note - the owner apparently lives on site. Quite...intriguing."},
+            { "thumb": "./images/portfolio/dungeon/2map.jpg", "full": "./images/portfolio/dungeon/2map.jpg", "desc":"Bogabali Forest\n\nA mysterious clearing in the middle of a large, luscious forest. There are signs of life, however special stones lay on the ground. These stones vibrate with some magical energy. What could this be?" }
         ],
         "links": [
         { "label": "Dungeon Scrawl", "url": "https://www.dungeonscrawl.com/" },
