@@ -38,7 +38,7 @@
             { "thumb": "./images/portfolio/major-projects/blockrun/9blockrun.png", "full": "./images/portfolio/major-projects/blockrun/9blockrun.png", "desc":"As a research component, a diegetic feedback screen was added after the completion of the Puzzle Solver's Tetris minigame to collect feedback." }
         ],
         "links": [
-        { "label": "Preprint", "url": "./images/portfolio/major-projects/blockrun/EDCI 556-Blockrun-FinalDesignDocument.pdf"},
+        { "label": "Preprint", "url": "./pdf/EDCI556WW-Blockrun-Maz.pdf"},
         { "label": "Demo Video", "url": "https://youtu.be/xu8FvZm7S4Y"}
         ]
     },
@@ -78,7 +78,7 @@
             { "thumb": "./images/portfolio/major-projects/rhf/7rhf.png", "full": "./images/portfolio/major-projects/rhf/7rhf.png", "desc":"This is a conceptual behavioral diagram I created based on how the societal balance is being upheld by its constituent's needs being satisfied, which in turn upholds the three pillars of societal sustenance. If there is an imbalance in needs, then the balance is off, which means that society will focus unequally on one of the three pillars of sustenance (in this case the social pillar since the divide among the constituents contributes to major societal problems). As a result, progress will be skewed towards that component while the other pillars might be addressed with a regressive mindset." }
         ],
         "links": [
-        { "label": "Preprint", "url": "./images/portfolio/major-projects/rhf/CNIT581JD-ABM-HighStress.pdf" },
+        { "label": "Preprint", "url": "./pdf/CNIT581JD-ABM-HighStress-Maz.pdf" },
         { "label": "Demo Video", "url": "https://youtu.be/D1M9zy-Uw7Y"}
         ]
     },
@@ -130,7 +130,7 @@
             { "thumb": "./images/portfolio/major-projects/diegetic/6diegetic.png", "full": "./images/portfolio/major-projects/diegetic/6diegetic.png", "desc":"Top-down view of the map displaying the layout of the world. During gameplay, it displays the player's realtime location and the destination as well." }
         ],
         "links": [
-        { "label": "Preprint", "url": "./images/portfolio/major-projects/diegetic/CGT581DK-Diegetic-vs-2D-MapNav.pdf" },
+        { "label": "Preprint", "url": "./pdf/CGT581DK-Diegetic-vs-2D-MapNav-Maz.pdf" },
         { "label": "Demo Video", "url": "https://youtu.be/vZThJRCXTwU" }
         ]
     }
@@ -184,7 +184,7 @@
             { "thumb": "./images/portfolio/major-projects/dungeon/3dungeon.png", "full": "./images/portfolio/major-projects/dungeon/3dungeon.png", "desc": "Gameplay screenshot of a player traversing the dungeon 'terrain' and on top the chunks can be seen."}
         ],
         "links": [
-            { "label": "Writeup", "url": "./images/portfolio/major-projects/dungeon/CGT581CM-Assm2-Writeup-Moz.pdf" },
+            { "label": "Writeup", "url": "./pdf/CGT581CM-EndlessRunner-Maz.pdf" },
             { "label": "Demo Video", "url":"https://youtu.be/qsstrtISIDE"}
         ]
     },
@@ -200,7 +200,7 @@
             { "thumb": "./images/portfolio/major-projects/procseat/2procseat.png", "full": "./images/portfolio/major-projects/procseat/2procseat.png", "desc":"One feature this algorithm also has is the edge (red blocks) and corner (yellow blocks without the grey pegs) detection abilities of the base, thus making it very versatile, and providing with the ability to generate any form of seats (from ottomans to sofas to barstools)." }
         ],
         "links": [
-            { "label": "Writeup", "url": "./images/portfolio/major-projects/procseat/CGT581CM-Assm1-Writeup-Moz.pdf" },
+            { "label": "Writeup", "url": "./pdf/CGT581CM-ProceduralFurniture-Maz.pdf" },
             { "label": "Demo Video", "url": "https://youtu.be/Wv7M7NUwZKk" }
         ]
     },
@@ -220,7 +220,7 @@
             { "thumb": "./images/portfolio/major-projects/crimeviz/2crimeviz.png", "full": "./images/portfolio/major-projects/crimeviz/2crimeviz.png", "desc": "A small game was developed that mapped all the points over approximately correct geographic locations (over a map image). The player could then click on each green 'hotspot' and look into the details of the homicide that happened in that area."}
         ],
         "links": [
-        { "label": "Preprint", "url": "./images/portfolio/major-projects/crimeviz/CGT513-InteractiveCrimeViz.pdf" }
+        { "label": "Preprint", "url": "./pdf/CGT513AF-InteractiveCrimeViz-Maz.pdf" }
         ]
     },
 
@@ -236,7 +236,7 @@
             { "thumb": "./images/portfolio/major-projects/graph/3graph.png", "full": "./images/portfolio/major-projects/graph/3graph.png", "desc": "A sie-by-side comparison between using the same vectorization and plotting technique for the original postmortem and the reduced postmortem text."}
         ],
         "links": [
-        { "label": "Presentation", "url": "./images/portfolio/major-projects/graph/CGT575VB-VizGraphGameDev.pdf" }
+        { "label": "Presentation", "url": "./pdf/CGT575VB-VizGraphGameDev-Maz.pdf" }
         ]
     },
 
@@ -361,7 +361,7 @@
             { "thumb": "./images/portfolio/major-projects/codesign/4codesign.png", "full": "./images/portfolio/major-projects/codesign/4codesign.png", "desc":"Demo website deployed using Node.js that displays the assignment evaluation page with the rubric and a component that allows the instructor to view the base model and morphed model (after changing dimensions according tot he assignment)." }
         ],
         "links": [
-        { "label": "Preprint", "url": "./images/portfolio/major-projects/codesign/CNIT581TL-Project-FinalReport-Moz.pdf" }
+        { "label": "Preprint", "url": "./pdf/CNIT581TL-CoDesignCAD-Maz.pdf" }
         ]
     },
 
